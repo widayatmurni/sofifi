@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Pages as PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('cek-session', function() {
+    dd(session()->get('_language'));
+});
+
+Route::get('del-session', function() {
+    dd(session()->all());
+});
+
+Route::get('set-session/{lang?}', function ($lang = 'id') {
+    session(['_language' => $lang]);
+    dd(session()->all());
+});
+
+Route::middleware(['user.lang'])->group(function () {
+
+    Route::controller(PageController::class)->group(function () {
+        Route::get('/{slug?}', 'pageView');
+    });
+
+
+});
+
+
+// ADMIN
+Route::prefix('admin')->group(function () {
+    Route::controller(PageController::class)->group(function () {
+        Route::get('/post', function() {
+            return view('admin/postpage');
+        });
+        Route::post('/post-page', 'store')->name('postpage');
+    });
 });
