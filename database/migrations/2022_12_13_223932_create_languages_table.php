@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table) {
+        Schema::create('languages', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('slug');
-            $table->longText('page');
-            $table->boolean('publish')->nullable()->default(false);
-            $table->foreignId('language_id')->constrained('languages');
+            $table->string('code');
+            $table->string('country_name');
+            $table->string('flag')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pages');
+        Schema::dropIfExists('languages');
     }
 };

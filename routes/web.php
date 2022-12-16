@@ -17,6 +17,10 @@ use App\Http\Controllers\Pages as PageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::group(['prefix' => 'laravel-filemanager'], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+
 
 Route::get('cek-session', function() {
     dd(session()->get('_language'));
@@ -32,12 +36,9 @@ Route::get('set-session/{lang?}', function ($lang = 'id') {
 });
 
 Route::middleware(['user.lang'])->group(function () {
-
     Route::controller(PageController::class)->group(function () {
         Route::get('/{slug?}', 'pageView');
     });
-
-
 });
 
 

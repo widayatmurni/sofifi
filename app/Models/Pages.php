@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pages extends Model
 {
-    protected $fillable = ['title', 'slug', 'lang', 'content'];
+    protected $fillable = ['title', 'slug', 'page', 'publish', 'language_id'];
     protected $table = 'pages';
 }
