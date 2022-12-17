@@ -30,9 +30,9 @@ Route::get('del-session', function() {
     dd(session()->all());
 });
 
-Route::get('set-session/{lang?}', function ($lang = 'id') {
+Route::get('set-lang/{lang?}', function ($lang = 'id') {
     session(['_language' => $lang]);
-    dd(session()->all());
+    return redirect()->back();
 });
 
 Route::middleware(['user.lang'])->group(function () {
