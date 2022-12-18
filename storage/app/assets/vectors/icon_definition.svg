@@ -1,0 +1,22 @@
+
+<svg width="127px" height="177px" viewBox="0 0 127 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WNI-Menu" transform="translate(-337.000000, -369.000000)">
+            <g id="Group-2" transform="translate(341.000000, 371.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#015C74" stroke-width="3" d="M59.5,1.5 C61.9852814,1.5 64.2352814,2.50735931 65.863961,4.13603897 C67.4926407,5.76471863 68.5,8.01471863 68.5,10.5 C68.5,12.8054431 67.6344951,14.9088568 66.2063793,16.5006474 L66.2063793,16.5006474 L111,16.5 C112.794925,16.5 114.419925,17.2275373 115.596194,18.4038059 C116.772463,19.5800746 117.5,21.2050746 117.5,23 L117.5,23 L117.5,161 C117.5,162.794925 116.772463,164.419925 115.596194,165.596194 C114.419925,166.772463 112.794925,167.5 111,167.5 L111,167.5 L8,167.5 C6.20507456,167.5 4.58007456,166.772463 3.40380592,165.596194 C2.22753728,164.419925 1.5,162.794925 1.5,161 L1.5,161 L1.5,23 C1.5,21.2050746 2.22753728,19.5800746 3.40380592,18.4038059 C4.58007456,17.2275373 6.20507456,16.5 7.99997832,16.5 L7.99997832,16.5 L52.7936207,16.5006474 C51.3655049,14.9088568 50.5,12.8054431 50.5,10.5 C50.5,8.01471863 51.5073593,5.76471863 53.136039,4.13603897 C54.7647186,2.50735931 57.0147186,1.5 59.5,1.5 Z" stroke-linejoin="square" fill="#649EAE" fill-rule="evenodd"></path>
+                </g>
+                <circle id="Oval" fill="#FFFFFF" cx="59.5" cy="10.5" r="3.5"></circle>
+                <rect id="Rectangle" stroke="#015C74" stroke-width="2" fill="#FFFFFF" x="7" y="21" width="106" height="142" rx="8"></rect>
+                <rect id="Rectangle" fill="#000000" x="19" y="35" width="32" height="4" rx="2"></rect>
+                <rect id="Rectangle" fill="#C6C5C5" x="53" y="35" width="46" height="4" rx="2"></rect>
+                <rect id="Rectangle" fill="#C6C5C5" x="19" y="89" width="37" height="7" rx="3.5"></rect>
+                <rect id="Rectangle" fill="#C6C5C5" x="63" y="89" width="37" height="7" rx="3.5"></rect>
+                <rect id="Rectangle" fill="#C6C5C5" x="63" y="104" width="37" height="45" rx="9"></rect>
+                <rect id="Rectangle" fill="#CECCCC" x="19" y="45" width="80" height="16" rx="8"></rect>
+                <rect id="Rectangle" fill="#CECCCC" x="19" y="67" width="80" height="16" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
