@@ -18,6 +18,7 @@ class Pages extends Controller
                 ->select('pages.title', 'pages.page', 'languages.code')
                 ->where(['pages.slug' => $slug, 'languages.code' => $lang])
                 ->get();
+
         return view('base')->with('page', $page[0]);
     }
 

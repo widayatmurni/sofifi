@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('pageContent')
-  {!! $page->page !!}    
+  {!! html_entity_decode($page->page) !!}    
 @endsection
