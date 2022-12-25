@@ -19,7 +19,12 @@ class Pages extends Controller
                 ->where(['pages.slug' => $slug, 'languages.code' => $lang])
                 ->get();
 
-        return view('base')->with('page', $page[0]);
+        if ($page->isEmpty()) {
+            return abort(404);
+        } else {
+            return view('base')->with('page', $page[0]);
+        }
+
     }
 
     public function store(Request $req) {

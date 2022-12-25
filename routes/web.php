@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Pages as PageController;
+use App\Http\Controllers\Admin;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +50,9 @@ Route::prefix('admin')->group(function () {
             return view('admin/postpage');
         });
         Route::post('/post-page', 'store')->name('postpage');
+    });
+
+    Route::controller(Admin::class)->group(function () {
+        Route::get('/login', 'getLogin');
     });
 });

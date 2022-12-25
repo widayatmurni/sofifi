@@ -679,6 +679,97 @@ a {
   z-index: 1002;
 }
 
+#wna-menu {
+  position: relative;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+  background-image: url("../vectors/wna-menu-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-color: #7fdffa;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+#wna-menu .overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+}
+
+#wna-menu .menus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+}
+
+#wna-menu .menus .menu {
+  margin: 30px;
+  width: 200px;
+  background-color: #D8D8D8;
+  border-radius: 18px;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+
+#wna-menu .menus .menu:hover {
+  background-color: #eaeaea;
+  transition: background-color 100ms ease-in-out;
+}
+
+#wna-menu .menus .menu .icon-box {
+  width: 198px;
+  height: 207px;
+  background-color: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #979797;
+}
+
+#wna-menu .menus .menu .icon-box i {
+  position: relative;
+}
+
+#wna-menu .menus .menu .icon-box .icon-definition {
+  width: 127px;
+  height: 177px;
+  background-image: url("../vectors/icon_definition.svg");
+}
+
+#wna-menu .menus .menu .icon-box .icon-requirement {
+  width: 175px;
+  height: 168px;
+  background-image: url("../vectors/icon_requirement.svg");
+}
+
+#wna-menu .menus .menu .icon-box .icon-price {
+  width: 178px;
+  height: 145px;
+  background-image: url("../vectors/icon_price.svg");
+}
+
+#wna-menu .menus .menu .icon-box .icon-flow {
+  width: 157px;
+  height: 156px;
+  background-image: url("../vectors/icon_flow.svg");
+}
+
+#wna-menu .menus .menu .text {
+  margin: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 @keyframes float-nav-single {
   0% {
     opacity: 0;
@@ -1194,3 +1285,5 @@ a {
   font-size: 1em;
   font-weight: 700;
 }
+
+/*# sourceMappingURL=style.css.map */
