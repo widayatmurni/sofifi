@@ -1,0 +1,21 @@
+
+<svg width="182px" height="146px" viewBox="0 0 182 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WNA-Tarif" transform="translate(-1166.000000, -424.000000)">
+            <g id="Group-5" transform="translate(1166.000000, 425.000000)">
+                <rect id="Rectangle" stroke="#2F5B4F" stroke-width="3" fill="#FFFFFF" x="1.5" y="52.5" width="179" height="91" rx="16"></rect>
+                <rect id="Rectangle" fill="#878787" opacity="0.316947574" x="4" y="111" width="174" height="21"></rect>
+                <text id="Others" opacity="0.316242036" font-family="Futura-CondensedExtraBold, Futura" font-size="36" font-style="condensed" font-weight="700" fill="#979797">
+                    <tspan x="56.7675781" y="93">Others</tspan>
+                </text>
+                <g id="Group-2" transform="translate(11.000000, 0.000000)">
+                    <text id="S" stroke="#2F5B4F" stroke-width="2" font-family="Impact" font-size="100" font-style="condensed" font-weight="700" fill="#FBAF17">
+                        <tspan x="0.145507812" y="101">S</tspan>
+                    </text>
+                    <path d="M19,8 L30,8 C32.7614237,8 35,10.2385763 35,13 L35,21 L35,21 L14,21 L14,13 C14,10.2385763 16.2385763,8 19,8 Z" id="Rectangle" fill="#2F5B4F"></path>
+                    <path d="M20,103 L31,103 C33.7614237,103 36,105.238576 36,108 L36,116 L36,116 L15,116 L15,108 C15,105.238576 17.2385763,103 20,103 Z" id="Rectangle" fill="#2F5B4F" transform="translate(25.500000, 109.500000) scale(1, -1) translate(-25.500000, -109.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

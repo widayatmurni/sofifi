@@ -16,14 +16,21 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: CoreUI for Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js" integrity="sha384-n0qOYeB4ohUPebL1M9qb/hfYkTp4lvnZM6U6phkRofqsMzK29IdkBJPegsyfj/r4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: CoreUI PRO for Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.4.2/dist/js/coreui.bundle.min.js" integrity="sha384-3EHk1T8EEnpl9A4dz453T47zxkVMJyHEsXmDWS0rOjvrBOJHCpPvdbm/EoAhsNnb" crossorigin="anonymous"></script>
 
     <!-- Option 3: Separate Popper and CoreUI/CoreUI PRO  for Bootstrap JS -->
     <!--
