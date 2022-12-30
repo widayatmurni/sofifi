@@ -157,14 +157,44 @@ a {
   margin: 0 3px;
   flex-direction: column;
   cursor: pointer;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 #dashboard .float-nav .nav-box .nav-item:hover {
   background-color: #c2c2c2;
 }
 
-#dashboard .float-nav .nav-box .nav-item:hover>.nav-icon {
-  opacity: 1;
+#dashboard .float-nav .nav-box .nav-item i {
+  margin: auto;
+  background-repeat: no-repeat;
+  width: 38px;
+  padding-bottom: 3px;
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-gallery {
+  content: url("../vectors/gallery.png");
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-news {
+  content: url("../vectors/news.png");
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-wna {
+  content: url("../vectors/wna.png");
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-wni {
+  content: url("../vectors/wni.png");
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-contact {
+  content: url("../vectors/contact.png");
+}
+
+#dashboard .float-nav .nav-box .nav-item .icon-survei {
+  content: url("../vectors/survei.png");
 }
 
 #dashboard .float-nav .nav-box .nav-icon {
@@ -394,6 +424,7 @@ a {
 
 #wni-definitions .definition .btn-jenis-layanan {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  display: block;
   padding: 30px;
   background-color: #F3D10D;
   border-radius: 50px;
@@ -709,7 +740,7 @@ a {
 
 #wna-menu .menus .menu {
   margin: 30px;
-  width: 200px;
+  width: 230px;
   background-color: #D8D8D8;
   border-radius: 18px;
   border: 1px solid #979797;
@@ -722,7 +753,7 @@ a {
 }
 
 #wna-menu .menus .menu .icon-box {
-  width: 198px;
+  width: 228px;
   height: 207px;
   background-color: white;
   border-radius: 18px;
@@ -760,6 +791,24 @@ a {
   background-image: url("../vectors/icon_flow.svg");
 }
 
+#wna-menu .menus .menu .icon-box .icon-tarif-visa {
+  width: 182px;
+  height: 146px;
+  background-image: url("../vectors/icon_tarif_visa.svg");
+}
+
+#wna-menu .menus .menu .icon-box .icon-tarif-imigrasi {
+  width: 182px;
+  height: 146px;
+  background-image: url("../vectors/icon_tarif_imigrasi.svg");
+}
+
+#wna-menu .menus .menu .icon-box .icon-tarif-lainnya {
+  width: 182px;
+  height: 146px;
+  background-image: url("../vectors/icon_tarif_lainnya.svg");
+}
+
 #wna-menu .menus .menu .text {
   margin: 20px;
   text-align: center;
@@ -768,6 +817,186 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+#wna-definitions {
+  padding-top: 130px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#wna-definitions .container {
+  position: relative;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+#wna-definitions .container .definition {
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: #A7DCFF;
+  border-radius: 40px;
+}
+
+#wna-definitions .container .definition p {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+#wna-definitions .container .permited {
+  position: relative;
+  border-radius: 40px;
+  border: 1px solid #979797;
+  background-color: #11375C;
+  overflow: hidden;
+}
+
+#wna-definitions .container .permited .title {
+  margin: 20px 0;
+  text-align: center;
+  color: #FBAF17;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#wna-definitions .container .permited .kind {
+  background-color: #F2F2F2;
+  padding: 30px 20px;
+  border-radius: 40px;
+}
+
+#wna-definitions .container .permited .kind .modal-button {
+  background-color: #F3D10D;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 75%;
+  min-width: 400px;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 600;
+  background: #F3D10D;
+  box-shadow: 0 2px 4px 0 #11375C;
+  border-radius: 60px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#wna-definitions .container .permited .kind .modal-button:active {
+  background-color: #f2db56;
+}
+
+.modal-content-itk {
+  position: relative;
+}
+
+.modal-content-itk .title {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.modal-content-itk ol {
+  margin: 30px;
+}
+
+.modal-content-itk ol li {
+  font-size: 2em;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  line-height: 1.3em;
+}
+
+#wna-requirements {
+  padding-top: 130px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#wna-requirements .container-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#wna-requirements .container-center .options {
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 55%;
+  min-width: 400px;
+}
+
+#wna-requirements .container-center .options p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
+}
+
+.custom-select {
+  position: relative;
+  font-size: 1.5em;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @keyframes float-nav-single {
@@ -921,6 +1150,11 @@ a {
   align-items: center;
   padding: 0 40px;
   cursor: pointer;
+}
+
+.float-menu .nav-single .nav-text {
+  font-size: 1.6em;
+  margin-left: 20px;
 }
 
 .float-menu .nav-single i {
@@ -1089,7 +1323,7 @@ a {
 
 .modal-dialog .modal-center-75 .modal__container .body {
   padding: 0 40px;
-  height: 100%;
+  height: calc(100% - 40px);
   overflow: scroll;
 }
 
@@ -1107,16 +1341,82 @@ a {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
+  font-size: 2em;
+  line-height: 1.3em;
 }
 
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items .item .label {
   width: 300px;
-  font-size: 2em;
 }
 
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items .item .value {
   width: 100%;
+}
+
+.modal-dialog .modal-center-margin-40px {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 50px;
+  width: calc(100% - 80px);
+  height: 75%;
+  animation: modal-show 300ms ease-in 200ms both;
+  padding-top: 40px;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header {
+  position: relative;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #D8D8D8;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close::after {
+  content: "\f067";
+  font-family: "FontAwesome";
   font-size: 2em;
+  color: #404040;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close::after:hover {
+  opacity: 0.5;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close:active {
+  color: white;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .header .btn-float {
+  position: absolute;
+  top: -60px;
+  right: -20px;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .body {
+  padding: 0 40px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.modal-dialog .modal-center-margin-40px .modal__container .body .content {
+  position: relative;
+  min-height: calc(100% - 140px);
 }
 
 .modal-dialog .modal-full {
@@ -1191,7 +1491,6 @@ a {
 
 .notes {
   position: relative;
-  display: inline-block;
   border: 1px solid #979797;
   border-radius: 10px;
   background-color: rgba(253, 177, 14, 0.295);

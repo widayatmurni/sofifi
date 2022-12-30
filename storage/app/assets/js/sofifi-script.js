@@ -1,8 +1,5 @@
 const navLink = document.querySelectorAll('.nav-item') // NAVIGATION ON DASHBOARD
 const navLanguage = document.querySelector('.nav-language') // NAVIGATION LANGUAGE
-const navToDashboard = document.querySelector('.to-dashboard') // NAVIGATION TO DASHBOARD
-const navToBack = document.querySelector('.to-back') // NAVIGATION TO BACK
-const navMenu = document.querySelectorAll('.menu') // NAVIGATION MENU
 const dlanguage = document.querySelector('.dialog-choose-language') // DIALOG LANGUAGE
 const langItem = document.querySelectorAll('.language-item') // LANGUAGE
 const singleLink = document.querySelector('.nav-link') // GLOBAL NAV LINK
@@ -59,21 +56,6 @@ if (dlanguage !== null) {
       dlanguage.classList.remove('dialog-open')
     }
   })
-}
-
-// NAV TO DASHBOARD
-if (navToDashboard !== null) {
-  hrefElementAddEvent(navToDashboard)
-}
-
-// NAV TO BACK
-if (navToBack !== null) {
-  hrefElementAddEvent(navToBack)
-}
-
-// GLOBAL LINK
-if (singleLink !== null) {
-  hrefElementAddEvent(singleLink)
 }
 
 // PAGINATION
