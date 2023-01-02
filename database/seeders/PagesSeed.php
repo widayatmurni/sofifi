@@ -979,7 +979,7 @@ class PagesSeed extends Seeder
                 </div>
               </main>',
             ], [
-              'title' => 'Tarif Pelayanan Paspor',
+              'title' => 'Panduan Aplikasi M-Paspor',
               'slug' => 'mpaspor',
               'language_id' => 1,
               'page' => '<main class="page-full-single">
@@ -1024,6 +1024,2002 @@ class PagesSeed extends Seeder
             
                 <div class="float-menu">
                   <a href="wni-menu" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'WNA Menu',
+              'slug' => 'wna-menu',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Layanan Imigrasi Bagi Warga Negara Asing ( WNA )</h2>
+                  </div>
+                </div>
+                <div id="wna-menu">
+                  <div class="overlay"></div>
+                  <div class="menus">
+            
+                    <a href="wna-definition" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-definition"></i>
+                      </div>
+                      <div class="text">Definisi</div>
+                    </a>
+            
+                    <a href="wna-requirement" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-requirement"></i>
+                      </div>
+                      <div class="text">Persyaratan</div>
+                    </a>
+            
+                    <a href="wna-price" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-price"></i>
+                      </div>
+                      <div class="text">Tarif</div>
+                    </a>
+            
+                    <a href="wna-flow" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-flow"></i>
+                      </div>
+                      <div class="text">Alur Proses</div>
+                    </a>
+            
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="dashboard" class="nav-single">
+                    <i class="icon-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Definisi Warga Negara Asing (WNA)',
+              'slug' => 'wna-definition',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Definisi Izin Tinggal Bagi Warga Negara Asing ( WNA )</h2>
+                  </div>
+                </div>
+                <div id="wna-definitions">
+                  <div class="container">
+                    <div class="definition">
+                      <p>
+                        <strong>Izin Tinggal</strong> adalah izin yang diberikan kepada Orang Asing oleh Pejabat Imigrasi atau
+                        pejabat dinas luar
+                        negeri untuk berada di Wilayah Indonesia.
+                      </p>
+                    </div>
+                    <div class="permited">
+                      <div class="title">Pemberian Izin Tinggal Bagi WNA</div>
+            
+                      <div class="kind">
+                        <div class="modal-button" data-href="itk">Izin Tinggal Kunjungan (ITK) / Visa On Arrival (VOA)</div>
+                        <div class="modal-button" data-href="itas">Izin Tinggal Terbatas (ITAS)</div>
+                        <div class="modal-button" data-href="itap">Izin Tinggal Tetap (ITAP)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- MODAL -->
+                <div id="modal-itk" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Izin Tinggal kunjungan (ITK) diberikan kepada : </h3>
+            
+                          <ol>
+                            <li>Orang Asing yang masuk Wilayah Indonesia dengan Visa kunjungan; atau</li>
+                            <li>Anak yang baru lahir di Wilayah Indonesia dan pada saat lahir ayah dan/atau ibunya pemegang Izin
+                              Tinggal kunjungan</li>
+                          </ol>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itk" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Izin Tinggal terbatas (ITAS) diberikan kepada : </h3>
+            
+                          <ol>
+                            <li>Orang Asing yang masuk Wilayah Indonesia dengan Visa tinggal terbatas;</li>
+                            <li>Anak yang pada saat lahir di Wilayah Indonesia ayah dan/atau ibunya pemegang Izin Tinggal terbatas;
+                            </li>
+                            <li>Orang Asing yang diberikan alih status dari Izin Tinggal kunjungan;</li>
+                            <li>Nakhoda, awak kapal, atau tenaga ahli asing di atas kapal laut, alat apung, atau instalasi yang
+                              beroperasi di wilayah perairan dan wilayah yurisdiksi Indonesia sesuai dengan ketentuan peraturan
+                              perundangundangan;</li>
+                            <li>Orang Asing yang kawin secara sah dengan warga negara Indonesia; atau</li>
+                            <li>Anak dari Orang Asing yang kawin secara sah dengan warga negara Indonesia</li>
+            
+                          </ol>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itk" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Izin Tinggal Tetap (ITAP) dapat diberikan kepada :</h3>
+            
+                          <ol>
+                            <li>Orang Asing pemegang Izin Tinggal terbatas sebagai rohaniwan, pekerja, investor, dan lanjut usia;
+                            </li>
+                            <li>Keluarga karena perkawinan campuran;</li>
+                            <li>Suami, istri, dan/atau anak dari Orang Asing pemegang Izin Tinggal Tetap; dan</li>
+                            <li>Orang Asing eks warga negara Indonesia dan eks subjek anak berkewarganegaraan ganda Republik
+                              Indonesia.</li>
+                          </ol>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-menu" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+                
+              </main>',
+            ], [
+              'title' => 'Persyaratan Permohonan Izin Tinggal',
+              'slug' => 'wna-requirement',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Persyaratan Izin Tinggal Bagi Warga Negara Asing</h2>
+                  </div>
+                </div>
+                <div id="wna-requirements">
+                  <div class="container-center">
+            
+                    <table id="t-buttons" class="options">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="btn-link" data-href="voa">
+                              <p>
+                                Persyaratan Perpanjangan Visa On Arrival (VOA)
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="btn-link">
+                              <p>
+                                Persyaratan Perpanjangan Izin Tinggal Kunjungan (ITK)
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="btn-link">
+                              <p>
+                                Persyaratan Izin Tinggal Terbatas (ITAS)
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="btn-link">
+                              <p>
+                                Persyaratan Izin Tinggal Tetap (ITAP)
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            
+                <!-- MODAL -->
+                <div id="modal-voa" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Persyaratan Perpanjangan VOA : </h3>
+            
+                          <ol>
+                            <li>Paspor kebangsaan atau dokumen perjalanan yang sah dan masih berlaku;</li>
+                            <li>Tiket untuk kembali ke negara asal atau meneruskan ke negara lain (return ticket)/ ED Card dan
+                              Voucher VOA; da</li>
+                            <li>Surat kuasa bermaterai cukup dalam hal pengurusan melalui kuasa.</li>
+                          </ol>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itk" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Peryaratan Perpanjangan ITK : </h3>
+            
+                          <ol>
+                            <li>Dapat diperpanjang paling banyak 4 (empat) kali dan setiap kali perpanjangan untuk jangka waktu
+                              paling lama 30 (tiga puluh) hari;</li>
+                            <li>Dapat di alih status ke ITAS setelah tiba di Indonesia, adapun syaratnya:</li>
+                            <ul>
+                              <li>Surat penjamin dari penjamin pada saat mengajukan permohonan visa, kecuali bagi permohonan
+                                terhadap anak yang lahir di wilayah Indonesia;</li>
+                              <li>Paspor kebangsaan atau dokumen perjalanan yang sah dan masih berlaku;</li>
+                              <li>Tiket untuk kembali ke Negara asal atau meneruskan ke negara lain;</li>
+                              <li>Surat kuasa bermaterai cukup dalam hal pengurusan melalui kuasa</li>
+                            </ul>
+                          </ol>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Persyaratan Permohonan ITAS :</h3>
+            
+                          <div class="custom-select">
+                            <select>
+                              <option value="0">Orang Asing yang bekerja sebagai penanaman modal</option>
+                              <option value="1">Orang Asing yang bekerja sebagai tenaga ahli</option>
+                              <option value="2">Orang Asing yang bekerja sebagai rohaniawan</option>
+                              <option value="3">Orang Asing yang mengikuti pendidikan dan pelatihan</option>
+                              <option value="4">Orang Asing yang melakukan perkawinan campuran dan menggabungkan diri dengan suami
+                                atau istri Warga Negara Indonesia</option>
+                              <option value="5">Orang Asing yang menggabungkan diri dengan suami atau istri pemegang Izin Tinggal
+                                Terbatas</option>
+                              <option value="6">Anak berkewarganegaraan asing yang menggabungkan diri dengan orang tua yang
+                                mempunyai hubungan hukum kekeluargaan dengan orang tua warga Negara Indonesia</option>
+                              <option value="7">Anak yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan
+                                diri dengan orang tua pemegang Izin Tinggal Terbatas/option>
+                              <option value="8">Warga Negara Indonesia dalam rangka memperoleh kembali Kewarganegaraan Republik
+                                Indonesia berdasarkan ketentuan peraturan perundang-undangan</option>
+                              <option value="9"> eks Warga Negara Indonesia bukan dalam rangka memperoleh kembali Kewarganegaraan
+                                Indonesia, permohonan diajukan oleh penjamin dengan melampirkan juga dokumen resmi yang dikeluarkan
+                                oleh Instansi Pemerintah Republik Indonesia atau oleh Lembaga yang diakui oleh Pemerintah Republik
+                                Indonesia yang sah yang dapat membuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia
+                              </option>
+                            </select>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-menu" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Tarif Izin Tinggal',
+              'slug' => 'wna-price',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Tarif Layanan Keimigrasian Bagi WNA</h2>
+                  </div>
+                </div>
+                <div id="wna-menu">
+                  <div class="overlay"></div>
+                  <div class="menus">
+            
+            
+                    <a href="wna-tarif-visa" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-tarif-visa"></i>
+                      </div>
+                      <div class="text">V I S A</div>
+                    </a>
+            
+                    <a href="wna-tarif-imigrasi" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-tarif-imigrasi"></i>
+                      </div>
+                      <div class="text">IZIN IMIGRASI</div>
+                    </a>
+                    
+                    <a href="wna-tarif-visa" class="menu">
+                      <div class="icon-box">
+                        <i class="icon-tarif-lainnya"></i>
+                      </div>
+                      <div class="text">TARIF LAINNYA</div>
+                    </a>
+            
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-menu" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Tarif Visa',
+              'slug' => 'wna-tarif-visa',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Tarif Layanan Visa</h2>
+                  </div>
+                </div>
+            
+                <div id="wni-prices">
+                  <div class="container-center">
+            
+                    <table id="t-buttons" class="options">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="1x">
+                              <span class="text">Visa Kunjungan Sekali Perjalanan</span>
+                              <span class="price">
+                                <span class="unit">USD.</span>
+                                <span class="value">50</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="xx">
+                              <span class="text">Visa Kunjungan Beberapa Kali Perjalanan Per Tahun</span>
+                              <span class="price">
+                                <span class="unit">USD.</span>
+                                <span class="value">110</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="arrived">
+                              <span class="text">Visa Kunjungan Saat Kedatangan</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">500.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="vitas">
+                              <span class="text">Visa Tinggal Terbatas</span>
+                              <span class="price">
+                                <span class="unit">USD.</span>
+                                <span class="value">150</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="vitas-datang">
+                              <span class="text">Visa Tinggal Terbatas saat Kedatangan </span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">700.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="persetujuan">
+                              <span class="text">Persetujuan Visa Direktur Jenderal Imigrasi</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">200.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+            
+                  </div>
+                </div>
+            
+                <!-- MODAL-->
+                <div id="modal-visa-1x" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Visa Kunjungan Sekali Perjalanan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">US$ ( Dollar US )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">50</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Visa Kunjungan Satu Kali perjalanan untuk 60 hari dan 180 hari dapat diajukan melalui aplikasi
+                                  Persetujuan Visa Online
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-visa-xx" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Visa Kunjungan Beberapa Kali Kunjungan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan</div>
+                              <div class="value">Per Sekali Permohanan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">US$ ( Dollar US )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">150 / Tahun</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Visa Kunjungan Beberapa Kali Perjalanan diberikan kepada Orang Asing dengan masa berlaku visa
+                                  paling lama 5 (lima) tahun. Visa ini dapat digunakan untuk tinggal di Wilayah Indonesia paling
+                                  lama 60 hari (dua bulan). Khusus untuk kegiatan pra-investasi dapat diberikan 180 hari (enam
+                                  bulan) sejak tanggal masuk.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-visa-arrived" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Visa Kunjungan Saat Kedatangan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">500.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Permohonan Visa Kunjungan Saat Kedatangan (VoA) diajukan oleh Orang Asing saat kedatangan di
+                                  Tempat Pemeriksaan Imigrasi (TPI) tertentu.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-visa-vitas" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Visa Tinggal Terbatas</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan</div>
+                              <div class="value">Per Sekali Permohanan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">US$ (Dollar US)</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">150</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Visa tinggal terbatas diberikan kepada Orang Asing yang akan masuk dan tinggal di Wilayah
+                                  Indonesia dalam waktu tertentu. Bagi orang asing pemegang visa tinggal terbatas dalam rangka
+                                  bekerja, izin tinggal dan izin masuk kembali diberikan pada saat kedatangan di Bandara/Pelabuhan
+                                  tertentu.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-visa-vitas-datang" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Visa Tinggal Terbatas Saat Kedatangan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan</div>
+                              <div class="value">Per Sekali Permohanan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">700.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Visa Kunjungan Saat Kedatangan diberikan izin untuk tinggal di Wilayah Indonesia selama 30 (tiga
+                                  puluh) hari dan dapat diperpanjang.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-visa-persetujuan" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Persetujuan Visa Direktur Jenderal Imigrasi</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan</div>
+                              <div class="value">Per Sekali Permohanan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">200.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Aplikasi ini akan membantu Anda untuk mendapatkan Surat Persetujuan Visa dimana surat tersebut
+                                  akan menjadi dasar perwakilan Republik Indonesia di luar negeri
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-price" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Tarif Izin Tinggal',
+              'slug' => 'wna-tarif-imigrasi',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Tarif Layanan Keimigrasian</h2>
+                  </div>
+                </div>
+            
+                <div id="wni-prices">
+                  <div class="container-center">
+            
+                    <table id="t-buttons" class="options">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itk-30">
+                              <span class="text">Permohonan Izin Kunjungan Berkalu Selama 30 Hari</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">500.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itk-30x">
+                              <span class="text">Perpanjangan Izin Kunjungan Berkalu Selama 30 Hari</span>
+                              <span class="price">
+                                <span class="unit">RP.</span>
+                                <span class="value">500.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itk-60">
+                              <span class="text">Permohonan Izin Kunjungan Berkalu Selama 60 Hari</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">750.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-kedatangan">
+                              <span class="text">Izin Tinggal Terbatas Saat Kedatangan</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">750.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-6">
+                              <span class="text">Izin Tinggal Terbatas Masa Berlaku 6 (Enam) Bulan</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">1.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-12">
+                              <span class="text">Izin Tinggal Terbatas Masa Berlaku 1 (Satu) Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">1.500.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-24">
+                              <span class="text">Izin Tinggal Terbatas Masa Berlaku 2 (Dua) Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">2.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-60">
+                              <span class="text">Izin Tinggal Khusus masa belaku paling lama 5 (Lima) Tahun khusus pada Kawasan
+                                Ekonomi Khusus (KEK)</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">5.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-persetujuan-pekerja-perairan">
+                              <span class="text">Persetujuan Izin Tinggal Terbatas untuk pekerja di perairan Indonesia</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">1.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itas-teraan-pekerja-perairan">
+                              <span class="text">Teraan Izin Tinggal Terbatas untuk pekerja di perairan Indonesia</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">300.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itap-5th">
+                              <span class="text">Pemberian Izin Tinggal Tetap masa berlaku 5 (Lima) Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">5.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itap-5ths">
+                              <span class="text">Perpanjangan Izin Tinggal Tetap masa berlaku 5 (Lima) Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">5.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="itap-unlimited">
+                              <span class="text">Perpanjangan Izin Tinggal Tetap untuk jangka waktu tidak terbatas</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">10.200.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="imk-6">
+                              <span class="text">Izin Masuk Kembali masa berlaku paling lama 6 bulan</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">600.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="imk-12">
+                              <span class="text">Izin Masuk Kembali masa berlaku paling lama 1 Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">1.000.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="imk-24">
+                              <span class="text">Izin Masuk Kembali masa berlaku paling lama 2 Tahun</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">1.750.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="button btn-link modal-button" data-href="imk-60">
+                              <span class="text">Izin Masuk Kembali masa berlaku paling lama 5 Tahun khusus pada Kawasan Ekonomi
+                                Khusus()</span>
+                              <span class="price">
+                                <span class="unit">Rp.</span>
+                                <span class="value">3.250.000</span>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+            
+                  </div>
+                </div>
+            
+                <!-- MODAL-->
+                <div id="modal-itk-30" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Pemberian Izin Tinggal Kunjungan Masa Berlaku 30 Hari</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">500.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Pemberian Izin Tinggal Kunjungan dengan Masa Berlaku 30 Hari
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itk-30x" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Perpanjangan Izin Tinggal Kunjungan Masa Berlaku 30 Hari</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">500.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Perpanjangan Izin Tinggal Kunjungan dengan Masa Berlaku 30 Hari
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itk-60" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Perpanjangan Izin Tinggal Kunjungan Masa Berlaku 30 Hari</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">750.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Perpanjangan Izin Tinggal Kunjungan dengan Masa Berlaku 60 Hari
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-kedatangan" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Permohonan Izin Tinggal Saat Kedatangan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">750.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  Permohonan Izin Tinggal Saat Kedatangan
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-6" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Tinggal Terbatas masa berlaku paling lama 6 bulan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">1.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-12" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Tinggal Terbatas masa berlaku paling lama 1 Tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">1.500.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-24" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Tinggal Terbatas masa berlaku paling lama 2 Tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">2.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-60" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Tinggal Terbatas masa berlaku paling lama 5 Tahun khusus Kawasan
+                                  Ekonomi Khusus (KEK)</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">5.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-persetujuan-pekerja-perairan" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Persetujuan Izin Tinggal Terbatas untuk pekerja di perairan
+                                  Indonesia</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">1.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itas-teraan-pekerja-perairan" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Teraan Izin Tinggal Terbatas untuk pekerja di perairan Indonesia</strong>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">300.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itap-5th" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Tinggal Tetap masa berlaku 5 tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">5.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itap-5ths" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Perpanjangan Izin Tinggal Tetap masa berlaku 5 tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">5.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itap-unlimited" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Perpanjangan Izin Tinggal Tetap untuk jangka waktu tak terbatas</strong>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">10.200.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-imk-6" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Masuk Kemabali masa berlaku paling lama 6 bulan</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">600.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-imk-12" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Masuk Kemabali masa berlaku paling lama 1 Tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">1.000.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-imk-24" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Masuk Kemabali masa berlaku paling lama 2 Tahun</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">1.750.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-imk-60" class="modal-dialog">
+                  <div class="overlay__modal modal-center-75">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content">
+            
+                          <div class="list-items">
+                            <div class="item">
+                              <div class="label">Jenis</div>
+                              <div class="value"><strong>Izin Masuk Kemabali masa berlaku paling lama 5 Tahun khusus pada Kawasan
+                                  Ekonomi Khusus (KEK)</strong></div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Satuan Ukur</div>
+                              <div class="value">Per Sekali Permohonan</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif Dalam</div>
+                              <div class="value">Rp ( Rupiah )</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Tarif</div>
+                              <div class="value">3.250.000</div>
+                            </div>
+                            <div class="item">
+                              <div class="label">Deskripsi</div>
+                              <div class="value">
+                                <p>
+                                  -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <!-- NOtes -->
+                        <div class="notes">
+                          <p class="text-italic">
+                            Berdasarkan Peraturan Pemerintah No. 28 Tahun 2019 tentang Jenis dan Tarif atas Jenis Penerimaan Negara
+                            Bukan Pajak (PNBP) yang berlaku pada Kementerian Hukum dan HAM Republik Indonesia Tanggal 18 April 2019
+                            (berlaku mulai 3 Mei 2019)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-price" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Alur Proses Permohonan Izin Tinggal',
+              'slug' => 'wna-flow',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Alur Proses Layanan Keimigrasian Bagi WNA</h2>
+                  </div>
+                </div>
+            
+                <div id="wni-alur">
+                  <div class="container-center">
+                    <table id="t-buttons" class="container-button">
+                      <tr>
+                        <td>
+                          <div class="button _btn-inline-ellipsis" data="wna-itk">
+                            <p>Permohonan Perpanjangan ITK/VOA</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="button _btn-inline-ellipsis" data="wna-itas">
+                            <p>Permohonan Izin Tinggal Terbatas (ITAS)</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="button _btn-inline-ellipsis" data="wna-itap">
+                            <p>Permohonan Izin Tinggal Tetap (ITAP)</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+            
+                <!-- MODAL PAS BARU -->
+                <div id="modal-wna-itk" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Permohonan ITK/VOA</h2>
+                        <div class="with-btn-close"></div>
+                      </div>
+                      <div class="body">
+                        body
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- MODAL PAS BARU -->
+                <div id="modal-wna-itas" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Permohonan Izin Tinggal Terbatas (ITAS)</h2>
+                        <div class="with-btn-close"></div>
+                      </div>
+                      <div class="body">
+                        Body
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-wna-itap" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Permohonan Izin Tinggal Tetap (ITAP)</h2>
+                        <div class="with-btn-close"></div>
+                      </div>
+                      <div class="body">
+                        Body
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="wna-menu" class="nav-single to-back">
                     <i class="icon-back"></i>
                     <span class="text nav-back">Kembali</span>
                   </a>
