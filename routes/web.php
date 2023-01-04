@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Pages as PageController;
 use App\Http\Controllers\Admin;
+use App\Http\Controllers\Articles;
+use App\Http\Controllers\Gallery;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,9 +39,21 @@ Route::get('set-lang/{lang?}', function ($lang = 'id') {
 });
 
 Route::middleware(['user.lang'])->group(function () {
+    // ARTICLES
+    Route::controller(Articles::class)->group(function () {
+        Route::get('/news', 'index');
+    });
+
+    // GALLERY
+    Route::controller(Gallery::class)->group(function () {
+        Route::get('/gallery', 'index');
+    });
+
+    // SOFIFI
     Route::controller(PageController::class)->group(function () {
         Route::get('/{slug?}', 'pageView');
     });
+
 });
 
 

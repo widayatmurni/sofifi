@@ -3025,6 +3025,80 @@ class PagesSeed extends Seeder
                   </a>
                 </div>
               </main>',
+            ], [
+              'title' => 'Kontak Kami',
+              'slug' => 'contact',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                  </div>
+                </div>
+            
+                <div id="contact">
+            
+                  <div class="contents">
+            
+                    <div class="buttons">
+                      <a href="#" class="btn-social btn-web">tenate.imigrasi.go.id
+                      </a>
+                      <a href="#" class="btn-social btn-fb">@kanim.ternate
+                      </a>
+                      <a href="#" class="btn-social btn-ig">@kanim.ternate
+                      </a>
+                      <a href="#" class="btn-social btn-tw">@kanim.ternate
+                      </a>
+                      <a href="#" class="btn-social btn-wa">082195541832 <span class="text-small">(Khusus Pengaduan)</span>
+                      </a>
+                    </div>
+            
+                  </div>
+            
+            
+                </div>
+            
+                <div class="float-menu">
+                  <a href="dashboard" class="nav-single">
+                    <i class="icon-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                  </a>
+                </div>
+              </main>',
+            ], [
+              'title' => 'Survei Kepuasan Masyarakat',
+              'slug' => 'survei',
+              'language_id' => 1,
+              'page' => '<main class="page-full-single">
+                <div id="ikm">
+                  <div class="mido">
+                    <div class="ballon">
+                      <div class="ballon-text">
+                        <h4><strong>Haii.. Sobat Urban. </strong></h4>
+                        <p>
+                          Bantu kami untuk membuat layanan Imigrasi lebih baik lagi, dengan mengisi survei pada link
+                          <strong>bit.ly/surveikanimternate</strong> atau scan QR-Code disamping dari smartphone kamu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="qr-ikm">
+                    <div class="qr-box">
+                      qrtes=xt
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-menu">
+                  <a href="dashboard" class="nav-single">
+                    <i class="icon-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                  </a>
+                </div>
+              </main>',
             ],
         ]);
     }

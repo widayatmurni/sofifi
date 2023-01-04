@@ -999,6 +999,192 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+#contact {
+  padding: 130px 20px 0 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+#contact::before {
+  content: url(../vectors/mido.svg);
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  z-index: 1200;
+}
+
+#contact .contents {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#contact .contents .buttons {
+  position: relative;
+  margin: 40px 0 40px 45%;
+}
+
+#contact .contents .buttons .btn-social {
+  min-width: 800px;
+  display: block;
+  font-size: 2.5em;
+  font-weight: 600;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 60px;
+  padding: 30px 60px;
+  background-color: #FFFEFE;
+  margin-bottom: 30px;
+  transition: background-color ease-in-out 500ms;
+}
+
+#contact .contents .buttons .btn-web {
+  border-color: #11375C;
+  color: #11375C;
+}
+
+#contact .contents .buttons .btn-web::before {
+  content: "\f0ac";
+  font-family: "FontAwesome";
+  margin-right: 40px;
+}
+
+#contact .contents .buttons .btn-web:hover {
+  background-color: #11375C;
+  color: #FFFEFE;
+}
+
+#contact .contents .buttons .btn-fb {
+  border-color: #3B5998;
+  color: #3B5998;
+}
+
+#contact .contents .buttons .btn-fb::before {
+  content: "\f09a";
+  font-family: "FontAwesome";
+  margin-right: 40px;
+}
+
+#contact .contents .buttons .btn-fb:hover {
+  background-color: #3B5998;
+  color: #FFFEFE;
+}
+
+#contact .contents .buttons .btn-ig {
+  border-color: #D900B6;
+  color: #D900B6;
+}
+
+#contact .contents .buttons .btn-ig::before {
+  content: "\f16d";
+  font-family: "FontAwesome";
+  margin-right: 40px;
+}
+
+#contact .contents .buttons .btn-ig:hover {
+  background-color: #D900B6;
+  color: #FFFEFE;
+}
+
+#contact .contents .buttons .btn-tw {
+  border-color: #0283C9;
+  color: #0283C9;
+}
+
+#contact .contents .buttons .btn-tw::before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  margin-right: 40px;
+}
+
+#contact .contents .buttons .btn-tw:hover {
+  background-color: #0283C9;
+  color: #FFFEFE;
+}
+
+#contact .contents .buttons .btn-wa {
+  border-color: #08B000;
+  color: #08B000;
+}
+
+#contact .contents .buttons .btn-wa::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  margin-right: 40px;
+}
+
+#contact .contents .buttons .btn-wa:hover {
+  background-color: #08B000;
+  color: #FFFEFE;
+}
+
+#contact .contents .buttons .btn-wa .text-small {
+  color: #9C9C9C;
+  font-size: 0.5em;
+  font-weight: 100;
+}
+
+#ikm {
+  background-color: #8DE0F6;
+  padding: 10px 40px;
+  height: 100vh;
+  width: 100%;
+}
+
+#ikm .mido {
+  position: relative;
+}
+
+#ikm .mido::before {
+  content: url("../vectors/mido.svg");
+  position: absolute;
+  left: 40px;
+  top: 200px;
+}
+
+#ikm .mido .ballon {
+  position: absolute;
+  top: 0;
+  left: 450px;
+}
+
+#ikm .mido .ballon::before {
+  content: url("../vectors/ballon.svg");
+  position: absolute;
+}
+
+#ikm .mido .ballon .ballon-text {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 748px;
+}
+
+#ikm .mido .ballon .ballon-text h4 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#ikm .mido .ballon .ballon-text p {
+  font-size: 1.9em;
+}
+
+#ikm .qr-ikm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#ikm .qr-ikm .qr-box {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
 @keyframes float-nav-single {
   0% {
     opacity: 0;
