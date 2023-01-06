@@ -450,138 +450,280 @@ class PagesSeed extends Seeder
               'slug' => 'requirement',
               'language_id' => 1,
               'page' => '<main class="page-full-single">
-              <div class="c-header">
-                <div class="office">
-                  <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                <div class="c-header">
+                  <div class="office">
+                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
+                  </div>
+                  <div class="title">
+                    <h2>Persyaratan Permohonan Paspor</h2>
+                  </div>
                 </div>
-                <div class="title">
-                  <h2>Persyaratan Permohonan Paspor</h2>
-                </div>
-              </div>
-          
-              <div id="requirements">
-          
-                <div class="content-box-center left-picture">
-                  <table class="table-button-box">
-                    <tr>
-                      <td>
-                        <div class="content-btn">
-                          <div class="button btn-link modal-button" data-href="pass-new">Permohonan Pembuatan Paspor Baru
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="content-btn">
-                          <div class="button btn-link modal-button" data-href="pass-expired">Permohonan Penggantian Paspor
-                            Habis Masa
-                            Berlaku</div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="content-btn">
-                          <div class="button btn-link modal-button" data-href="pass-lost">Permohonan Penggantian Paspor
-                            Hilang</div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="content-btn">
-                          <div class="button btn-link modal-button" data-href="pass-broke">Permohonan Penggantian Paspor
-                            Rusak</div>
-                        </div>
-                      </td>
-                    </tr>
-          
-                  </table>
-                </div>
-          
-              </div>
-          
-              <!-- MODAL -->
-              <div id="modal-pass-new" class="modal-dialog">
-                <div class="overlay__modal-full modal-full with-btn-close">
-                  <div class="modal__container">
-                    <div class="header transparent">
-                      <h2 class="title">Persyaratan Permohona Paspor Baru</h2>
-                      <div class="with-btn-close btn"></div>
-                    </div>
-                    <div class="body">
-          
-                      <div class="content">
-                        <div class="content-persyaratan">
-                          <div class="s-card">
-                            <div class="img-single">
-                              <img src="../assets/vectors/ektp.png" alt="E-KTP" class="img-persyaratan">
+            
+                <div id="requirements">
+            
+                  <div class="content-box-center left-picture">
+                    <table class="table-button-box">
+                      <tr>
+                        <td>
+                          <div class="content-btn">
+                            <div class="button btn-link modal-button" data-href="pass-new">Permohonan Pembuatan Paspor Baru
                             </div>
-                            <div class="text-title">Fotokopi E-KTP</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="content-btn">
+                            <div class="button btn-link modal-button" data-href="pass-expired">Permohonan Penggantian Paspor
+                              Habis Masa
+                              Berlaku</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="content-btn">
+                            <div class="button btn-link modal-button" data-href="pass-lost">Permohonan Penggantian Paspor
+                              Hilang</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="content-btn">
+                            <div class="button btn-link modal-button" data-href="pass-broke">Permohonan Penggantian Paspor
+                              Rusak</div>
+                          </div>
+                        </td>
+                      </tr>
+            
+                    </table>
+                  </div>
+            
+                </div>
+            
+                <!-- MODAL -->
+                <div id="modal-pass-new" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Persyaratan Permohona Paspor Baru</h2>
+                        <div class="with-btn-close btn"></div>
+                      </div>
+                      <div class="body">
+            
+                        <div class="content">
+                          <div class="persyaratans">
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-ektp.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi E-KTP</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-kk.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Kartu Keluarga</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait img-rotate-1" src="../assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
+                            </div>
+            
                           </div>
                         </div>
+                        <div class="notes">
+                          <p class="text-italic">
+                            Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
+                            Paspor bagi Warga Negara Indonesia
+                          </p>
+                        </div>
+            
                       </div>
-                      <div class="notes">
-                        <p class="text-italic">
-                          Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
-                          Paspor bagi Warga Negara Indonesia
-                        </p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-pass-expired" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Persyaratan Permohonan Penggantian Paspor</h2>
+                        <div class="with-btn-close btn"></div>
+                      </div>
+                      <div class="body">
+            
+                        <div class="content">
+                          <div class="persyaratans">
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-ektp.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi E-KTP</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-kk.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Kartu Keluarga</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-kk.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Melampirkan Paspor lama</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait img-rotate-1" src="../assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
+                            </div>
+            
+            
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <p class="text-italic">
+                            Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
+                            Paspor bagi Warga Negara Indonesia
+                          </p>
+                        </div>
+            
+            
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-          
-              <div id="modal-pass-expired" class="modal-dialog">
-                <div class="overlay__modal-full modal-full with-btn-close">
-                  <div class="modal__container">
-                    <div class="header transparent">
-                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor</h2>
-                      <div class="with-btn-close btn"></div>
-                    </div>
-                    <div class="body">
-                      Persyaratan
+            
+                <div id="modal-pass-lost" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Persyaratan Permohonan Penggantian Hilang</h2>
+                        <div class="with-btn-close btn"></div>
+                      </div>
+                      <div class="body">
+            
+                        <div class="content">
+                          <div class="persyaratans">
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-ektp.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi E-KTP</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-kk.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Kartu Keluarga</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/suket-hilang.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Surat Keterangan Kehilangan dari Kepolisian</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait img-rotate-1" src="../assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
+                            </div>
+            
+            
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <p class="text-italic">
+                            Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
+                            Paspor bagi Warga Negara Indonesia
+                          </p>
+                        </div>
+            
+            
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-          
-              <div id="modal-pass-lost" class="modal-dialog">
-                <div class="overlay__modal-full modal-full with-btn-close">
-                  <div class="modal__container">
-                    <div class="header transparent">
-                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor Hilang</h2>
-                      <div class="with-btn-close btn"></div>
-                    </div>
-                    <div class="body">
-                      Persyaratan
+            
+                <div id="modal-pass-broke" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Persyaratan Permohonan Penggantian Rusak</h2>
+                        <div class="with-btn-close btn"></div>
+                      </div>
+                      <div class="body">
+            
+                        <div class="content">
+                          <div class="persyaratans">
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-ektp.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi E-KTP</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait" src="../assets/vectors/fc-kk.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Kartu Keluarga</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait img-rotate-1" src="../assets/vectors/suket.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Surat Keterangan Serta Melampirkan Paspor lama</div>
+                            </div>
+            
+                            <div class="s-card">
+                              <div class="content-image">
+                                <img class="img-potrait img-rotate-1" src="../assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../assets/vectors/ijazah.png" alt="E-KTP">
+                              </div>
+                              <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
+                            </div>
+            
+            
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <p class="text-italic">
+                            Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
+                            Paspor bagi Warga Negara Indonesia
+                          </p>
+                        </div>
+            
+            
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-          
-              <div id="modal-pass-broke" class="modal-dialog">
-                <div class="overlay__modal-full modal-full with-btn-close">
-                  <div class="modal__container">
-                    <div class="header transparent">
-                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor Rusak</h2>
-                      <div class="with-btn-close btn"></div>
-                    </div>
-                    <div class="body">
-                      Persyaratan
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="float-menu">
-                <a href="wni-menu" class="nav-single to-back">
-                  <i class="icon-back"></i>
-                  <span class="text nav-back">Kembali</span>
-                </a>
-              </div>
-            </main>',
+            
+              </main>',
             ], [
               'title' => 'Tarif Pelayanan Paspor',
               'slug' => 'price',
