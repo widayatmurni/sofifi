@@ -299,10 +299,10 @@ class PagesSeed extends Seeder
                 <div id="wni-definition-services">
                   <div class="options">
             
-                    <div class="option-btn modal-button" data-href="expired">Permohonan Penggantian Paspor</div>
-                    <div class="option-btn modal-button" data-href="lost">Permohonan Penggantian Paspor Hilang</div>
-                    <div class="option-btn modal-button" data-href="broke">Permohonan Penggantian Paspor Rusak</div>
-                    <div class="option-btn modal-button" data-href="new">Permohonan Paspor Baru</div>
+                    <div class="option-btn modal-button" data-href="pass-new">Permohonan Paspor Baru</div>
+                    <div class="option-btn modal-button" data-href="pass-expired">Permohonan Penggantian Paspor</div>
+                    <div class="option-btn modal-button" data-href="pass-lost">Permohonan Penggantian Paspor Hilang</div>
+                    <div class="option-btn modal-button" data-href="pass-broke">Permohonan Penggantian Paspor Rusak</div>
             
                   </div>
                 </div>
@@ -334,13 +334,13 @@ class PagesSeed extends Seeder
                         </p>
                       </div>
                       <div class="modal__footer">
-                        <button id="modal-close" class="btn">OK</button>
+                        <button id="modal-close" class="btn with-btn-close">OK</button>
                       </div>
                     </div>
                   </div>
                 </div>
             
-                <div id="modal-pass-change" class="modal-dialog">
+                <div id="modal-pass-expired" class="modal-dialog">
                   <div class="overlay__modal modal-center">
                     <div class="modal__container">
                       <div class="modal__content">
@@ -367,7 +367,7 @@ class PagesSeed extends Seeder
                         </p>
                       </div>
                       <div class="modal__footer">
-                        <button id="modal-close" class="btn">OK</button>
+                        <button id="modal-close" class="btn with-btn-close">OK</button>
                       </div>
                     </div>
                   </div>
@@ -401,7 +401,7 @@ class PagesSeed extends Seeder
                         </p>
                       </div>
                       <div class="modal__footer">
-                        <button id="modal-close" class="btn">OK</button>
+                        <button id="modal-close" class="btn with-btn-close">OK</button>
                       </div>
                     </div>
                   </div>
@@ -432,7 +432,7 @@ class PagesSeed extends Seeder
                         </p>
                       </div>
                       <div class="modal__footer">
-                        <button id="modal-close" class="btn">OK</button>
+                        <button id="modal-close" class="btn with-btn-close">OK</button>
                       </div>
                     </div>
                   </div>
@@ -450,122 +450,138 @@ class PagesSeed extends Seeder
               'slug' => 'requirement',
               'language_id' => 1,
               'page' => '<main class="page-full-single">
-                <div class="c-header">
-                  <div class="office">
-                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
-                  </div>
-                  <div class="title">
-                    <h2>Persyaratan Permohonan Paspor</h2>
-                  </div>
+              <div class="c-header">
+                <div class="office">
+                  <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
                 </div>
-            
-                <div id="requirements">
-            
-                  <div class="content-box-center left-picture">
-                    <table class="table-button-box">
-                      <tr>
-                        <td>
-                          <div class="content-btn">
-                            <div class="btn-link btn-text-ellipsis modal-button" data-href="new">Permohonan Pembuatan Paspor Baru
+                <div class="title">
+                  <h2>Persyaratan Permohonan Paspor</h2>
+                </div>
+              </div>
+          
+              <div id="requirements">
+          
+                <div class="content-box-center left-picture">
+                  <table class="table-button-box">
+                    <tr>
+                      <td>
+                        <div class="content-btn">
+                          <div class="button btn-link modal-button" data-href="pass-new">Permohonan Pembuatan Paspor Baru
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="content-btn">
+                          <div class="button btn-link modal-button" data-href="pass-expired">Permohonan Penggantian Paspor
+                            Habis Masa
+                            Berlaku</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="content-btn">
+                          <div class="button btn-link modal-button" data-href="pass-lost">Permohonan Penggantian Paspor
+                            Hilang</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="content-btn">
+                          <div class="button btn-link modal-button" data-href="pass-broke">Permohonan Penggantian Paspor
+                            Rusak</div>
+                        </div>
+                      </td>
+                    </tr>
+          
+                  </table>
+                </div>
+          
+              </div>
+          
+              <!-- MODAL -->
+              <div id="modal-pass-new" class="modal-dialog">
+                <div class="overlay__modal-full modal-full with-btn-close">
+                  <div class="modal__container">
+                    <div class="header transparent">
+                      <h2 class="title">Persyaratan Permohona Paspor Baru</h2>
+                      <div class="with-btn-close btn"></div>
+                    </div>
+                    <div class="body">
+          
+                      <div class="content">
+                        <div class="content-persyaratan">
+                          <div class="s-card">
+                            <div class="img-single">
+                              <img src="../assets/vectors/ektp.png" alt="E-KTP" class="img-persyaratan">
                             </div>
+                            <div class="text-title">Fotokopi E-KTP</div>
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="content-btn">
-                            <div class="btn-link btn-text-ellipsis modal-button" data-href="expired">Permohonan Penggantian Paspor
-                              Habis Masa
-                              Berlaku</div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="content-btn">
-                            <div class="btn-link btn-text-ellipsis modal-button" data-href="lost">Permohonan Penggantian Paspor
-                              Hilang</div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="content-btn">
-                            <div class="btn-link btn-text-ellipsis modal-button" data-href="broke">Permohonan Penggantian Paspor
-                              Rusak</div>
-                          </div>
-                        </td>
-                      </tr>
-            
-                    </table>
-                  </div>
-            
-                </div>
-            
-                <!-- MODAL -->
-                <div id="modal-pass-new" class="modal-dialog">
-                  <div class="overlay__modal-full modal-full with-btn-close">
-                    <div class="modal__container">
-                      <div class="header transparent">
-                        <h2 class="title">Persyaratan Permohona Paspor Baru</h2>
-                        <div class="with-btn-close btn"></div>
+                        </div>
                       </div>
-                      <div class="body">
-                        Persyaratan
+                      <div class="notes">
+                        <p class="text-italic">
+                          Tarif sesuai Permenkumham RI Nomor 17 Tahun 2022 tentang Persyaratan Pembuatan
+                          Paspor bagi Warga Negara Indonesia
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-            
-                <div id="modal-pass-expired" class="modal-dialog">
-                  <div class="overlay__modal-full modal-full with-btn-close">
-                    <div class="modal__container">
-                      <div class="header transparent">
-                        <h2 class="title">Persyaratan Permohonan Penggantian Paspor</h2>
-                        <div class="with-btn-close btn"></div>
-                      </div>
-                      <div class="body">
-                        Persyaratan
-                      </div>
+              </div>
+          
+              <div id="modal-pass-expired" class="modal-dialog">
+                <div class="overlay__modal-full modal-full with-btn-close">
+                  <div class="modal__container">
+                    <div class="header transparent">
+                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor</h2>
+                      <div class="with-btn-close btn"></div>
+                    </div>
+                    <div class="body">
+                      Persyaratan
                     </div>
                   </div>
                 </div>
-            
-                <div id="modal-pass-lost" class="modal-dialog">
-                  <div class="overlay__modal-full modal-full with-btn-close">
-                    <div class="modal__container">
-                      <div class="header transparent">
-                        <h2 class="title">Persyaratan Permohonan Penggantian Paspor Hilang</h2>
-                        <div class="with-btn-close btn"></div>
-                      </div>
-                      <div class="body">
-                        Persyaratan
-                      </div>
+              </div>
+          
+              <div id="modal-pass-lost" class="modal-dialog">
+                <div class="overlay__modal-full modal-full with-btn-close">
+                  <div class="modal__container">
+                    <div class="header transparent">
+                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor Hilang</h2>
+                      <div class="with-btn-close btn"></div>
+                    </div>
+                    <div class="body">
+                      Persyaratan
                     </div>
                   </div>
                 </div>
-            
-                <div id="modal-pass-broke" class="modal-dialog">
-                  <div class="overlay__modal-full modal-full with-btn-close">
-                    <div class="modal__container">
-                      <div class="header transparent">
-                        <h2 class="title">Persyaratan Permohonan Penggantian Paspor Rusak</h2>
-                        <div class="with-btn-close btn"></div>
-                      </div>
-                      <div class="body">
-                        Persyaratan
-                      </div>
+              </div>
+          
+              <div id="modal-pass-broke" class="modal-dialog">
+                <div class="overlay__modal-full modal-full with-btn-close">
+                  <div class="modal__container">
+                    <div class="header transparent">
+                      <h2 class="title">Persyaratan Permohonan Penggantian Paspor Rusak</h2>
+                      <div class="with-btn-close btn"></div>
+                    </div>
+                    <div class="body">
+                      Persyaratan
                     </div>
                   </div>
                 </div>
-            
-                <div class="float-menu">
-                  <a href="wni-menu" class="nav-single to-back">
-                    <i class="icon-back"></i>
-                    <span class="text nav-back">Kembali</span>
-                  </a>
-                </div>
-              </main>',
+              </div>
+          
+              <div class="float-menu">
+                <a href="wni-menu" class="nav-single to-back">
+                  <i class="icon-back"></i>
+                  <span class="text nav-back">Kembali</span>
+                </a>
+              </div>
+            </main>',
             ], [
               'title' => 'Tarif Pelayanan Paspor',
               'slug' => 'price',
@@ -647,7 +663,7 @@ class PagesSeed extends Seeder
                 </div>
             
                 <!-- MODAL PAS BIASA -->
-                <div id="modal-pass-biasa" class="modal-dialog">
+                <div id="modal-biasa" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -695,7 +711,7 @@ class PagesSeed extends Seeder
                 </div>
             
                 <!-- MODAL PAS ELEKTRONEIK-->
-                <div id="modal-pass-el" class="modal-dialog">
+                <div id="modal-el" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -743,7 +759,7 @@ class PagesSeed extends Seeder
                 </div>
             
                 <!-- MODAL PAS Percepatan-->
-                <div id="modal-pass-percepatan" class="modal-dialog">
+                <div id="modal-percepatan" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -791,7 +807,7 @@ class PagesSeed extends Seeder
                 </div>
             
                 <!-- MODAL PAS RUSAK-->
-                <div id="modal-pass-rusak" class="modal-dialog">
+                <div id="modal-rusak" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -838,7 +854,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
                 <!-- MODAL PAS HILANG-->
-                <div id="modal-pass-hilang" class="modal-dialog">
+                <div id="modal-hilang" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -902,7 +918,7 @@ class PagesSeed extends Seeder
                     <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
-                    <h2>Alur Proses Permohonan Paspor</h2>
+                    <h2>Alur Proses Permohonan Paspor baru</h2>
                   </div>
                 </div>
             
@@ -911,28 +927,28 @@ class PagesSeed extends Seeder
                     <table id="t-buttons" class="container-button">
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="pas-new">
+                          <div class="button btn-link modal-button" data-href="pas-new">
                             <p>Permohonan Pembuatan Paspor Baru</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="pas-expired">
+                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-expired">
                             <p>Permohona Pembuatan Paspor Habis Masa Belakunya</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="pas-lost">
+                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-lost">
                             <p>Permohona Pembuatan Paspor Hilang</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="pas-broke">
+                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-broke">
                             <p>Permohona Pembuatan Paspor Rusak</p>
                           </div>
                         </td>

@@ -24,23 +24,23 @@ for (let index = 0; index < langItem.length; index++) {
 //   hrefElementAddEvent(btnMenu)
 // }
 
-for (let index = 0; index < btnOpenModal.length; index++) {
-  const btnOption = btnOpenModal[index];
-  btnOption.addEventListener('click', function (e) {
-    const dataRef = e.target.getAttribute('data-href')
-    const modalRef = document.getElementById('modal-pass-' + dataRef)
+// for (let index = 0; index < btnOpenModal.length; index++) {
+//   const btnOption = btnOpenModal[index];
+//   btnOption.addEventListener('click', function (e) {
+//     const dataRef = e.target.getAttribute('data-href')
+//     const modalRef = document.getElementById('modal-pass-' + dataRef)
 
-    if (modalRef !== null) {
-      modalRef.classList.add('is-open')
-      const btnClose = modalRef.getElementsByClassName('btn')
-      if (btnClose !== null) {
-        btnClose[0].addEventListener('click', function (e) {
-          modalRef.classList.remove('is-open')
-        })
-      }
-    }
-  })
-}
+//     if (modalRef !== null) {
+//       modalRef.classList.add('is-open')
+//       const btnClose = modalRef.getElementsByClassName('btn')
+//       if (btnClose !== null) {
+//         btnClose[0].addEventListener('click', function (e) {
+//           modalRef.classList.remove('is-open')
+//         })
+//       }
+//     }
+//   })
+// }
 
 // SHOW DIALOG LANGUAGE 
 if (navLanguage !== null) {
@@ -60,82 +60,86 @@ if (dlanguage !== null) {
 
 // PAGINATION
 
-const $table = document.getElementById("t-buttons")
-
-if ($table !== null) {
+const btnInTbl = document.getElementById("t-buttons")
+if (btnInTbl !== null) {
   // number of rows per page
-  let $n = 5,
+  let n = 5,
     // number of rows of the table
-    $rowCount = $table.rows.length,
+    rowCount = btnInTbl.rows.length,
     // get the first cell's tag name (in the first row)
-    $firstRow = $table.rows[0].firstElementChild.tagName,
+    firstRow = btnInTbl.rows[0].firstElementChild.tagName,
     // boolean var to check if table has a head row
-    $hasHead = ($firstRow === "TH"),
+    hasHead = (firstRow === "TH"),
     // an array to hold each row
-    $tr = [],
+    tr = [],
     // loop counters, to start count from rows[1] (2nd row) if the first row has a head tag
-    $i, $ii, $j = ($hasHead) ? 1 : 0,
+    i, ii, j = (hasHead) ? 1 : 0,
     // holds the first row if it has a (<TH>) & nothing if (<TD>)
-    $th = ($hasHead ? $table.rows[(0)].outerHTML : "");
+    th = (hasHead ? btnInTbl.rows[(0)].outerHTML : "");
   // count the number of pages
-  let $pageCount = Math.ceil($rowCount / $n);
+  let pageCount = Math.ceil(rowCount / n);
   // if we had one page only, then we have nothing to do ..
-  if ($pageCount > 1) {
+  if (pageCount > 1) {
     // assign each row outHTML (tag name & innerHTML) to the array
-    for ($i = $j, $ii = 0; $i < $rowCount; $i++, $ii++)
-      $tr[$ii] = $table.rows[$i].outerHTML;
+    for (i = j, ii = 0; i < rowCount; i++, ii++)
+      tr[ii] = btnInTbl.rows[i].outerHTML;
     // create a div block to hold the buttons
-    $table.insertAdjacentHTML("afterend", "<div id='pagination-nav-buttons' class='paginations'></div");
+    btnInTbl.insertAdjacentHTML("afterend", "<div id='pagination-nav-buttons' class='paginations'></div");
     // the first sort, default page is the first one
     sort(1);
   }
 
-  // ($p) is the selected page number. it will be generated when a user clicks a button
-  function sort($p) {
-    /* create ($rows) a variable to hold the group of rows
+  // (p) is the selected page number. it will be generated when a user clicks a button
+  function sort(p) {
+    /* create (rows) a variable to hold the group of rows
     ** to be displayed on the selected page,
-    ** ($s) the start point .. the first row in each page, Do The Math
+    ** (s) the start point .. the first row in each page, Do The Math
     */
-    var $rows = $th, $s = (($n * $p) - $n);
-    for ($i = $s; $i < ($s + $n) && $i < $tr.length; $i++)
-      $rows += $tr[$i];
+    var rows = th, s = ((n * p) - n);
+    for (i = s; i < (s + n) && i < tr.length; i++)
+      rows += tr[i];
 
     // now the table has a processed group of rows ..
-    $table.innerHTML = $rows;
+    btnInTbl.innerHTML = rows;
     // create the pagination buttons
-    document.getElementById("pagination-nav-buttons").innerHTML = pageButtons($pageCount, $p);
+    document.getElementById("pagination-nav-buttons").innerHTML = pageButtons(pageCount, p);
     // CSS Stuff
-    document.getElementById("id" + $p).setAttribute("class", "active");
+    document.getElementById("id" + p).setAttribute("class", "active");
     btnsAddEventAfterRendered();
   }
 
 
-  // ($pCount) : number of pages,($cur) : current page, the selected one ..
-  function pageButtons($pCount, $cur) {
+  // (pCount) : number of pages,(cur) : current page, the selected one ..
+  function pageButtons(pCount, cur) {
     /* this variables will disable the "Prev" button on 1st page
       and "next" button on the last one */
-    var $prevDis = ($cur == 1) ? "disabled" : "",
-      $nextDis = ($cur == $pCount) ? "disabled" : "",
-      /* this ($buttons) will hold every single button needed
+    var prevDis = (cur == 1) ? "disabled" : "",
+      nextDis = (cur == pCount) ? "disabled" : "",
+      /* this (buttons) will hold every single button needed
       ** it will creates each button and sets the onclick attribute
-      ** to the "sort" function with a special ($p) number..
+      ** to the "sort" function with a special (p) number..
       */
-      $buttons = "<input type='button' class='pagination-nav-btn pagination-nav-prev' value='&lt;&lt;' onclick='sort(" + ($cur - 1) + ")' " + $prevDis + ">";
-    for ($i = 1; $i <= $pCount; $i++)
-      $buttons += "<input type='button' id='id" + $i + "'value='" + $i + "' onclick='sort(" + $i + ")'>";
-    $buttons += "<input type='button' class='pagination-nav-btn pagination-nav-next' value='&gt;&gt;' onclick='sort(" + ($cur + 1) + ")' " + $nextDis + ">";
-    return $buttons;
+      buttons = "<input type='button' class='pagination-nav-btn pagination-nav-prev' value='&lt;&lt;' onclick='sort(" + (cur - 1) + ")' " + prevDis + ">";
+    for (i = 1; i <= pCount; i++)
+      buttons += "<input type='button' id='id" + i + "'value='" + i + "' onclick='sort(" + i + ")'>";
+    buttons += "<input type='button' class='pagination-nav-btn pagination-nav-next' value='&gt;&gt;' onclick='sort(" + (cur + 1) + ")' " + nextDis + ">";
+    return buttons;
   }
+
+}
+
+if (btnOpenModal !== null) {
+  btnsAddEventAfterRendered()
 }
 
 // END PAGINATION
-
 function btnsAddEventAfterRendered() {
   const btnsOpenModal = document.querySelectorAll('.modal-button')
   for (let index = 0; index < btnsOpenModal.length; index++) {
     const btnMdl = btnsOpenModal[index];
-    btnMdl.addEventListener('click', function (e) {
-      const ref = e.target.getAttribute('data-href')
+
+    btnMdl.addEventListener('click', function (btnEvt) {
+      const ref = btnEvt.target.getAttribute('data-href')
       const modalRef = document.getElementById('modal-' + ref)
 
       if (modalRef !== null) {
@@ -146,8 +150,10 @@ function btnsAddEventAfterRendered() {
         })
       }
     })
+
   }
 }
+
 
 function hrefElementAddEvent(el) {
   el.addEventListener('click', function (e) {
