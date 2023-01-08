@@ -1301,7 +1301,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-itk" class="modal-dialog">
+                <div id="modal-itas" class="modal-dialog">
                   <div class="overlay__modal modal-center-margin-40px">
                     <div class="modal__container">
                       <div class="header">
@@ -1332,7 +1332,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-itk" class="modal-dialog">
+                <div id="modal-itap" class="modal-dialog">
                   <div class="overlay__modal modal-center-margin-40px">
                     <div class="modal__container">
                       <div class="header">
@@ -1387,7 +1387,7 @@ class PagesSeed extends Seeder
                       <tbody>
                         <tr>
                           <td>
-                            <div class="btn-link" data-href="voa">
+                            <div class="btn-link modal-button" data-href="voa">
                               <p>
                                 Persyaratan Perpanjangan Visa On Arrival (VOA)
                               </p>
@@ -1396,7 +1396,7 @@ class PagesSeed extends Seeder
                         </tr>
                         <tr>
                           <td>
-                            <div class="btn-link">
+                            <div class="btn-link modal-button" data-href="itk">
                               <p>
                                 Persyaratan Perpanjangan Izin Tinggal Kunjungan (ITK)
                               </p>
@@ -1405,7 +1405,7 @@ class PagesSeed extends Seeder
                         </tr>
                         <tr>
                           <td>
-                            <div class="btn-link">
+                            <div class="btn-link modal-button" data-href="itas">
                               <p>
                                 Persyaratan Izin Tinggal Terbatas (ITAS)
                               </p>
@@ -1414,7 +1414,7 @@ class PagesSeed extends Seeder
                         </tr>
                         <tr>
                           <td>
-                            <div class="btn-link">
+                            <div class="btn-link modal-button" data-href="itap">
                               <p>
                                 Persyaratan Izin Tinggal Tetap (ITAP)
                               </p>
@@ -1484,6 +1484,48 @@ class PagesSeed extends Seeder
                 </div>
             
                 <div id="modal-itas" class="modal-dialog">
+                  <div class="overlay__modal modal-center-margin-40px">
+                    <div class="modal__container">
+                      <div class="header">
+                        <div class="with-btn-close btn-float btn"></div>
+                      </div>
+                      <div class="body">
+                        <!-- Content -->
+                        <div class="content modal-content-itk">
+                          <h3 class="title">Persyaratan Permohonan ITAS :</h3>
+            
+                          <div class="custom-select">
+                            <select>
+                              <option value="0">Orang Asing yang bekerja sebagai penanaman modal</option>
+                              <option value="1">Orang Asing yang bekerja sebagai tenaga ahli</option>
+                              <option value="2">Orang Asing yang bekerja sebagai rohaniawan</option>
+                              <option value="3">Orang Asing yang mengikuti pendidikan dan pelatihan</option>
+                              <option value="4">Orang Asing yang melakukan perkawinan campuran dan menggabungkan diri dengan suami
+                                atau istri Warga Negara Indonesia</option>
+                              <option value="5">Orang Asing yang menggabungkan diri dengan suami atau istri pemegang Izin Tinggal
+                                Terbatas</option>
+                              <option value="6">Anak berkewarganegaraan asing yang menggabungkan diri dengan orang tua yang
+                                mempunyai hubungan hukum kekeluargaan dengan orang tua warga Negara Indonesia</option>
+                              <option value="7">Anak yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan
+                                diri dengan orang tua pemegang Izin Tinggal Terbatas/option>
+                              <option value="8">Warga Negara Indonesia dalam rangka memperoleh kembali Kewarganegaraan Republik
+                                Indonesia berdasarkan ketentuan peraturan perundang-undangan</option>
+                              <option value="9"> eks Warga Negara Indonesia bukan dalam rangka memperoleh kembali Kewarganegaraan
+                                Indonesia, permohonan diajukan oleh penjamin dengan melampirkan juga dokumen resmi yang dikeluarkan
+                                oleh Instansi Pemerintah Republik Indonesia atau oleh Lembaga yang diakui oleh Pemerintah Republik
+                                Indonesia yang sah yang dapat membuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia
+                              </option>
+                            </select>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div id="modal-itap" class="modal-dialog">
                   <div class="overlay__modal modal-center-margin-40px">
                     <div class="modal__container">
                       <div class="header">
@@ -1673,7 +1715,7 @@ class PagesSeed extends Seeder
                 </div>
             
                 <!-- MODAL-->
-                <div id="modal-visa-1x" class="modal-dialog">
+                <div id="modal-1x" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -1725,7 +1767,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-visa-xx" class="modal-dialog">
+                <div id="modal-xx" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -1779,7 +1821,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-visa-arrived" class="modal-dialog">
+                <div id="modal-arrived" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -1831,7 +1873,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-visa-vitas" class="modal-dialog">
+                <div id="modal-vitas" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -1885,7 +1927,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-visa-vitas-datang" class="modal-dialog">
+                <div id="modal-vitas-datang" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -1937,7 +1979,7 @@ class PagesSeed extends Seeder
                   </div>
                 </div>
             
-                <div id="modal-visa-persetujuan" class="modal-dialog">
+                <div id="modal-persetujuan" class="modal-dialog">
                   <div class="overlay__modal modal-center-75">
                     <div class="modal__container">
                       <div class="header">
@@ -3109,22 +3151,22 @@ class PagesSeed extends Seeder
                     <table id="t-buttons" class="container-button">
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="wna-itk">
-                            <p>Permohonan Perpanjangan ITK/VOA</p>
+                          <div class="_btn-inline-ellipsis">
+                            <div class="button modal-button" data-href="wna-itk">Permohonan Perpanjangan ITK/VOA</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="wna-itas">
-                            <p>Permohonan Izin Tinggal Terbatas (ITAS)</p>
+                          <div class="_btn-inline-ellipsis">
+                            <div class="button modal-button" data-href="wna-itas">Permohonan Izin Tinggal Terbatas (ITAS)</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis" data="wna-itap">
-                            <p>Permohonan Izin Tinggal Tetap (ITAP)</p>
+                          <div class="_btn-inline-ellipsis">
+                            <div class="button modal-button" data-href="wna-itap">Permohonan Izin Tinggal Tetap (ITAP)</div>
                           </div>
                         </td>
                       </tr>
