@@ -24,37 +24,41 @@ Route::group(['prefix' => 'laravel-filemanager'], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
-
-Route::get('cek-session', function() {
-    dd(session()->get('_language'));
-});
-
-Route::get('del-session', function() {
-    dd(session()->all());
-});
-
-Route::get('set-lang/{lang?}', function ($lang = 'id') {
-    session(['_language' => $lang]);
-    return redirect()->back();
-});
-
-Route::middleware(['user.lang'])->group(function () {
-    // ARTICLES
-    Route::controller(Articles::class)->group(function () {
-        Route::get('/news', 'index');
+Route::prefix('pages')->group(function () {
+    
+    Route::get('cek-session', function() {
+        dd(session()->get('_language'));
     });
-
-    // GALLERY
-    Route::controller(Gallery::class)->group(function () {
-        Route::get('/gallery', 'index');
+    
+    Route::get('del-session', function() {
+        dd(session()->all());
     });
-
-    // SOFIFI
-    Route::controller(PageController::class)->group(function () {
-        Route::get('/{slug?}', 'pageView');
+    
+    Route::get('set-lang/{lang?}', function ($lang = 'id') {
+        session(['_language' => $lang]);
+        return redirect()->back();
     });
-
+    
+    Route::middleware(['user.lang'])->group(function () {
+        // ARTICLES
+        Route::controller(Articles::class)->group(function () {
+            Route::get('/news', 'index');
+        });
+    
+        // GALLERY
+        Route::controller(Gallery::class)->group(function () {
+            Route::get('/gallery', 'index');
+        });
+    
+        // SOFIFI
+        Route::controller(PageController::class)->group(function () {
+            Route::get('/{slug?}', 'pageView');
+        });
+    
+    });
+    
 });
+
 
 
 // ADMIN
@@ -67,6 +71,35 @@ Route::prefix('admin')->group(function () {
     });
 
     Route::controller(Admin::class)->group(function () {
+        Route::get('/', 'index');
         Route::get('/login', 'getLogin');
+        Route::get('/add-page', 'getAddPage');
+        Route::get('/edit-page/{id}', 'getEditPage')->name('edit-page');
     });
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware('auth')->group(function () {
+    Route::view('about', 'about')->name('about');
+
+    Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+
+    Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
+    Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware('auth')->group(function () {
+    Route::view('about', 'about')->name('about');
+
+    Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+
+    Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
+    Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 });

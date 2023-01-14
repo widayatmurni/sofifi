@@ -67,7 +67,7 @@ class PagesSeed extends Seeder
               
                         <div class="nav-btn nav-language">
                           <span class="text">ID</span>
-                          <img class="flag" src="../assets/vectors/flag_id.png" alt="flag">
+                          <img class="flag" src="../assets/icons/flag_id.svg" alt="flag">
                         </div>
               
                         <a href="/wni-menu" class="nav-btn nav-item">
@@ -95,31 +95,31 @@ class PagesSeed extends Seeder
                           <div class="items">
               
                             <div class="language-item" data-href="id">
-                              <div class="flag">
-                                <img src="../assets/vectors/flag_id.png" alt="Flag">
+                              <div class="c-flag">
+                                <img class="flag" src="../assets/icons/flag_id.svg" alt="id">
                               </div>
                               <div class="text">Indonesia</div>
                             </div>
               
                             <div class="language-item" data-href="en">
-                              <div class="flag">
-                                <img src="../assets/vectors/flag_id.png" alt="Flag">
+                              <div class="c-flag">
+                                <img class="flag" src="../assets/icons/flag_us.svg" alt="us">
                               </div>
                               <div class="text">Inggris</div>
                             </div>
               
                             <div class="language-item" data-href="ch">
-                              <div class="flag">
-                                <img src="../assets/vectors/flag_id.png" alt="Flag">
+                              <div class="c-flag">
+                                <img class="flag" src="../assets/icons/flag_ch.svg" alt="ch">
                               </div>
                               <div class="text">China</div>
                             </div>
               
                             <div class="language-item" data-href="ko">
-                              <div class="flag">
-                                <img src="../assets/vectors/flag_id.png" alt="Flag">
+                              <div class="c-flag">
+                                <img class="flag" src="../assets/icons/flag_ko.svg" alt="ko">
                               </div>
-                              <div class="text">Korea</div>
+                              <div class="text">Korea Selatan</div>
                             </div>
               
                           </div>
