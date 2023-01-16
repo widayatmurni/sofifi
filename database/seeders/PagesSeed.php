@@ -60,7 +60,7 @@ class PagesSeed extends Seeder
                           Buletin
                         </a>
               
-                        <a href="/wna-menu" class="nav-btn nav-item">
+                        <a href="/pages/wna-menu" class="nav-btn nav-item">
                           <i class="icon-wna"></i>
                           WNA
                         </a>
@@ -70,7 +70,7 @@ class PagesSeed extends Seeder
                           <img class="flag" src="../assets/icons/flag_id.svg" alt="flag">
                         </div>
               
-                        <a href="/wni-menu" class="nav-btn nav-item">
+                        <a href="/pages/wni-menu" class="nav-btn nav-item">
                           <i class="icon-wni"></i>
                           WNI
                         </a>
@@ -1060,7 +1060,7 @@ class PagesSeed extends Seeder
                     <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
-                    <h2>Alur Proses Permohonan Paspor baru</h2>
+                    <h2>Alur Proses Permohonan Paspor</h2>
                   </div>
                 </div>
             
@@ -1076,21 +1076,21 @@ class PagesSeed extends Seeder
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-expired">
+                          <div class="button btn-link modal-button" data-href="pas-expired">
                             <p>Permohona Pembuatan Paspor Habis Masa Belakunya</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-lost">
+                          <div class="button btn-link modal-button" data-href="pas-lost">
                             <p>Permohona Pembuatan Paspor Hilang</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="button _btn-inline-ellipsis modal-button" data-href="pas-broke">
+                          <div class="button btn-link modal-button" data-href="pas-broke">
                             <p>Permohona Pembuatan Paspor Rusak</p>
                           </div>
                         </td>
@@ -1120,6 +1120,36 @@ class PagesSeed extends Seeder
                     <div class="modal__container">
                       <div class="header transparent">
                         <h2 class="title">Alur Permohonan Pembuatan Paspor Habis Masa Berlaku</h2>
+                        <div class="with-btn-close"></div>
+                      </div>
+                      <div class="body">
+                        Persyaratan
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MODAL PAS BARU -->
+                <div id="modal-pas-lost" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Alur Permohonan Pembuatan Paspor Hilang</h2>
+                        <div class="with-btn-close"></div>
+                      </div>
+                      <div class="body">
+                        Persyaratan
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MODAL PAS BARU -->
+                <div id="modal-pas-broke" class="modal-dialog">
+                  <div class="overlay__modal-full modal-full with-btn-close">
+                    <div class="modal__container">
+                      <div class="header transparent">
+                        <h2 class="title">Alur Permohonan Pembuatan Paspor Rusak</h2>
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">

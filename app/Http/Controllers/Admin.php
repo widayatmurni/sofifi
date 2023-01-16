@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Language as CLang;
 use App\Models\Pages as MPage;
 
 class Admin extends Controller
 {
     public function index()
     {
-        $pages = MPage::get();
+        $pages = \DB::table('pages')
+                ->select('id', 'title', 'slug')
+                ->get();
         return view('admin.pages.page', ['pages' => $pages]);
     }
 
@@ -23,8 +26,44 @@ class Admin extends Controller
         return view('admin.add_page');
     }
 
-    public function getEditPage( $id ) {
-        $page = MPage::where('id', $id)->get();
-        return view('admin.pages.page_edit', ['page' => $page]);
+    public function getEditPage( $slug, $lang = '' ) {
+        $langs = (new CLang)->getLanguages();
+        $l = $lang;
+        if ($l == '' ) {
+            $l=$langs[0]->id;
+        }
+
+        $page = \DB::table('pages')
+                ->join('languages', 'languages.id', '=', 'pages.language_id')
+                ->where(['pages.slug' => $slug, 'languages.id' => $l])
+                ->select('pages.id', 'pages.title', 'languages.code', 'languages.id as lang_id', 'pages.slug', 'pages.page', 'pages.publish')
+                ->get();
+        return view('admin.pages.page_edit', ['page' => $page, 'languages' => $langs, 'cur_lang_id' => $l, 'cur_slug' => $slug]);
+    }
+
+    public function generateNewPage($slug, $lang_id){
+        $pageAttr = [
+            'title' => ucfirst($slug),
+            'slug' => $slug,
+            'language_id' => $lang_id,
+            'page' => '',
+        ];
+
+        $this->createPage($pageAttr);
+        return redirect()->back();
+    }
+
+    public function createPage($pageAttr) {
+        return \DB::table('pages')->insert($pageAttr);
+    }
+
+    // BULLETINS
+    public function getBulletins() {
+        return 'bulletin';
+    }
+
+    // GALLERY
+    public function getGalleries() {
+        return 'Gallery';
     }
 }

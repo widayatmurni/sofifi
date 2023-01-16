@@ -18,22 +18,22 @@ class LanguageTableSeeder extends Seeder
         DB::table('languages')->insert([[
             'code' => 'id',
             'country_name' => 'Indonesia',
-            'flag' => '',
+            'flag' => 'flag_id.svg',
             ],
             [
             'code' => 'en',
             'country_name' => 'English',
-            'flag' => '',
+            'flag' => 'flag_us.svg',
             ],
             [
             'code' => 'ch',
             'country_name' => 'China',
-            'flag' => '',
+            'flag' => 'flag_ch.svg',
             ],
             [
             'code' => 'ko',
             'country_name' => 'Korea Selatan',
-            'flag' => '',
+            'flag' => 'flag_ko.svg',
             ]
         ]);
     }

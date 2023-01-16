@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class Pages extends Controller
 {
-    public function PageView($slug = '')
+    public function PageView($slug = 'dashboard')
     {
         $lang = session()->get('_language');
 

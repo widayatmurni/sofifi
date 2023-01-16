@@ -72,9 +72,18 @@ Route::prefix('admin')->group(function () {
 
     Route::controller(Admin::class)->group(function () {
         Route::get('/', 'index');
+        Route::get('/sofifi', 'index')->name('admin.sofifi');
         Route::get('/login', 'getLogin');
         Route::get('/add-page', 'getAddPage');
-        Route::get('/edit-page/{id}', 'getEditPage')->name('edit-page');
+        Route::get('/edit-page/{slug}/{lang?}', 'getEditPage')->name('edit-page');
+        Route::get('/generate-page/{slug}/{lang_id}', 'generateNewPage')->name('generateNewPage');
+
+
+        // BUlletin
+        Route::get('/bulletin', 'getBulletins')->name('admin.bulletin');
+
+        // Gallery
+        Route::get('/gallery', 'getGalleries')->name('admin.gallery');
     });
 });
 

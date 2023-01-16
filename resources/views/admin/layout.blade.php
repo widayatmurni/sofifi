@@ -49,15 +49,15 @@
         </svg> --}}
       </div>
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-        <li class="nav-item"><a class="nav-link active" href="dashboard">
+        <li class="nav-item"><a class="nav-link active" href="{{ route('admin.sofifi')}}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-speedometer') }}"></use>
             </svg> Sofifi Apps</a></li>
-        <li class="nav-item"><a class="nav-link" href="bulletin">
+        <li class="nav-item"><a class="nav-link" href="{{ route('admin.bulletin')}}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-drop')}}"></use>
             </svg> Bulletin</a></li>
-        <li class="nav-item"><a class="nav-link" href="dokumentasi">
+        <li class="nav-item"><a class="nav-link" href="{{ route('admin.gallery') }}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-pencil')}}"></use>
             </svg> Dokumentasi</a>
@@ -113,5 +113,6 @@
     <!-- CoreUI and necessary plugins-->
     <script src="{{ asset('assets/js/coreui.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/tooltips.js') }}"></script>
+    @stack('bodyScript')
   </body>
 </html>
