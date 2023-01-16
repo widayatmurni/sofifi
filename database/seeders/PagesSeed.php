@@ -131,7 +131,7 @@ class PagesSeed extends Seeder
               
                 </main>',
             ], [
-                'title' => 'WNI MENU',
+                'title' => 'WNI Menu',
                 'slug' => 'wni-menu',
                 'language_id' => 1,
                 'page' => '<main class="page-full-single">
@@ -194,7 +194,7 @@ class PagesSeed extends Seeder
                   </main>
                 ',
             ], [
-                'title' => 'WNA MENU',
+                'title' => 'WNA Menu',
                 'slug' => 'wna-menu',
                 'language_id' => 1,
                 'page' => '<main class="page-full-single">
@@ -1214,61 +1214,6 @@ class PagesSeed extends Seeder
                   <a href="wni-menu" class="nav-single to-back">
                     <i class="icon-back"></i>
                     <span class="text nav-back">Kembali</span>
-                  </a>
-                </div>
-              </main>',
-            ], [
-              'title' => 'WNA Menu',
-              'slug' => 'wna-menu',
-              'language_id' => 1,
-              'page' => '<main class="page-full-single">
-                <div class="c-header">
-                  <div class="office">
-                    <img class="logo" src="../assets/vectors/logoditjenim.png" alt="logo">
-                  </div>
-                  <div class="title">
-                    <h2>Layanan Imigrasi Bagi Warga Negara Asing ( WNA )</h2>
-                  </div>
-                </div>
-                <div id="wna-menu">
-                  <div class="overlay"></div>
-                  <div class="menus">
-            
-                    <a href="wna-definition" class="menu">
-                      <div class="icon-box">
-                        <i class="icon-definition"></i>
-                      </div>
-                      <div class="text">Definisi</div>
-                    </a>
-            
-                    <a href="wna-requirement" class="menu">
-                      <div class="icon-box">
-                        <i class="icon-requirement"></i>
-                      </div>
-                      <div class="text">Persyaratan</div>
-                    </a>
-            
-                    <a href="wna-price" class="menu">
-                      <div class="icon-box">
-                        <i class="icon-price"></i>
-                      </div>
-                      <div class="text">Tarif</div>
-                    </a>
-            
-                    <a href="wna-flow" class="menu">
-                      <div class="icon-box">
-                        <i class="icon-flow"></i>
-                      </div>
-                      <div class="text">Alur Proses</div>
-                    </a>
-            
-                  </div>
-                </div>
-            
-                <div class="float-menu">
-                  <a href="dashboard" class="nav-single">
-                    <i class="icon-dashboard"></i>
-                    <span class="nav-text">Dashboard</span>
                   </a>
                 </div>
               </main>',
