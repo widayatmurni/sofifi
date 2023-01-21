@@ -10,9 +10,7 @@ class Admin extends Controller
 {
     public function index()
     {
-        $pages = \DB::table('pages')
-                ->select('id', 'title', 'slug')
-                ->get();
+        $pages = MPage::groupBy('slug')->get(['slug', 'title']);
         return view('admin.pages.page', ['pages' => $pages]);
     }
 
@@ -23,7 +21,8 @@ class Admin extends Controller
 
     public function getAddPage()
     {
-        return view('admin.add_page');
+        $langs = $langs = (new CLang)->getLanguages();
+        return view('admin.pages.page_add', ['languages' => $langs]);
     }
 
     public function getEditPage( $slug, $lang = '' ) {

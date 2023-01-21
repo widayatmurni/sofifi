@@ -8,7 +8,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
         <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -30,12 +30,12 @@
         <h4 class="card-title mb-0">Halaman Sofifi</h4>
       </div>
       <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
-        <button class="btn btn-primary">
+        <a href="{{ route('add-page') }}" class="btn btn-primary">
           <svg class="icon me-2">
             <use xlink:href="../assets/icons/free.svg#cil-link"></use>
           </svg>
           Tambah Baru
-        </button>
+        </a>
       </div>
     </div>
 
@@ -45,7 +45,7 @@
             <tr>
                 <th scope="col" class="text-center" width="40">#</th>
                 <th scope="col" class="" width="">Halaman</th>
-                <th scope="col" class="text-center" width="150">Aksi</th>
+                <th scope="col" class="text-center" width="85"></th>
             </tr>
         </thead>
         <tbody>
@@ -55,18 +55,6 @@
                   <th class="text-center" scope="col">#</th>
                   <td>{{ $page->title }}</td>
                   <td>
-                      <a href="#" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Publish">
-                          <svg class="icon">
-                              <use xlink:href="../assets/icons/free.svg#cil-link"></use>
-                            </svg>
-                            
-                      </a>
-                      <a href="#" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Preview">
-                          <svg class="icon">
-                            <use xlink:href="../assets/icons/free.svg#cil-check-alt"></use>
-                          </svg>
-                            
-                      </a>
                       <a href="{{ route('edit-page', ['slug' => $page->slug]) }}" type="button" class="btn btn-ghost-success btn-sm" data-coreui-toggle="tooltip" title="Edit">
                           <svg class="icon">
                             <use xlink:href="../assets/icons/free.svg#cil-pencil"></use>
@@ -102,7 +90,7 @@ const exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.coreui.modal', event => {
   const button = event.relatedTarget
   const title = button.getAttribute('data-title')
-  const curSlug = button.getAttribute('data-id')
+  const curSlug = button.getAttribute('data-slug')
 
   const modalBodySpan = exampleModal.querySelector('.modal-body span')
   const modalBodyInput = exampleModal.querySelector('.modal-body input')

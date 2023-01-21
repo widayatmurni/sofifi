@@ -3,9 +3,9 @@
 @section('contents')
 
 @if ($page->isEmpty())
-    <div class="callout callout-danger">
-        Halaman belum tersedia! Apakah ingin membuat halaman?
-        <div class="mt-3 d-flex">
+    <div class="callout callout-danger bg-white">
+        <h5 class="my-3"><strong>Halaman belum tersedia!</strong> Apakah ingin membuat halaman?</h5>
+        <div class="my-3 d-flex">
             <a href="{{ route('generateNewPage', ['slug' => $cur_slug,'lang_id' => $cur_lang_id]) }}" type="button" class="btn btn-success me-2 px-5">Ya</a>
             <a href="{{ URL::previous() }}" type="button" class="btn btn-outline-secondary px-2">Tidak</a>
         </div>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <form action="" method="post">
+    <form class="form-control" action="" method="post">
         <div class="row mb-4">
             <div class="mb-3">
                 <label for="title" class="form-label">Judul Halaman</label>
@@ -45,13 +45,15 @@
             </div>
         </div>
     
-        <div class="mb-4">
-            <button type="submit" class="btn btn-success btn-lg px-4">
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success px-4">
                 <svg class="icon me-2">
                     <use xlink:href="{{ asset('assets/icons/free.svg#cil-save') }}"></use>
                 </svg>
                 <span>Simpan</span>
             </button>
+
+            <a href="{{ route('admin.sofifi') }}" class="btn btn-outline-secondary">Batal</a>
         </div>
     </form>
 

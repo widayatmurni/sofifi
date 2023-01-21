@@ -74,7 +74,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/', 'index');
         Route::get('/sofifi', 'index')->name('admin.sofifi');
         Route::get('/login', 'getLogin');
-        Route::get('/add-page', 'getAddPage');
+        Route::get('/add-page', 'getAddPage')->name('add-page');
         Route::get('/edit-page/{slug}/{lang?}', 'getEditPage')->name('edit-page');
         Route::get('/generate-page/{slug}/{lang_id}', 'generateNewPage')->name('generateNewPage');
 
