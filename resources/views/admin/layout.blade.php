@@ -49,15 +49,15 @@
         </svg> --}}
       </div>
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-        <li class="nav-item"><a class="nav-link active" href="{{ route('admin.sofifi')}}">
+        <li class="nav-item"><a class="nav-link @if($nav == 'sofifi') 'active' @endif" href="{{ route('admin.sofifi')}}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-speedometer') }}"></use>
             </svg> Sofifi Apps</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('admin.bulletin')}}">
+        <li class="nav-item"><a class="nav-link @if($nav == 'bulletin') 'active' @endif" href="{{ route('admin.bulletin')}}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-drop')}}"></use>
             </svg> Bulletin</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('admin.gallery') }}">
+        <li class="nav-item"><a class="nav-link @if($nav == 'gallery') 'active' @endif" href="{{ route('admin.gallery') }}">
             <svg class="nav-icon">
               <use xlink:href="{{ asset('assets/icons/free.svg#cil-pencil')}}"></use>
             </svg> Dokumentasi</a>

@@ -77,10 +77,14 @@ Route::prefix('admin')->group(function () {
         Route::get('/add-page', 'getAddPage')->name('add-page');
         Route::get('/edit-page/{slug}/{lang?}', 'getEditPage')->name('edit-page');
         Route::get('/generate-page/{slug}/{lang_id}', 'generateNewPage')->name('generateNewPage');
+        Route::post('/post-add-page', 'postAddPage')->name('post-add-page');
 
 
         // BUlletin
-        Route::get('/bulletin', 'getBulletins')->name('admin.bulletin');
+        Route::prefix('bulletin')->group(function() {
+            Route::get('/', 'getBulletins')->name('admin.bulletin');
+            Route::get('/add-page', 'addBulletin')->name('add-bulletin');
+        });
 
         // Gallery
         Route::get('/gallery', 'getGalleries')->name('admin.gallery');

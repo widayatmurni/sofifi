@@ -1,5 +1,5 @@
 @php
-  $nav = 'sofifi';     
+  $nav = 'bulletin';     
 @endphp
 
 @extends('admin.layout')
@@ -8,7 +8,7 @@
 <form action="{{ route('post-add-page')}}" method="post">
 <div class="d-flex justify-content-between mb-4">
   <div>
-      <h4 class="card-title mb-0">Halaman Sofifi</h4>
+      <h4 class="card-title mb-0">Halaman Bulletin</h4>
   </div>
   <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -37,7 +37,7 @@
 <div class="my-4">
   <div class="form-control mb-3">
     <div class="mb-3">
-      <label for="title" class="form-label">Judul Halaman</label>
+      <label for="title" class="form-label">Judul Bulletin</label>
       <input type="text" name="title" id="title" class="form-control">
     </div>
     <div class="mb-3">

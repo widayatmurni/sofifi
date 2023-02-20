@@ -1,7 +1,6 @@
 @php
-  $nav = 'sofifi';     
+  $nav = 'bulletin';     
 @endphp
-
 @extends('admin.layout')
 
 @section('contents')
@@ -34,7 +33,7 @@
         <h4 class="card-title mb-0">Halaman Sofifi</h4>
       </div>
       <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
-        <a href="{{ route('add-page') }}" class="btn btn-primary">
+        <a href="{{ route('add-bulletin') }}" class="btn btn-primary">
           <svg class="icon me-2">
             <use xlink:href="../assets/icons/free.svg#cil-link"></use>
           </svg>
@@ -53,19 +52,19 @@
             </tr>
         </thead>
         <tbody>
-          @if ($pages !== null)
-            @foreach ($pages as $page)
+          @if (!$bulletins->isEmpty())
+            @foreach ($bulletins as $item)
               <tr>
                   <th class="text-center" scope="col">#</th>
-                  <td>{{ $page->title }}</td>
+                  <td>Title</td>
                   <td>
-                      <a href="{{ route('edit-page', ['slug' => $page->slug]) }}" type="button" class="btn btn-ghost-success btn-sm" data-coreui-toggle="tooltip" title="Edit">
+                      <a href="" type="button" class="btn btn-ghost-success btn-sm" data-coreui-toggle="tooltip" title="Edit">
                           <svg class="icon">
                             <use xlink:href="../assets/icons/free.svg#cil-pencil"></use>
                           </svg>
                             
                       </a>
-                      <button type="button" class="btn btn-ghost-danger btn-sm" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="" data-title="{{ $page->title }}" data-slug="{{ $page->slug }}">
+                      <button type="button" class="btn btn-ghost-danger btn-sm" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="" data-title="" data-slug="">
                         <svg class="icon">
                           <use xlink:href="../assets/icons/free.svg#cil-trash"></use>
                         </svg>
@@ -75,7 +74,7 @@
             @endforeach
           @else
               <tr>
-                <td class="text-center text-danger" colspan="3">-Halaman tidak ditemukan!-</td>
+                <td class="text-center text-danger" colspan="3">-Belum ada bulletin!-</td>
               </tr>
           @endif
 
@@ -104,4 +103,3 @@ exampleModal.addEventListener('show.coreui.modal', event => {
 })
 
 </script>
-@endpush

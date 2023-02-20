@@ -5,22 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Language as CLang;
 use App\Models\Pages as MPage;
+use App\Models\Bulletins as MBulletin;
 
-class Admin extends Controller
-{
-    public function index()
-    {
+class Admin extends Controller {
+    public function index() {
         $pages = MPage::groupBy('slug')->get(['slug', 'title']);
         return view('admin.pages.page', ['pages' => $pages]);
     }
 
-    public function getLogin()
-    {
+    public function getLogin() {
         return view('admin.login');
     }
 
-    public function getAddPage()
-    {
+    public function getAddPage() {
         $langs = $langs = (new CLang)->getLanguages();
         return view('admin.pages.page_add', ['languages' => $langs]);
     }
@@ -58,11 +55,17 @@ class Admin extends Controller
 
     // BULLETINS
     public function getBulletins() {
-        return 'bulletin';
+        $bulletins = MBulletin::get();
+        return view('admin.pages.bulletin', ['bulletins' => $bulletins]);
+    }
+
+    public function addBulletin() {
+        $langs = $langs = (new CLang)->getLanguages();
+        return view('admin.pages.bulletin_add', ['languages' => $langs]);
     }
 
     // GALLERY
     public function getGalleries() {
-        return 'Gallery';
+        return view('admin.pages.gallery');
     }
 }

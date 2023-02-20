@@ -35,7 +35,7 @@ class PagesSeed extends Seeder
                       </div>
               
                       <div class="apps">
-                        <img class="app-brand" src="http://dev.local:8000/assets/vectors/logoapp.png" alt="app">
+                        <img class="app-brand" src="../assets/vectors/logoapp.png" alt="app">
                         <div class="names">
                           <div class="app-name">SOFIFI</div>
                           <div class="app-name-2">Sitem Operasi Interaktif Imigrasi</div>
@@ -721,6 +721,13 @@ class PagesSeed extends Seeder
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div class="float-menu">
+                  <a href="wni-menu" class="nav-single to-back">
+                    <i class="icon-back"></i>
+                    <span class="text nav-back">Kembali</span>
+                  </a>
                 </div>
             
               </main>',
