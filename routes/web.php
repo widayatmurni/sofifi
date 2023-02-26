@@ -42,7 +42,10 @@ Route::prefix('pages')->group(function () {
     Route::middleware(['user.lang'])->group(function () {
         // ARTICLES
         Route::controller(Articles::class)->group(function () {
-            Route::get('/news', 'index');
+            Route::prefix('news')->group(function () {
+                Route::get('/', 'index');
+                Route::get('/read/{slug}', 'read')->name('bulletin.read');
+            });
         });
     
         // GALLERY

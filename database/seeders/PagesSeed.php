@@ -94,28 +94,28 @@ class PagesSeed extends Seeder
                         <div class="language-box">
                           <div class="items">
               
-                            <div class="language-item" data-href="id">
+                            <div class="language-item" data-href="pages/set-lang/id">
                               <div class="c-flag">
                                 <img class="flag" src="../assets/icons/flag_id.svg" alt="id">
                               </div>
                               <div class="text">Indonesia</div>
                             </div>
               
-                            <div class="language-item" data-href="en">
+                            <div class="language-item" data-href="pages/set-lang/en">
                               <div class="c-flag">
                                 <img class="flag" src="../assets/icons/flag_us.svg" alt="us">
                               </div>
                               <div class="text">Inggris</div>
                             </div>
               
-                            <div class="language-item" data-href="ch">
+                            <div class="language-item" data-href="pages/set-lang/ch">
                               <div class="c-flag">
                                 <img class="flag" src="../assets/icons/flag_ch.svg" alt="ch">
                               </div>
                               <div class="text">China</div>
                             </div>
               
-                            <div class="language-item" data-href="ko">
+                            <div class="language-item" data-href="pages/set-lang/ko">
                               <div class="c-flag">
                                 <img class="flag" src="../assets/icons/flag_ko.svg" alt="ko">
                               </div>
@@ -1193,26 +1193,51 @@ class PagesSeed extends Seeder
             
                       <div class="box">
                         <!-- STEPS -->
-                        <table>
+                        <table id="mpas-steps">
                           <tr>
                             <td>
                               <div>
                                 <h3>Intalasi Aplikasi</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt iure, dolorem facilis
-                                  sequi cum molestiae natus ab, est reiciendis quis voluptatibus? Laboriosam fuga culpa nesciunt
-                                  recusandae alias soluta similique.</p>
+                                <p>Instal aplikasi pada perangkat anda melalui Playstore untuk pengguna Android atau AppStore untuk pengguna IOS<p>
                               </div>
                             </td>
+                            <td><img src="../assets/vectors/mpas_steps0.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pembuatan Akun</h3>
+                                <p>Pemohon yang belum memiliki akun dapat membuat akun baru dengan memilih <strong>Daftar Akun</strong> kemudian mengisi data diri pada halaman Pendaftaran Akun. Aktivasi akun akan terhubung dengan email yang didaftarkan. Klik <strong>Aktivasi Akun Anda</strong> untuk melanjutkan. Selanjutnya, masuk ke aplikasi M-Paspor dengan megisikan alamat email dan sandi yang telah didaftarkan lalu klik <strong>Masuk</strong></p>
+                              </div>
+                            </td>
+                            <td><img src="../assets/vectors/mpas_steps1.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pilih <strong>Pengajuan Permohonan</strong>, kemudian <strong>Permohonan Paspor Reguler</strong>, Klik <strong>Lanjutkan</strong>. Pemohon harus mengisi data dengan benar. Pengisian data yang tidak benar mengakibatkan permohonan paspor anda ditolak dan pembayaran tidak dapat dikembalikan</p>
+                              </div>
+                            </td>
+                            <td><img src="../assets/vectors/mpas_steps0.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pemilihan Kantor Imigrasi Terdekat</h3>
+                                <p></p>
+                              </div>
+                            </td>
+                            <td><img src="../assets/vectors/mpas_steps0.png"></td>
                           </tr>
                         </table>
                       </div>
-            
                     </div>
                     <div class="phone-skin-box">
                       <div class="content-img">
-            
+                        <img src="../assets/vectors/mpas_steps0.png">
                       </div>
-                      <img src="/assets/vectors/phone-skin.svg" alt="" srcset="">
+                      <img src="/assets/vectors/phone-skin.svg">
                     </div>
                   </div>
                 </div>
@@ -3282,6 +3307,26 @@ class PagesSeed extends Seeder
                 </div>
               </main>',
             ],
+        ]);
+
+        DB::table('bulletins')->insert([
+          [
+            'slug' => 'infrastruktur-darat,-konektivitas-jadi-utama',
+            'publish' => TRUE,
+            'title'=> 'Infrastruktur Darat, Konektivitas Jadi Utama',
+            'lead_title' => 'Antarkan Perjalanan Masyarakat Jadi Lebih Lancar',
+            'lead_text' => 'Infrastruktur jalan tol di Indonesia membuat perjalanan masyarakat lebih mudah dan lancar. Tak hanya Tol Trans-Jawa, kini akses jalan tol di seluruh Indonesia sedang dikebut pembangunannya oleh pemerintah untuk memenuhi konektivitas antarwilayah.',
+            'lead_bg' => 'http://dev.local:8000/assets/lead_bg.jpg',
+            'content' => '<p>Coba</p>',
+          ], [
+            'slug' => 'infrastruktur-darat,-konektivitas-jadi-utama-2',
+            'publish' => TRUE,
+            'title'=> 'Infrastruktur Darat, Konektivitas Jadi Utama 2',
+            'lead_title' => 'Antarkan Perjalanan Masyarakat Jadi Lebih Lancar 2',
+            'lead_text' => '2 Infrastruktur jalan tol di Indonesia membuat perjalanan masyarakat lebih mudah dan lancar. Tak hanya Tol Trans-Jawa, kini akses jalan tol di seluruh Indonesia sedang dikebut pembangunannya oleh pemerintah untuk memenuhi konektivitas antarwilayah.',
+            'lead_bg' => 'http://dev.local:8000/assets/lead_bg.jpg',
+            'content' => '<p>Coba 2</p>'
+          ]
         ]);
     }
 }

@@ -15,9 +15,12 @@ return new class extends Migration
     {
         Schema::create('bulletins', function (Blueprint $table) {
             $table->id();
+            $table->string('slug')->unique();
             $table->string('title');
             $table->boolean('publish')->nullable()->default(false);
-            $table->text('headline');
+            $table->string('lead_bg')->default('assets/lead_bg.png');
+            $table->string('lead_title')->nullable();
+            $table->string('lead_text')->nullable()->default('Resume berita');
             $table->longText('content');
             $table->timestamps();
         });

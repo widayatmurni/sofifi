@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('page');
             $table->boolean('publish')->nullable()->default(false);
             $table->foreignId('language_id')->constrained('languages');
-            $table->unique('slug');
+            // $table->unique('slug');
             $table->timestamps();
         });
     }
