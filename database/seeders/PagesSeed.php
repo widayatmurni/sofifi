@@ -50,12 +50,12 @@ class PagesSeed extends Seeder
               
                     <div class="float-nav">
                       <div class="nav-box">
-                        <a href="/gallery" class="nav-btn nav-item">
+                        <a href="/pages/gallery" class="nav-btn nav-item">
                           <i class="icon-gallery"></i>
                           Gallery
                         </a>
               
-                        <a href="/news" class="nav-btn nav-item">
+                        <a href="/pages/news" class="nav-btn nav-item">
                           <i class="icon-news"></i>
                           Buletin
                         </a>
@@ -75,12 +75,12 @@ class PagesSeed extends Seeder
                           WNI
                         </a>
               
-                        <a href="/contact" class="nav-btn nav-item">
+                        <a href="/pages/contact" class="nav-btn nav-item">
                           <i class="icon-contact"></i>
                           Kontak
                         </a>
               
-                        <a href="/survei" class="nav-btn nav-item">
+                        <a href="/pages/survei" class="nav-btn nav-item">
                           <i class="icon-survei"></i>
                           Survei
                         </a>

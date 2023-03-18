@@ -5,7 +5,8 @@
 @extends('admin.layout')
 
 @section('contents')
-<form action="{{ route('post-add-page')}}" method="post">
+<form action="{{ route('post-add-page') }}" method="post">
+{{ @csrf }}
 <div class="d-flex justify-content-between mb-4">
   <div>
       <h4 class="card-title mb-0">Halaman Sofifi</h4>

@@ -53,6 +53,14 @@ class Admin extends Controller {
         return \DB::table('pages')->insert($pageAttr);
     }
 
+    public function create_page(Request $req) {
+        $page = MPage::find($req->_id);
+        $page->title = $req->title;
+        $page->page = $req->page;
+        $page->update();
+        return redirect()->back()->with('status','Halaman Berhasil di perbaharui.');
+    }
+
     // BULLETINS
     public function getBulletins() {
         $bulletins = MBulletin::get();

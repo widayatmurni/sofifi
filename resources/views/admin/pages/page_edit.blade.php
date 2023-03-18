@@ -36,8 +36,10 @@
         </div>
     </div>
 
-    <form class="form-control" action="" method="post">
+    <form class="form-control" action="{{ route('post-add-page') }}" method="post">
+        @csrf
         <div class="row mb-4">
+            <input type="hidden" name="_id" value={{ $page[0]->id }}>
             <div class="mb-3">
                 <label for="title" class="form-label">Judul Halaman</label>
                 <input type="text" name="title" id="title" class="form-control" value="{{ $page[0]->title}}">

@@ -24,6 +24,8 @@ Route::group(['prefix' => 'laravel-filemanager'], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
+
+
 Route::prefix('pages')->group(function () {
     
     Route::get('cek-session', function() {
@@ -80,7 +82,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/add-page', 'getAddPage')->name('add-page');
         Route::get('/edit-page/{slug}/{lang?}', 'getEditPage')->name('edit-page');
         Route::get('/generate-page/{slug}/{lang_id}', 'generateNewPage')->name('generateNewPage');
-        Route::post('/post-add-page', 'postAddPage')->name('post-add-page');
+        Route::post('/post-add-page', 'create_page')->name('post-add-page');
 
 
         // BUlletin
