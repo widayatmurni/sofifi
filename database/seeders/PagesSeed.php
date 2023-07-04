@@ -3329,38 +3329,38 @@ class PagesSeed extends Seeder
           ]
         ]);
 
-        DB::table('albums')->insert([
-          [
-            'name' => 'nama Album 1',
-            'description' => 'Deskripsi Album 1 sebagai contoh',
-          ],
-          [
-            'name' => 'Name Album 2',
-            'description' => 'Deskripsi album 2',
-          ],
-        ]);
+        // DB::table('albums')->insert([
+        //   [
+        //     'title' => 'nama Album 1',
+        //     'description' => 'Deskripsi Album 1 sebagai contoh',
+        //   ],
+        //   [
+        //     'title' => 'Name Album 2',
+        //     'description' => 'Deskripsi album 2',
+        //   ],
+        // ]);
 
-        DB::table('galleries')->insert([
-          [
-            'file_uri' => 'http:\\dev.local:8000\assets\albums\gal1.jpg',
-            'description' => 'deskripsi foto',
-            'album_id' => 1
-          ],
-          [
-            'file_uri' => 'http:\\dev.local:8000\assets\albums\gal2.jpg',
-            'description' => 'deskripsi foto',
-            'album_id' => 1
-          ],
-          [
-            'file_uri' => 'http:\\dev.local:8000\assets\albums\gal1.jpg',
-            'description' => 'deskripsi foto',
-            'album_id' => 2
-          ],
-          [
-            'file_uri' => 'http:\\dev.local:8000\assets\albums\gal2.jpg',
-            'description' => 'deskripsi foto',
-            'album_id' => 2
-          ],
-        ]);
+        // DB::table('galleries')->insert([
+        //   [
+        //     'file_uri' => 'http:\\dev.local:8000\assets\albums\gal1.jpg',
+        //     'description' => 'deskripsi foto',
+        //     'album_id' => 1
+        //   ],
+        //   [
+        //     'file_uri' => 'http:\\dev.local:8000\assets\albums\gal2.jpg',
+        //     'description' => 'deskripsi foto',
+        //     'album_id' => 1
+        //   ],
+        //   [
+        //     'file_uri' => 'http:\\dev.local:8000\assets\albums\gal1.jpg',
+        //     'description' => 'deskripsi foto',
+        //     'album_id' => 2
+        //   ],
+        //   [
+        //     'file_uri' => 'http:\\dev.local:8000\assets\albums\gal2.jpg',
+        //     'description' => 'deskripsi foto',
+        //     'album_id' => 2
+        //   ],
+        // ]);
     }
 }

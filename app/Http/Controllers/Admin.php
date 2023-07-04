@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Language as CLang;
 use App\Models\Pages as MPage;
 use App\Models\Bulletins as MBulletin;
+use App\Models\Albums as MAlbum;
+use App\Models\Galleries as MGal;
 
 class Admin extends Controller {
     public function index() {
@@ -74,6 +76,23 @@ class Admin extends Controller {
 
     // GALLERY
     public function getGalleries() {
-        return view('admin.pages.gallery');
+        $albums = MAlbum::all();
+        return view('admin.pages.gallery', ['albums' => $albums]);
+    }
+
+    public function createAlbum(Request $req) {
+        $newAlbum = new MAlbum;
+        $newAlbum->title = $req->title;
+        $newAlbum->description = $req->description;
+        $newAlbum->save();
+        // return redirect()->back();
+        return $this->getGalleryCollections($newAlbum->id);
+    }
+
+    public function getGalleryCollections($idAlbum) {
+        $albumName = MAlbum::where('id', $idAlbum)->select('title')->first();
+        $colls = MGal::where('album_id', $idAlbum)->get();
+        
+        return view('admin.pages.gallery_manage_collection', ['album_name' => $albumName, 'collections'=> $colls]);
     }
 }

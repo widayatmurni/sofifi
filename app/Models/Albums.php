@@ -9,5 +9,5 @@ class Albums extends Model
 {
     // use HasFactory;
     protected $table = 'albums';
-    protected $fillable = ['name', 'description']; 
+    protected $fillable = ['title', 'description', 'publish']; 
 }

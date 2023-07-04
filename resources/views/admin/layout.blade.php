@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendors/simplebar.css') }}">
     <!-- Main styles for this application-->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset("assets/css/custom.css")}}">
+    @stack('headerScript')
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
@@ -94,7 +96,7 @@
         </div>
       </header>
       <div class="body flex-grow-1 px-3">
-        <div class="container-lg">
+        <div class="container-fluid">
           
           @yield('contents')
 
@@ -102,11 +104,9 @@
       </div>
       <footer class="footer">
           <div>
-              <a href="#">Hastama Tech</a> &copy; 2023
           </div>
           <div class="ms-auto">
-              Powered by &nbsp; Coreui Components
-              <a href="#"></a>
+              <a href="#">Hastama Tech</a> &copy; 2023
           </div>
       </footer>
   </div>

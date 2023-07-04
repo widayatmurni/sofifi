@@ -41,7 +41,7 @@ Route::prefix('pages')->group(function () {
         return redirect()->back();
     });
     
-    Route::middleware(['user.lang'])->group(function () {
+    Route::middleware(['user.lang', 'cors'])->group(function () {
         // ARTICLES
         Route::controller(Articles::class)->group(function () {
             Route::prefix('news')->group(function () {
@@ -52,7 +52,10 @@ Route::prefix('pages')->group(function () {
     
         // GALLERY
         Route::controller(Gallery::class)->group(function () {
-            Route::get('/gallery', 'index');
+            Route::prefix('gallery')->group(function () {
+                Route::get('/', 'index');
+                Route::get('/get-album-content/{idAlbum}', 'getAlbumContent');
+            });
         });
     
         // SOFIFI
@@ -92,7 +95,12 @@ Route::prefix('admin')->group(function () {
         });
 
         // Gallery
-        Route::get('/gallery', 'getGalleries')->name('admin.gallery');
+        Route::prefix('gallery')->group(function() {
+            Route::get('/', 'getGalleries')->name('admin.gallery');
+            Route::post('/create-album', 'createAlbum')->name('admin.create-album');
+            Route::get('/album/{id}', 'getGalleryCollections')->name('admin.get-album');
+        });
+
     });
 });
 

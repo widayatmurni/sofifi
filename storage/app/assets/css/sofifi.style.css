@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 body {
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif
 }
 
 .page-full-single {
@@ -13,90 +13,104 @@ body {
   overflow: hidden;
   height: 100vh;
   color: #000;
-  background-color: #FFF;
+  background-color: #fff
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000
 }
 
 #dashboard {
   height: 100vh;
   display: block;
-  overflow: hidden;
+  overflow: hidden
 }
+
 #dashboard .header {
   position: absolute;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 130px;
-  background-color: #A7DCFF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  background-color: #a7dcff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+  z-index: 1
 }
+
 #dashboard .header .instansi {
   width: 640px;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 20px
 }
+
 #dashboard .header .instansi .logo {
   width: 90px;
-  height: 90px;
+  height: 90px
 }
+
 #dashboard .header .instansi .text {
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0 20px
 }
+
 #dashboard .header .instansi .text .kl {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 17px
 }
+
 #dashboard .header .instansi .text .kantor {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 23px
 }
+
 #dashboard .header .instansi .text .address {
   font-style: italic;
-  font-size: 12px;
+  font-size: 12px
 }
+
 #dashboard .header .apps {
   width: calc(100% - 769px);
   display: block;
-  background-color: #11375C;
+  background-color: #11375c;
   margin-left: 129px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: center
 }
+
 #dashboard .header .apps::before {
   content: url("../vectors/header.png");
   margin-left: -129px;
-  height: 130px;
+  height: 130px
 }
+
 #dashboard .header .apps .app-brand {
   height: 100px;
-  width: 100px;
+  width: 100px
 }
+
 #dashboard .header .apps .names {
-  margin-left: 20px;
+  margin-left: 20px
 }
+
 #dashboard .header .apps .names .app-name {
-  color: #FBAF17;
+  color: #fbaf17;
   font-size: 3em;
   font-weight: 700;
-  letter-spacing: 0.6em;
-  text-decoration: underline;
+  letter-spacing: .6em;
+  text-decoration: underline
 }
+
 #dashboard .header .apps .names .app-name-2 {
-  color: #FBAF17;
+  color: #fbaf17;
   font-size: 1.3em;
-  margin: 7px 0;
+  margin: 7px 0
 }
+
 #dashboard .contents {
   margin-top: 130px;
   height: calc(100vh - 130px);
@@ -105,35 +119,40 @@ a {
   background-attachment: fixed;
   background-position: bottom center;
   background-size: 60%;
-  overflow: hidden;
+  overflow: hidden
 }
+
 #dashboard .contents video {
-  width: 100%;
+  width: 100%
 }
+
 #dashboard .float-nav {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
+
 #dashboard .float-nav .nav-box {
   position: relative;
   height: 64px;
   padding: 0 40px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: 1px solid #979797;
   display: flex;
   align-items: center;
   border-radius: 32px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5)
 }
+
 #dashboard .float-nav .nav-box .nav-btn {
   width: 110px;
-  display: flex;
+  display: flex
 }
+
 #dashboard .float-nav .nav-box .nav-item {
   position: relative;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   height: 56px;
   border-radius: 10px;
   padding: 3px;
@@ -142,47 +161,59 @@ a {
   cursor: pointer;
   text-align: center;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 700
 }
+
 #dashboard .float-nav .nav-box .nav-item:hover {
-  background-color: #c2c2c2;
+  background-color: #c2c2c2
 }
+
 #dashboard .float-nav .nav-box .nav-item i {
   margin: auto;
   background-repeat: no-repeat;
   width: 38px;
-  padding-bottom: 3px;
+  padding-bottom: 3px
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-gallery {
-  content: url("../vectors/gallery.png");
+  content: url("../vectors/gallery.png")
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-news {
-  content: url("../vectors/news.png");
+  content: url("../vectors/news.png")
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-wna {
-  content: url("../vectors/wna.png");
+  content: url("../vectors/wna.png")
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-wni {
-  content: url("../vectors/wni.png");
+  content: url("../vectors/wni.png")
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-contact {
-  content: url("../vectors/contact.png");
+  content: url("../vectors/contact.png")
 }
+
 #dashboard .float-nav .nav-box .nav-item .icon-survei {
-  content: url("../vectors/survei.png");
+  content: url("../vectors/survei.png")
 }
+
 #dashboard .float-nav .nav-box .nav-icon {
   display: inline;
-  margin: auto;
+  margin: auto
 }
+
 #dashboard .float-nav .nav-box .nav-icon .img-icon {
-  width: 38px;
+  width: 38px
 }
+
 #dashboard .float-nav .nav-box .nav-text {
   font-size: 11px;
   font-weight: 700;
-  text-align: center;
+  text-align: center
 }
+
 #dashboard .float-nav .nav-box .nav-language {
   position: relative;
   height: 100%;
@@ -190,79 +221,92 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #11375C;
-  border-radius: 8px;
+  background-color: #11375c;
+  border-radius: 8px
 }
+
 #dashboard .float-nav .nav-box .nav-language .text {
   font-weight: 700;
   font-size: 2em;
   margin-right: 10px;
-  color: #FBAF17;
+  color: #fbaf17
 }
+
 #dashboard .float-nav .nav-box .nav-language .flag {
   width: 40px;
   background-color: red;
-  border-radius: 3px 8px 8px 3px;
+  border-radius: 3px 8px 8px 3px
 }
+
 #dashboard .dialog-choose-language {
   position: absolute;
   top: 130px;
   left: 0;
   height: calc(100vh - 130px);
   width: 100%;
-  display: none;
+  display: none
 }
+
 #dashboard .dialog-choose-language .overlay-bg {
   position: relative;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, .75)
 }
+
 #dashboard .dialog-choose-language .choose-language {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box {
   position: relative;
-  background: white;
-  border-radius: 20px;
+  background: #fff;
+  border-radius: 20px
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 10px
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items .language-item {
   margin: 0 10px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   padding: 10px;
   width: 130px;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: pointer
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items .language-item:hover {
-  background-color: #c2c2c2;
+  background-color: #c2c2c2
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items .language-item .c-flag {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items .language-item .c-flag .flag {
-  width: 100%;
+  width: 100%
 }
+
 #dashboard .dialog-choose-language .choose-language .language-box .items .language-item .text {
   font-size: 1.1em;
   font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  text-align: center;
+  text-align: center
 }
+
 #dashboard .dialog-open {
-  display: block;
+  display: block
 }
 
 #wni-menu {
@@ -276,71 +320,83 @@ a {
   background-position: bottom center;
   background-color: #7fdffa;
   background-size: 100%;
-  overflow: hidden;
+  overflow: hidden
 }
+
 #wni-menu .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  height: 100%
 }
+
 #wni-menu .menus {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
+
 #wni-menu .menus .menu {
   margin: 30px;
   width: 200px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   border-radius: 18px;
   border: 1px solid #979797;
   cursor: pointer;
-  box-shadow: 0px 0px 5px 2px #8a8a8a;
+  box-shadow: 0px 0px 5px 2px #8a8a8a
 }
+
 #wni-menu .menus .menu:hover {
   background-color: #eaeaea;
-  transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out
 }
+
 #wni-menu .menus .menu .icon-box {
   width: 198px;
   height: 207px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #979797;
+  border-bottom: 3px solid #979797
 }
+
 #wni-menu .menus .menu .icon-box i {
-  position: relative;
+  position: relative
 }
+
 #wni-menu .menus .menu .icon-box .icon-definition {
   width: 127px;
   height: 177px;
-  background-image: url("../vectors/icon_definition.svg");
+  background-image: url("../vectors/icon_definition.svg")
 }
+
 #wni-menu .menus .menu .icon-box .icon-requirement {
   width: 175px;
   height: 168px;
-  background-image: url("../vectors/icon_requirement.svg");
+  background-image: url("../vectors/icon_requirement.svg")
 }
+
 #wni-menu .menus .menu .icon-box .icon-price {
   width: 178px;
   height: 145px;
-  background-image: url("../vectors/icon_price.svg");
+  background-image: url("../vectors/icon_price.svg")
 }
+
 #wni-menu .menus .menu .icon-box .icon-flow {
   width: 157px;
   height: 156px;
-  background-image: url("../vectors/icon_flow.svg");
+  background-image: url("../vectors/icon_flow.svg")
 }
+
 #wni-menu .menus .menu .icon-box .icon-mpaspor {
   width: 144px;
   height: 138px;
-  background-image: url("../vectors/icon_mpaspor.svg");
+  background-image: url("../vectors/icon_mpaspor.svg")
 }
+
 #wni-menu .menus .menu .text {
   margin: 20px;
   text-align: center;
@@ -348,46 +404,50 @@ a {
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap
 }
 
 #wni-definitions {
   padding-top: 130px;
-  height: 100vh;
+  height: 100vh
 }
+
 #wni-definitions .definition {
   position: relative;
   top: 40%;
   margin-right: 40px;
   margin-left: 40%;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%)
 }
+
 #wni-definitions .definition p {
   font-size: 3em;
   padding: 60px;
   border: 1px solid #979797;
   border-radius: 20px;
   margin-bottom: 60px;
-  line-height: 1.5em;
+  line-height: 1.5em
 }
+
 #wni-definitions .definition .btn-jenis-layanan {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
   display: block;
   padding: 30px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   border-radius: 50px;
   text-align: center;
   font-size: 2.6em;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 600
 }
 
 #wni-definition-services {
   padding-top: 130px;
   height: 100vh;
-  margin: 0 20px;
+  margin: 0 20px
 }
+
 #wni-definition-services .options {
   position: relative;
   margin-top: 60px;
@@ -395,81 +455,94 @@ a {
   margin-right: 60px;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-items: center
 }
+
 #wni-definition-services .options .option-btn {
   cursor: pointer;
   font-size: 2.8em;
   font-weight: 500;
   margin-bottom: 30px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   padding: 40px 60px;
   border-radius: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5)
 }
 
 #requirements {
   padding: 130px 20px 0 20px;
   height: 100vh;
   padding: 0 20px;
-  width: 100%;
+  width: 100%
 }
+
 #requirements .left-picture {
-  margin-left: 600px;
+  margin-left: 600px
 }
+
 #requirements .content-box-center {
   position: relative;
   display: flex;
   align-items: center;
   height: 100%;
-  max-width: 100%;
+  max-width: 100%
 }
+
 #requirements .content-box-center .table-button-box {
   position: relative;
-  width: 100%;
+  width: 100%
 }
+
 #requirements .content-box-center .table-button-box tr {
-  position: relative;
+  position: relative
 }
+
 #requirements .content-box-center .table-button-box tr td {
-  max-width: 0;
+  max-width: 0
 }
+
 #requirements .content-box-center .table-button-box tr td .content-btn {
   position: relative;
-  display: flex;
+  display: flex
 }
+
 #requirements .container-v-center {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 100%
 }
+
 #requirements .container-v-center .options {
   position: relative;
-  margin: 60px 40px 60px 40%;
+  margin: 60px 40px 60px 40%
 }
+
 #requirements .container-v-center .options .option-box {
   position: relative;
   margin-bottom: 40px;
-  display: flex;
+  display: flex
 }
+
 #requirements .container-v-center .options .option-box .button {
   padding: 40px 120px;
-  background-color: #FBAF17;
+  background-color: #fbaf17;
   font-size: 2.8em;
   font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   border-radius: 70px;
-  cursor: pointer;
+  cursor: pointer
 }
+
 #requirements .container-v-center .options .option-box .button::after {
   position: absolute;
   content: url("/assets/vectors/angle-right.png");
-  margin-left: 50px;
+  margin-left: 50px
 }
+
 #requirements .container-v-center .options .option-box .button:active {
-  opacity: 0.8;
+  opacity: .8
 }
 
 .persyaratans {
@@ -477,71 +550,84 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 80px
 }
+
 .persyaratans .s-card {
   margin: 20px 80px;
   position: relative;
-  width: 280px;
+  width: 280px
 }
+
 .persyaratans .s-card .content-image {
   margin-bottom: 60px;
   height: 396px;
-  width: 100%;
+  width: 100%
 }
+
 .persyaratans .s-card .content-image .img-potrait {
   width: 100%;
-  position: absolute;
+  position: absolute
 }
+
 .persyaratans .s-card .content-image .img-landscape {
-  width: 100%;
+  width: 100%
 }
+
 .persyaratans .s-card .content-image .img-rotate-1 {
   transform: rotate(-10deg) translate(-10px, 20px);
-  transform-origin: bottom left;
+  transform-origin: bottom left
 }
+
 .persyaratans .s-card .content-image .img-rotate-2 {
   transform: rotate(0deg) translate(30px, 10px);
-  transform-origin: bottom left;
+  transform-origin: bottom left
 }
+
 .persyaratans .s-card .content-image .img-rotate-3 {
   transform: rotate(10deg) translate(70px, -15px);
-  transform-origin: bottom left;
+  transform-origin: bottom left
 }
+
 .persyaratans .s-card .text-title {
   width: 100%;
   font-size: 2em;
-  text-align: center;
+  text-align: center
 }
 
 #wni-prices {
   position: relative;
   margin-top: 130px;
-  height: calc(100% - 130px);
+  height: calc(100% - 130px)
 }
+
 #wni-prices .container-center {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100%
 }
+
 #wni-prices .container-center .options {
   position: relative;
   margin-bottom: 40px;
   width: 75%;
-  min-width: 400px;
+  min-width: 400px
 }
+
 #wni-prices .container-center .options tr {
-  position: relative;
+  position: relative
 }
+
 #wni-prices .container-center .options tr td {
-  max-width: 0;
+  max-width: 0
 }
+
 #wni-prices .container-center .options tr td .button {
   padding: 40px 60px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   font-size: 2.8em;
   font-weight: 600;
   text-overflow: ellipsis;
@@ -552,30 +638,34 @@ a {
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between
 }
+
 #wni-prices .container-center .options tr td .button .text {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis
 }
+
 #wni-prices .container-center .options tr td .button .price {
   width: 280px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between
 }
+
 #wni-prices .container-center .paginations {
   position: absolute;
   bottom: 20px;
-  right: 12%;
+  right: 12%
 }
 
 #wni-alur {
   position: relative;
   height: calc(100% - 130px);
-  margin-top: 130px;
+  margin-top: 130px
 }
+
 #wni-alur .container-center {
   display: flex;
   flex-direction: column;
@@ -583,96 +673,111 @@ a {
   align-items: center;
   overflow-y: scroll;
   padding: 20px;
-  height: 100%;
+  height: 100%
 }
+
 #wni-alur .container-center .container-button {
   margin-left: 25%;
   width: 75%;
-  padding-top: 10px;
+  padding-top: 10px
 }
+
 #wni-alur .container-center .container-button td {
-  max-width: 0;
+  max-width: 0
 }
+
 #wni-alur .container-center .paginations {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 20px
 }
 
 #wni-mpas {
   position: relative;
   height: 100vh;
   padding-top: 130px;
-  overflow: scroll;
+  overflow: scroll
 }
+
 #wni-mpas .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, .85);
   height: 100%;
-  width: 100%;
+  width: 100%
 }
+
 #wni-mpas .container {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100%
 }
+
 #wni-mpas .container .content-box {
   height: calc(100% - 68px);
   width: calc(100% - 500px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
+
 #wni-mpas .container .content-box .box {
   position: relative;
-  background-color: white;
+  background-color: #fff;
   border-radius: 60px;
   padding: 60px;
   height: 80%;
   min-height: 608px;
   width: 100%;
-  margin: 60px 140px 60px 60px;
+  margin: 60px 140px 60px 60px
 }
+
 #wni-mpas .container .content-box .box div {
-  position: relative;
+  position: relative
 }
+
 #wni-mpas .container .content-box .box div h3 {
   font-size: 3em;
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
+
 #wni-mpas .container .content-box .box div p {
   font-size: 2.5em;
-  line-height: 1.3;
+  line-height: 1.3
 }
+
 #wni-mpas .container .content-box .box img {
   position: absolute;
   display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 500px
 }
+
 #wni-mpas .container .content-box .box .paginations {
   position: absolute;
   right: 40px;
-  bottom: 40px;
+  bottom: 40px
 }
+
 #wni-mpas .container .phone-skin-box {
   position: absolute;
   right: 20px;
   top: 60px;
   width: 500px;
   height: 100%;
-  z-index: 1000;
+  z-index: 1000
 }
+
 #wni-mpas .container .phone-skin-box .content-img {
   position: relative;
-  background-color: white;
+  background-color: #fff;
   border-radius: 78px;
   margin: 0 5px;
   width: 498px;
-  height: 1001px;
+  height: 1001px
 }
+
 #wni-mpas .container .phone-skin-box .content-img img {
   position: absolute;
   left: 50%;
@@ -680,12 +785,13 @@ a {
   transform: translate(-50%, -50%);
   width: calc(100% - 54px);
   height: calc(100% - 38px);
-  animation: step-image 300ms ease-in-out forwards;
+  animation: step-image 300ms ease-in-out forwards
 }
+
 #wni-mpas .container .phone-skin-box img {
   position: absolute;
   top: 0;
-  z-index: 1002;
+  z-index: 1002
 }
 
 #wna-menu {
@@ -699,80 +805,94 @@ a {
   background-position: bottom center;
   background-color: #7fdffa;
   background-size: 100%;
-  overflow: hidden;
+  overflow: hidden
 }
+
 #wna-menu .overlay {
-  background-color: rgba(0, 0, 0, 0.75);
-  height: 100%;
+  background-color: rgba(0, 0, 0, .75);
+  height: 100%
 }
+
 #wna-menu .menus {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
+
 #wna-menu .menus .menu {
   margin: 30px;
   width: 230px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   border-radius: 18px;
   border: 1px solid #979797;
-  cursor: pointer;
+  cursor: pointer
 }
+
 #wna-menu .menus .menu:hover {
   background-color: #eaeaea;
-  transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out
 }
+
 #wna-menu .menus .menu .icon-box {
   width: 228px;
   height: 207px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #979797;
+  border-bottom: 3px solid #979797
 }
+
 #wna-menu .menus .menu .icon-box i {
-  position: relative;
+  position: relative
 }
+
 #wna-menu .menus .menu .icon-box .icon-definition {
   width: 127px;
   height: 177px;
-  background-image: url("../vectors/icon_definition.svg");
+  background-image: url("../vectors/icon_definition.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-requirement {
   width: 175px;
   height: 168px;
-  background-image: url("../vectors/icon_requirement.svg");
+  background-image: url("../vectors/icon_requirement.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-price {
   width: 178px;
   height: 145px;
-  background-image: url("../vectors/icon_price.svg");
+  background-image: url("../vectors/icon_price.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-flow {
   width: 157px;
   height: 156px;
-  background-image: url("../vectors/icon_flow.svg");
+  background-image: url("../vectors/icon_flow.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-tarif-visa {
   width: 182px;
   height: 146px;
-  background-image: url("../vectors/icon_tarif_visa.svg");
+  background-image: url("../vectors/icon_tarif_visa.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-tarif-imigrasi {
   width: 182px;
   height: 146px;
-  background-image: url("../vectors/icon_tarif_imigrasi.svg");
+  background-image: url("../vectors/icon_tarif_imigrasi.svg")
 }
+
 #wna-menu .menus .menu .icon-box .icon-tarif-lainnya {
   width: 182px;
   height: 146px;
-  background-image: url("../vectors/icon_tarif_lainnya.svg");
+  background-image: url("../vectors/icon_tarif_lainnya.svg")
 }
+
 #wna-menu .menus .menu .text {
   margin: 20px;
   text-align: center;
@@ -780,51 +900,58 @@ a {
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap
 }
 
 #wna-definitions {
   padding-top: 130px;
   height: 100vh;
-  overflow: scroll;
+  overflow: scroll
 }
+
 #wna-definitions .container {
   position: relative;
   height: 100%;
-  padding: 20px 30px;
+  padding: 20px 30px
 }
+
 #wna-definitions .container .definition {
   margin-bottom: 40px;
   padding: 40px;
-  background-color: #A7DCFF;
-  border-radius: 40px;
+  background-color: #a7dcff;
+  border-radius: 40px
 }
+
 #wna-definitions .container .definition p {
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.5em
 }
+
 #wna-definitions .container .permited {
   position: relative;
   border-radius: 40px;
   border: 1px solid #979797;
-  background-color: #11375C;
-  overflow: hidden;
+  background-color: #11375c;
+  overflow: hidden
 }
+
 #wna-definitions .container .permited .title {
   margin: 20px 0;
   text-align: center;
-  color: #FBAF17;
+  color: #fbaf17;
   font-size: 2em;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
+
 #wna-definitions .container .permited .kind {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 30px 20px;
-  border-radius: 40px;
+  border-radius: 40px
 }
+
 #wna-definitions .container .permited .kind .modal-button {
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   padding: 20px;
   margin: 20px auto;
   max-width: 75%;
@@ -832,76 +959,85 @@ a {
   font-size: 1.8em;
   text-align: center;
   font-weight: 600;
-  background: #F3D10D;
-  box-shadow: 0 2px 4px 0 #11375C;
+  background: #f3d10d;
+  box-shadow: 0 2px 4px 0 #11375c;
   border-radius: 60px;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap
 }
+
 #wna-definitions .container .permited .kind .modal-button:active {
-  background-color: #f2db56;
+  background-color: #f2db56
 }
 
 .modal-content-itk {
-  position: relative;
+  position: relative
 }
+
 .modal-content-itk .title {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2em
 }
+
 .modal-content-itk ol {
-  margin: 30px;
+  margin: 30px
 }
+
 .modal-content-itk ol li {
   font-size: 2em;
   padding-left: 20px;
   margin-bottom: 20px;
-  line-height: 1.3em;
+  line-height: 1.3em
 }
 
 #wna-requirements {
   padding-top: 130px;
   height: 100vh;
-  overflow: scroll;
+  overflow: scroll
 }
+
 #wna-requirements .container-center {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100%
 }
+
 #wna-requirements .container-center .options {
   position: relative;
   margin-bottom: 40px;
   max-width: 55%;
-  min-width: 400px;
+  min-width: 400px
 }
+
 #wna-requirements .container-center .options p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
-  font-weight: 500;
+  font-weight: 500
 }
 
 .custom-select {
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.5em
 }
+
 .custom-select select {
-  display: none;
+  display: none
 }
 
 .select-selected {
-  background-color: DodgerBlue;
+  background-color: #1e90ff;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden
 }
+
 .select-selected:after {
   position: absolute;
   content: "";
@@ -909,62 +1045,67 @@ a {
   right: 10px;
   width: 0;
   height: 0;
-  border: 8px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-color: #fff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
 }
+
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff rgba(0, 0, 0, 0);
+  top: 7px
 }
 
-.select-items div, .select-selected {
-  color: #ffffff;
+.select-items div,
+.select-selected {
+  color: #fff;
   padding: 20px 30px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, .1) rgba(0, 0, 0, 0);
+  cursor: pointer
 }
 
-/* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: #1e90ff;
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 99
 }
 
-/* Hide the items when the select box is closed: */
 .select-hide {
-  display: none;
+  display: none
 }
 
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, .1)
 }
 
 #contact {
   padding: 130px 20px 0 20px;
   height: 100vh;
-  width: 100%;
+  width: 100%
 }
+
 #contact::before {
   content: url(../vectors/mido.svg);
   position: absolute;
   top: 100px;
   left: 60px;
-  z-index: 1200;
+  z-index: 1200
 }
+
 #contact .contents {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: center
 }
+
 #contact .contents .buttons {
   position: relative;
-  margin: 40px 0 40px 45%;
+  margin: 40px 0 40px 45%
 }
+
 #contact .contents .buttons .btn-social {
   min-width: 800px;
   display: block;
@@ -974,164 +1115,193 @@ a {
   border-style: solid;
   border-radius: 60px;
   padding: 30px 60px;
-  background-color: #FFFEFE;
+  background-color: #fffefe;
   margin-bottom: 30px;
-  transition: background-color ease-in-out 500ms;
+  transition: background-color ease-in-out 500ms
 }
+
 #contact .contents .buttons .btn-web {
-  border-color: #11375C;
-  color: #11375C;
+  border-color: #11375c;
+  color: #11375c
 }
+
 #contact .contents .buttons .btn-web::before {
-  content: "\f0ac";
+  content: "";
   font-family: "FontAwesome";
-  margin-right: 40px;
+  margin-right: 40px
 }
+
 #contact .contents .buttons .btn-web:hover {
-  background-color: #11375C;
-  color: #FFFEFE;
+  background-color: #11375c;
+  color: #fffefe
 }
+
 #contact .contents .buttons .btn-fb {
-  border-color: #3B5998;
-  color: #3B5998;
+  border-color: #3b5998;
+  color: #3b5998
 }
+
 #contact .contents .buttons .btn-fb::before {
-  content: "\f09a";
+  content: "";
   font-family: "FontAwesome";
-  margin-right: 40px;
+  margin-right: 40px
 }
+
 #contact .contents .buttons .btn-fb:hover {
-  background-color: #3B5998;
-  color: #FFFEFE;
+  background-color: #3b5998;
+  color: #fffefe
 }
+
 #contact .contents .buttons .btn-ig {
-  border-color: #D900B6;
-  color: #D900B6;
+  border-color: #d900b6;
+  color: #d900b6
 }
+
 #contact .contents .buttons .btn-ig::before {
-  content: "\f16d";
+  content: "";
   font-family: "FontAwesome";
-  margin-right: 40px;
+  margin-right: 40px
 }
+
 #contact .contents .buttons .btn-ig:hover {
-  background-color: #D900B6;
-  color: #FFFEFE;
+  background-color: #d900b6;
+  color: #fffefe
 }
+
 #contact .contents .buttons .btn-tw {
-  border-color: #0283C9;
-  color: #0283C9;
+  border-color: #0283c9;
+  color: #0283c9
 }
+
 #contact .contents .buttons .btn-tw::before {
-  content: "\f099";
+  content: "";
   font-family: "FontAwesome";
-  margin-right: 40px;
+  margin-right: 40px
 }
+
 #contact .contents .buttons .btn-tw:hover {
-  background-color: #0283C9;
-  color: #FFFEFE;
+  background-color: #0283c9;
+  color: #fffefe
 }
+
 #contact .contents .buttons .btn-wa {
-  border-color: #08B000;
-  color: #08B000;
+  border-color: #08b000;
+  color: #08b000
 }
+
 #contact .contents .buttons .btn-wa::before {
-  content: "\f232";
+  content: "";
   font-family: "FontAwesome";
-  margin-right: 40px;
+  margin-right: 40px
 }
+
 #contact .contents .buttons .btn-wa:hover {
-  background-color: #08B000;
-  color: #FFFEFE;
+  background-color: #08b000;
+  color: #fffefe
 }
+
 #contact .contents .buttons .btn-wa .text-small {
-  color: #9C9C9C;
-  font-size: 0.5em;
-  font-weight: 100;
+  color: #9c9c9c;
+  font-size: .5em;
+  font-weight: 100
 }
 
 #ikm {
-  background-color: #8DE0F6;
+  background-color: #8de0f6;
   padding: 10px 40px;
   height: 100vh;
-  width: 100%;
+  width: 100%
 }
+
 #ikm .mido {
-  position: relative;
+  position: relative
 }
+
 #ikm .mido::before {
   content: url("../vectors/mido.svg");
   position: absolute;
   left: 40px;
-  top: 200px;
+  top: 200px
 }
+
 #ikm .mido .ballon {
   position: absolute;
   top: 0;
-  left: 450px;
+  left: 450px
 }
+
 #ikm .mido .ballon::before {
   content: url("../vectors/ballon.svg");
-  position: absolute;
+  position: absolute
 }
+
 #ikm .mido .ballon .ballon-text {
   position: absolute;
   top: 60px;
   left: 60px;
-  width: 748px;
+  width: 748px
 }
+
 #ikm .mido .ballon .ballon-text h4 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
+
 #ikm .mido .ballon .ballon-text p {
-  font-size: 1.9em;
+  font-size: 1.9em
 }
+
 #ikm .qr-ikm {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100%
 }
+
 #ikm .qr-ikm .qr-box {
   width: 400px;
   height: 400px;
   padding: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #000;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 body {
   font-size: 16px;
-  color: white;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
-  background: black;
+  background: #000
 }
 
 .busi {
   position: relative;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
+
 .busi .busi-c-header {
   height: 120px;
   padding: 0 40px;
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 5
 }
+
 .busi .busi-c-header .app-brand {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin: 0;
+  margin: 0
 }
+
 .busi .fullpage-wraper {
   height: 100vh;
   position: relative;
   touch-action: none;
   transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.1) 0s;
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px)
 }
+
 .busi .fullpage-wraper .section {
   margin: 0;
   padding: 0;
@@ -1139,24 +1309,27 @@ body {
   font: inherit;
   font-size: inherit;
   font-size: 100%;
-  height: 100%;
+  height: 100%
 }
+
 .busi .fullpage-wraper .section .the-overlay {
   position: absolute;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5);
   width: 100%;
   top: 0;
-  z-index: 40;
+  z-index: 40
 }
+
 .busi .fullpage-wraper .section .overlay-wrap {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 40;
+  z-index: 40
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container {
   width: 100%;
   padding: 0px 20px;
@@ -1164,8 +1337,9 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-  height: 100%;
+  height: 100%
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container .box-in-lead {
   position: absolute;
   top: calc(50% + 40px);
@@ -1173,36 +1347,40 @@ body {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: calc(100% - 40px);
-  color: white;
+  color: #fff
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container .box-in-lead .top-title {
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 7px;
   font-family: "Fjalla One", sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container .box-in-lead .lead-title {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container .box-in-lead .text-preview {
   max-height: 56px;
   max-width: 80%;
   font-weight: 300;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
   max-height: 108px;
-  overflow: hidden;
+  overflow: hidden
 }
+
 .busi .fullpage-wraper .section .overlay-wrap .container .box-in-lead .visit-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.64);
+  color: rgba(255, 255, 255, .64);
   padding: 10px 2px 10px 10px;
   font-size: 14px;
   vertical-align: middle;
-  border: 1px solid rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(255, 255, 255, .64);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 9px;
@@ -1210,15 +1388,17 @@ body {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
-  font-family: "lato", sans-serif;
+  font-family: "lato", sans-serif
 }
+
 .busi .fullpage-wraper .section .bg-slide {
-  height: 100%;
+  height: 100%
 }
+
 .busi .fullpage-wraper .section .bg-slide .on-background {
   height: 100%;
   width: 100%;
-  background-size: cover !important;
+  background-size: cover !important
 }
 
 .header {
@@ -1233,16 +1413,18 @@ body {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  background: rgba(167, 220, 255, 0.53);
-  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.29);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.29);
-  z-index: 10;
+  background: rgba(167, 220, 255, .53);
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .29);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .29);
+  z-index: 10
 }
+
 .header .logo {
   padding: 5px;
   text-align: left;
-  position: relative;
+  position: relative
 }
+
 .header .logo .logo-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,82 +1436,97 @@ body {
   color: #fff;
   letter-spacing: 2px;
   -webkit-transition: none;
-  transition: none;
+  transition: none
 }
+
 .header .logo .logo-title .title-text {
-  font-family: Black Ops One, cursive;
-  line-height: 1;
+  font-family: #000 Ops One, cursive;
+  line-height: 1
 }
+
 .header .logo .logo-title .color-pry {
-  color: #11375C;
+  color: #11375c
 }
+
 .header .logo .logo-title .color-thr {
-  color: #FBAF17;
+  color: #fbaf17
 }
+
 .header .logo .logo-title .block-logo {
   float: left;
   border-left: 1px solid #fff;
   padding-left: 10px;
   margin-top: 3px;
-  margin-left: 10px;
+  margin-left: 10px
 }
+
 .header .logo .logo-title .block-logo .title-break {
   text-transform: uppercase;
   display: block;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 10px
 }
 
 .header--fixed {
   position: fixed;
-  top: 0;
+  top: 0
 }
 
 .gallery {
   position: relative;
-  width: 100%;
+  width: 100%
 }
+
 .gallery .gal-slider {
   width: 100%;
   height: 75vh;
-  background-color: red;
+  background-color: red
 }
+
 .gallery .gal-main {
-  position: relative;
+  position: relative
 }
+
 .gallery .gal-main .__header {
   margin: 0 40px;
-  padding: 20px 0;
+  padding: 20px 0
 }
+
 .gallery .gal-main .__body {
   position: relative;
-  margin: 0 40px;
+  margin: 0 40px
 }
+
 .gallery .gal-main .__c-main {
   width: auto;
   max-width: none;
   float: none;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
+
 .gallery .gal-main .__c-main .__grid-container {
   position: relative;
   display: grid;
   grid-gap: 36px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  overflow: hidden;
+  overflow: hidden
 }
+
 .gallery .gal-main .__c-main .__grid-container .__grid-item {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
+  cursor: pointer
 }
-.gallery .gal-main .__c-main .__grid-container .__grid-item:hover > .__c-desc {
-  display: block;
+
+.gallery .gal-main .__c-main .__grid-container .__grid-item:hover>.__c-desc {
+  display: block
 }
+
 .gallery .gal-main .__c-main .__grid-container .__grid-item img {
-  width: 100%;
+  width: 100%
 }
+
 .gallery .gal-main .__c-main .__grid-container .__grid-item .__c-desc {
   transition: ease-in-out 300ms;
   position: absolute;
@@ -1337,112 +1534,131 @@ body {
   display: none;
   padding: 20px 10px;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.905));
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.905))
 }
+
 .gallery .c-view-album {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: hidden
 }
+
 .gallery .c-view-album .overlay-bg {
-  transition: opacity 0.15s linear;
-  background-color: rgba(0, 0, 0, 0.814);
+  transition: opacity .15s linear;
+  background-color: rgba(0, 0, 0, .814);
   height: 100%;
-  width: 100%;
+  width: 100%
 }
+
 .gallery .c-view-album .c-album-main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%
 }
+
 .gallery .c-view-album .c-album-main .viewer-header {
   position: relative;
-  background-color: #000000;
+  background-color: #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 5px 20px
 }
+
 .gallery .c-view-album .c-album-main .viewer-header .tools {
-  position: relative;
+  position: relative
 }
+
 .gallery .c-view-album .c-album-main .viewer-header .tools .btn-img {
   background-color: #123;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   padding: 5px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 @keyframes float-nav-single {
   0% {
     opacity: 0;
-    bottom: 0;
+    bottom: 0
   }
+
   100% {
     opacity: 1;
-    bottom: 20px;
+    bottom: 20px
   }
 }
+
 @keyframes c-header {
   0% {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(20%)
   }
+
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0)
   }
 }
+
 @keyframes modal-show {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(50px)
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
   }
 }
+
 @keyframes modal-full-show {
   0% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100%)
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
   }
 }
+
 @keyframes modal-full-header {
   0% {
     opacity: 0;
-    top: -260px;
+    top: -260px
   }
+
   100% {
     opacity: 1;
-    top: -130px;
+    top: -130px
   }
 }
+
 @keyframes step-image {
   0% {
     opacity: 0;
-    top: 100%;
+    top: 100%
   }
+
   100% {
     opacity: 1;
-    top: 50%;
+    top: 50%
   }
 }
+
 .d-header {
-  position: absolute;
+  position: absolute
 }
 
 .c-header {
@@ -1451,46 +1667,51 @@ body {
   left: 0;
   width: 100%;
   height: 130px;
-  background-color: #A7DCFF;
+  background-color: #a7dcff;
   z-index: 1000;
   display: flex;
-  overflow: hidden;
+  overflow: hidden
 }
+
 .c-header .office {
   position: relative;
   min-width: 300px;
   width: 300px;
   height: 100%;
-  background-color: #A7DCFF;
+  background-color: #a7dcff;
   display: flex;
-  padding: 0 30px;
+  padding: 0 30px
 }
+
 .c-header .office .logo {
   width: 100px;
   height: 90px;
-  align-self: center;
+  align-self: center
 }
+
 .c-header .title {
   position: relative;
   opacity: 0;
   height: 100%;
-  background-color: #11375C;
+  background-color: #11375c;
   width: 100%;
   display: inline-flex;
   align-items: center;
-  animation: c-header 800ms ease-in-out forwards;
+  animation: c-header 800ms ease-in-out forwards
 }
+
 .c-header .title::before {
   content: url("../vectors/header.png");
   margin-left: -129px;
-  height: 130px;
+  height: 130px
 }
+
 .c-header .title h2 {
   font-size: 3.5em;
-  color: #FBAF17;
+  color: #fbaf17;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis
 }
 
 .float-menu {
@@ -1500,90 +1721,103 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  animation: float-nav-single 200ms ease-in 800ms forwards;
+  animation: float-nav-single 200ms ease-in 800ms forwards
 }
+
 .float-menu .nav-menus {
   height: 64px;
-  background-color: #F2F2F2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
   border: 1px solid #979797;
-  border-radius: 30px;
+  border-radius: 30px
 }
+
 .float-menu .nav-menus .nav-menu {
-  position: relative;
+  position: relative
 }
+
 .float-menu .nav-single {
   position: relative;
-  background-color: white;
+  background-color: #fff;
   height: 64px;
-  background-color: #F2F2F2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
   border-radius: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 40px;
-  cursor: pointer;
+  cursor: pointer
 }
+
 .float-menu .nav-single .nav-text {
   font-size: 1.6em;
-  margin-left: 20px;
+  margin-left: 20px
 }
+
 .float-menu .nav-single i {
   position: relative;
   width: 57px;
   height: 41px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
+
 .float-menu .nav-single .icon-dashboard {
-  background-image: url("../vectors/icon_dashboard.svg");
+  background-image: url("../vectors/icon_dashboard.svg")
 }
+
 .float-menu .nav-single .icon-back {
-  background-image: url("../vectors/icon_back.svg");
+  background-image: url("../vectors/icon_back.svg")
 }
+
 .float-menu .nav-single .text {
   margin-left: 15px;
-  font-size: 1.8em;
+  font-size: 1.8em
 }
 
 .modal-dialog {
   box-sizing: border-box;
   display: none;
-  color: black;
+  color: #000
 }
+
 .modal-dialog .overlay__modal {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, .85);
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
   top: 130px;
-  z-index: 1001;
+  z-index: 1001
 }
+
 .modal-dialog .overlay__modal-full {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, .85);
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1001;
+  z-index: 1001
 }
+
 .modal-dialog .modal-center {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
+
 .modal-dialog .modal-center .modal__container {
   position: relative;
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid #979797;
   border-radius: 50px;
   width: 1381px;
   height: 674px;
   overflow: hidden;
-  animation: modal-show 200ms ease-in both;
+  animation: modal-show 200ms ease-in both
 }
+
 .modal-dialog .modal-center .modal__container .close-btn {
   content: "+";
   position: absolute;
@@ -1592,174 +1826,206 @@ body {
   transform: translate(30%, -25%);
   padding: 30px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #fff;
   color: #000;
-  border: 1px solid #979797;
+  border: 1px solid #979797
 }
+
 .modal-dialog .modal-center .modal__container .modal__content {
   position: relative;
   height: calc(100% - 80px);
-  overflow: scroll;
+  overflow: scroll
 }
+
 .modal-dialog .modal-center .modal__container .modal__content p {
   position: absolute;
   top: 0;
   padding: 60px;
   font-size: 3em;
-  line-height: 1.5;
+  line-height: 1.5
 }
+
 .modal-dialog .modal-center .modal__container .modal__footer {
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
+
 .modal-dialog .modal-center .modal__container .modal__footer .btn {
   padding: 10px 20px;
   font-size: 1.5em;
   min-width: 200px;
   border: none;
-  background-color: #F3D10D;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f3d10d;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
   border-radius: 50px;
-  cursor: pointer;
+  cursor: pointer
 }
+
 .modal-dialog .modal-center .modal__container .modal__footer .btn:active {
-  opacity: 0.8;
+  opacity: .8
 }
+
 .modal-dialog .modal-center-75 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
+
 .modal-dialog .modal-center-75 .modal__container {
   position: relative;
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid #979797;
   border-radius: 50px;
   width: 75%;
   height: 75%;
   animation: modal-show 300ms ease-in 200ms both;
-  padding-top: 40px;
+  padding-top: 40px
 }
+
 .modal-dialog .modal-center-75 .modal__container .header {
-  position: relative;
+  position: relative
 }
+
 .modal-dialog .modal-center-75 .modal__container .header .with-btn-close {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #D8D8D8;
+  background: #d8d8d8;
   border: 1px solid #979797;
-  cursor: pointer;
+  cursor: pointer
 }
+
 .modal-dialog .modal-center-75 .modal__container .header .with-btn-close::after {
   content: url("../vectors/icon_close.svg");
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
+
 .modal-dialog .modal-center-75 .modal__container .header .with-btn-close::after:hover {
-  opacity: 0.5;
+  opacity: .5
 }
+
 .modal-dialog .modal-center-75 .modal__container .header .with-btn-close:active {
-  color: white;
+  color: #fff
 }
+
 .modal-dialog .modal-center-75 .modal__container .header .btn-float {
   position: absolute;
   top: -60px;
-  right: -20px;
+  right: -20px
 }
+
 .modal-dialog .modal-center-75 .modal__container .body {
   padding: 0 40px;
   height: calc(100% - 40px);
-  overflow: scroll;
+  overflow: scroll
 }
+
 .modal-dialog .modal-center-75 .modal__container .body .content {
   position: relative;
-  min-height: calc(100% - 140px);
+  min-height: calc(100% - 140px)
 }
+
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items {
   position: relative;
-  margin: 20px 0;
+  margin: 20px 0
 }
+
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items .item {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   font-size: 2em;
-  line-height: 1.3em;
+  line-height: 1.3em
 }
+
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items .item .label {
-  width: 300px;
+  width: 300px
 }
+
 .modal-dialog .modal-center-75 .modal__container .body .content .list-items .item .value {
-  width: 100%;
+  width: 100%
 }
+
 .modal-dialog .modal-center-margin-40px {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container {
   position: relative;
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid #979797;
   border-radius: 50px;
   width: calc(100% - 80px);
   height: 75%;
   animation: modal-show 300ms ease-in 200ms both;
-  padding-top: 40px;
+  padding-top: 40px
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header {
-  position: relative;
+  position: relative
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #D8D8D8;
+  background: #d8d8d8;
   border: 1px solid #979797;
-  cursor: pointer;
+  cursor: pointer
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close::after {
   content: url("../vectors/icon_close.svg");
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close::after:hover {
-  opacity: 0.5;
+  opacity: .5
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header .with-btn-close:active {
-  color: white;
+  color: #fff
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .header .btn-float {
   position: absolute;
   top: -60px;
-  right: -20px;
+  right: -20px
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .body {
   padding: 0 40px;
   height: 100%;
-  overflow: scroll;
+  overflow: scroll
 }
+
 .modal-dialog .modal-center-margin-40px .modal__container .body .content {
   position: relative;
-  min-height: calc(100% - 140px);
+  min-height: calc(100% - 140px)
 }
+
 .modal-dialog .modal-full {
   display: block;
-  padding-top: 130px;
+  padding-top: 130px
 }
+
 .modal-dialog .modal-full .modal__container {
   position: relative;
   background: #e0dfdf;
   border: 1px solid #979797;
   width: 100%;
   height: 100%;
-  animation: modal-full-show 200ms ease-in both;
+  animation: modal-full-show 200ms ease-in both
 }
+
 .modal-dialog .modal-full .modal__container .header {
   opacity: 0;
   position: fixed;
@@ -1769,15 +2035,17 @@ body {
   display: flex;
   align-items: center;
   z-index: 1002;
-  background-color: #11375C;
-  animation: modal-full-header 200ms ease-in 300ms forwards;
+  background-color: #11375c;
+  animation: modal-full-header 200ms ease-in 300ms forwards
 }
+
 .modal-dialog .modal-full .modal__container .header .title {
   font-size: 3em;
   font-weight: 700;
-  color: #FBAF17;
-  margin-left: 20px;
+  color: #fbaf17;
+  margin-left: 20px
 }
+
 .modal-dialog .modal-full .modal__container .header .with-btn-close {
   cursor: pointer;
   display: flex;
@@ -1787,74 +2055,83 @@ body {
   right: 30px;
   width: 60px;
   height: 60px;
-  background-color: white;
-  border-radius: 50%;
+  background-color: #fff;
+  border-radius: 50%
 }
+
 .modal-dialog .modal-full .modal__container .header .with-btn-close::after {
   content: url("../vectors/icon_close.svg");
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
+
 .modal-dialog .modal-full .modal__container .header .with-btn-close::after:hover {
-  opacity: 0.5;
+  opacity: .5
 }
+
 .modal-dialog .modal-full .modal__container .body {
   padding: 20px;
-  height: 100%;
+  height: 100%
 }
+
 .modal-dialog .modal-full .modal__container .body .content {
   position: relative;
-  height: calc(100% - 90px);
+  height: calc(100% - 90px)
 }
 
 .is-open {
-  display: block;
+  display: block
 }
 
 .notes {
   position: relative;
   border: 1px solid #979797;
   border-radius: 10px;
-  background-color: rgba(253, 177, 14, 0.295);
+  background-color: rgba(253, 177, 14, .295);
   padding: 20px;
   min-width: 300px;
-  max-width: 668px;
+  max-width: 668px
 }
+
 .notes p {
   text-align: justify;
   color: #5a5a5a;
-  font-size: 1.3em;
+  font-size: 1.3em
 }
+
 .notes .text-italic {
-  font-style: italic;
+  font-style: italic
 }
 
 ._btn-inline-ellipsis {
-  display: flex;
+  display: flex
 }
+
 ._btn-inline-ellipsis div {
   padding: 35px 150px;
   cursor: pointer;
   margin-bottom: 40px;
   border: 1px solid #979797;
   border-radius: 60px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   transition: background-color ease-in-out 100ms;
   font-size: 3.5em;
   font-weight: 500;
   display: inline;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap
 }
+
 ._btn-inline-ellipsis div:hover {
   color: #404040;
-  transition: color ease-in 200ms;
+  transition: color ease-in 200ms
 }
+
 ._btn-inline-ellipsis div:active {
-  background-color: #f2db56;
+  background-color: #f2db56
 }
 
 .btn-link {
@@ -1863,43 +2140,43 @@ body {
   font-weight: 500;
   border: 1px solid #979797;
   border-radius: 60px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   margin-bottom: 20px;
   cursor: pointer;
-  transition: background-color ease-in-out 100ms;
+  transition: background-color ease-in-out 100ms
 }
+
 .btn-link:hover {
   color: #404040;
-  transition: color ease-in 200ms;
+  transition: color ease-in 200ms
 }
+
 .btn-link:active {
-  background-color: #f2db56;
+  background-color: #f2db56
 }
 
 .btn-text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap
 }
 
 .pagination-nav-btn {
   border: 1px solid #979797;
   padding: 10px 20px;
   margin: 0 10px;
-  background-color: #F3D10D;
+  background-color: #f3d10d;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5)
 }
 
 .pagination-nav-prev {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .pagination-nav-next {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 700
 }
-
-/*# sourceMappingURL=sofifi.style.css.map */

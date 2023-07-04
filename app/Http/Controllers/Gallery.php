@@ -9,7 +9,7 @@ use App\Models\Galleries;
 class Gallery extends Controller
 {
     public function index() {
-        $data = $this->getAlbums();
+        $data = $this->getAlbums(); 
         return view('gallery')->with('albums', $data);
     }
 
@@ -30,5 +30,12 @@ class Gallery extends Controller
                 ->select('albums.name as nama_album', 'galleries.file_uri', 'galleries.description as deskripsi')
                 ->get();
         return $gal;
+    }
+
+    public function getAlbumContent($albumId) {
+        $data = [
+            'coba' => $albumId
+        ];
+        return response()->json($data);
     }
 }

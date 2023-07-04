@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('file_uri');
             $table->string('description');
+            $table->boolean('publish')->default(true);
             $table->unsignedBigInteger('album_id');
             $table->timestamps();
             $table->foreign('album_id')->references('id')->on('albums');

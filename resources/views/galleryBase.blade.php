@@ -15,5 +15,6 @@
 <body>
   @yield('Galleries')
   <script src="{{ asset('assets/js/sofifi-script.js') }}"></script>
+  @stack('bodyResouces')
 </body>
 </html>

@@ -55,7 +55,8 @@
 @endsection
 
 @push('bodyScript')
-<script src="{{ asset('assets/tinymce/js/tinymce/tinymce.min.js') }}"></script>
+{{-- <script src="{{ asset('assets/tinymce/js/tinymce/tinymce.min.js') }}"></script> --}}
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
 var editor_config = {
   content_css:"http://dev.local:8000/assets/css/style.css",
