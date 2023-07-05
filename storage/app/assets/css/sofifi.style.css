@@ -5,7 +5,10 @@
 }
 
 body {
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  background-image: url("../vectors/logoditjenim-lg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-full-single {
