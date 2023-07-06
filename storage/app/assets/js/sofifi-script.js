@@ -234,7 +234,7 @@ if (mpasSteps !== null) {
       */
       $buttons = "<input type='button' class='pagination-nav-btn pagination-nav-prev' value='&lt;&lt;' onclick='sort(" + ($cur - 1) + ")' " + $prevDis + ">";
     for ($i = 1; $i <= $pCount; $i++)
-      $buttons += "<input type='button' id='id" + $i + "'value='" + $i + "' onclick='sort(" + $i + ")' style='display:none'>";
+      $buttons += "<input type='button' style='display:none' id='id" + $i + "'value='" + $i + "' onclick='sort(" + $i + ")'>";
     $buttons += "<input type='button' class='pagination-nav-btn pagination-nav-next' value='&gt;&gt;' onclick='sort(" + ($cur + 1) + ")' " + $nextDis + ">";
     return $buttons;
   }
