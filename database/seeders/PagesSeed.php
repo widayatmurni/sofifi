@@ -1541,6 +1541,37 @@ class PagesSeed extends Seeder
                       <div class="body">
                         <!-- Content -->
                         <div class="content modal-content-itk">
+                          <div class="container-dropdown">
+                            <div class="dropdown">
+                              <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+                              <label for="filter-switch" class="dropdown__options-filter">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                  <li class="dropdown__filter-selected" aria-selected="true">
+                                    Default option
+                                  </li>
+                                  <li>
+                                    <ul class="dropdown__select">
+                                      <li class="dropdown__select-option" role="option">
+                                        Option 1
+                                      </li>
+                                      <li class="dropdown__select-option" role="option">
+                                        Option 2
+                                      </li>
+                                      <li class="dropdown__select-option" role="option">
+                                        Option 3
+                                      </li>
+                                      <li class="dropdown__select-option" role="option">
+                                        Option 4
+                                      </li>
+                                      <li class="dropdown__select-option" role="option">
+                                        Option 5
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>			
+                              </label>
+                            </div>
+                          </div>
                           <h3 class="title">Persyaratan Permohonan ITAS :</h3>
             
                           <div class="custom-select">
