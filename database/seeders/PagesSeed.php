@@ -1115,7 +1115,142 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Persyaratan
+                        <div class="alur-pembuatan-passport">
+                          <div class="kedatangan-pertama">
+                            <div class="step-header">
+                              <h2>Kedatangan Pertama</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Membawa berkas permohonan kepada petugas Customer Care untuk mendapatkan nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan berkas, verifikasi dan input data. petugas akan melakukan pengambilan foto, sidik jari dan
+                                    melakukan wawancara
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mendapatkan bukti tanda terima permohonan paspor
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Melakuan pembayaran melalui bank
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="kedatangan-kedua">
+                            <div class="step-header">
+                              <h2>Kedatangan Kedua</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mengambil nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan bukti tanda terima pembayaran kepada petugas loket pengambilan
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Terima dokumen yang telah jadi
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1130,7 +1265,142 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Persyaratan
+                        <div class="alur-pembuatan-passport">
+                          <div class="kedatangan-pertama">
+                            <div class="step-header">
+                              <h2>Kedatangan Pertama</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Membawa berkas permohonan kepada petugas Customer Care untuk mendapatkan nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan berkas, verifikasi dan input data. petugas akan melakukan pengambilan foto, sidik jari dan
+                                    melakukan wawancara
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mendapatkan bukti tanda terima permohonan paspor
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Melakuan pembayaran melalui bank
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="kedatangan-kedua">
+                            <div class="step-header">
+                              <h2>Kedatangan Kedua</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mengambil nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan bukti tanda terima pembayaran kepada petugas loket pengambilan
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Terima dokumen yang telah jadi
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1145,7 +1415,142 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Persyaratan
+                        <div class="alur-pembuatan-passport">
+                          <div class="kedatangan-pertama">
+                            <div class="step-header">
+                              <h2>Kedatangan Pertama</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Membawa berkas permohonan kepada petugas Customer Care untuk mendapatkan nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan berkas, verifikasi dan input data. petugas akan melakukan pengambilan foto, sidik jari dan
+                                    melakukan wawancara
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mendapatkan bukti tanda terima permohonan paspor
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Melakuan pembayaran melalui bank
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="kedatangan-kedua">
+                            <div class="step-header">
+                              <h2>Kedatangan Kedua</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mengambil nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan bukti tanda terima pembayaran kepada petugas loket pengambilan
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Terima dokumen yang telah jadi
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1160,7 +1565,142 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Persyaratan
+                        <div class="alur-pembuatan-passport">
+                          <div class="kedatangan-pertama">
+                            <div class="step-header">
+                              <h2>Kedatangan Pertama</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Membawa berkas permohonan kepada petugas Customer Care untuk mendapatkan nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan berkas, verifikasi dan input data. petugas akan melakukan pengambilan foto, sidik jari dan
+                                    melakukan wawancara
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mendapatkan bukti tanda terima permohonan paspor
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-4">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Melakuan pembayaran melalui bank
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="kedatangan-kedua">
+                            <div class="step-header">
+                              <h2>Kedatangan Kedua</h2>
+                            </div>
+                            <div class="step-container">
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Mengambil nomor antrian
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3" style="margin-right: 50px;">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Menyerahkan bukti tanda terima pembayaran kepada petugas loket pengambilan
+                                  </p>
+                                </div>
+                                <div class="arrow-wrap">
+                                  <div class="arrow">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="step step-3">
+                                <div class="step-pic">
+                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                </div>
+                                <div class="deskripsi">
+
+                                  <p class="buble">
+                                    Terima dokumen yang telah jadi
+                                  </p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
