@@ -756,7 +756,7 @@ class PagesSeed extends Seeder
                               <span class="text">Papor Biasa 48 Halaman</span>
                               <span class="price">
                                 <span class="unit">Rp.</span>
-                                <span class="value">350.000</span>
+                                <span class="value">500.000</span>
                               </span>
                             </div>
                           </td>
@@ -767,7 +767,7 @@ class PagesSeed extends Seeder
                               <span class="text">Papor Biasa 48 Halaman Elektronik</span>
                               <span class="price">
                                 <span class="unit">Rp.</span>
-                                <span class="value">350.000</span>
+                                <span class="value">650.000</span>
                               </span>
                             </div>
                           </td>
@@ -881,7 +881,7 @@ class PagesSeed extends Seeder
                             </div>
                             <div class="item">
                               <div class="label">Tarif</div>
-                              <div class="value">500.000</div>
+                              <div class="value">650.000</div>
                             </div>
                             <div class="item">
                               <div class="label">Deskripsi</div>
