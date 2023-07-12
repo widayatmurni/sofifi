@@ -26,7 +26,7 @@ class PagesSeed extends Seeder
                     <div class="header">
               
                       <div class="instansi">
-                        <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                        <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                         <div class="text">
                           <div class="kl">Kementerian Hukum dan HAM RI</div>
                           <div class="kantor">Kantor Imigrasi Kelas I TPI Ternate</div>
@@ -35,7 +35,7 @@ class PagesSeed extends Seeder
                       </div>
               
                       <div class="apps">
-                        <img class="app-brand" src="../sofifi/public/assets/vectors/logoapp.png" alt="app">
+                        <img class="app-brand" src="../public/assets/vectors/logoapp.png" alt="app">
                         <div class="names">
                           <div class="app-name">SOFIFI</div>
                           <div class="app-name-2">Sitem Operasi Interaktif Imigrasi</div>
@@ -137,7 +137,7 @@ class PagesSeed extends Seeder
                 'page' => '<main class="page-full-single">
                     <div class="c-header">
                       <div class="office">
-                        <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                        <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                       </div>
                       <div class="title">
                         <h2>Layanan Imigrasi Bagi Warga Negara Indonesia ( WNI )</h2>
@@ -200,7 +200,7 @@ class PagesSeed extends Seeder
                 'page' => '<main class="page-full-single">
                   <div class="c-header">
                     <div class="office">
-                      <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                      <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                     </div>
                     <div class="title">
                       <h2>Layanan Imigrasi Bagi Warga Negara Asing ( WNA )</h2>
@@ -255,7 +255,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single" style="background-image: url(../public/assets/vectors/passport-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: bottom;">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Definisi Paspor Republik Indonesia</h2>
@@ -289,7 +289,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Jenis Layanan Paspor RI</h2>
@@ -452,7 +452,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single" style="background-image: url(../public/assets/vectors/doc-persyaratan-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: center;">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Persyaratan Permohonan Paspor</h2>
@@ -516,23 +516,23 @@ class PagesSeed extends Seeder
                           <div class="persyaratans">
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-ektp.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-ektp.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi E-KTP</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Kartu Keluarga</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait img-rotate-1" src="../sofifi/public/assets/vectors/aktalahir.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-2" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-3" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-1" src="../public/assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
                             </div>
@@ -564,30 +564,30 @@ class PagesSeed extends Seeder
                           <div class="persyaratans">
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-ektp.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-ektp.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi E-KTP</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Kartu Keluarga</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Melampirkan Paspor lama</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait img-rotate-1" src="../sofifi/public/assets/vectors/aktalahir.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-2" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-3" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-1" src="../public/assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
                             </div>
@@ -621,30 +621,30 @@ class PagesSeed extends Seeder
                           <div class="persyaratans">
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-ektp.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-ektp.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi E-KTP</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Kartu Keluarga</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/suket-hilang.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/suket-hilang.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Surat Keterangan Kehilangan dari Kepolisian</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait img-rotate-1" src="../sofifi/public/assets/vectors/aktalahir.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-2" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-3" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-1" src="../public/assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
                             </div>
@@ -678,31 +678,31 @@ class PagesSeed extends Seeder
                           <div class="persyaratans">
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-ektp.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-ektp.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi E-KTP</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../sofifi/public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Kartu Keluarga</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait img-rotate-1" src="../sofifi/public/assets/vectors/suket.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-2" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-1" src="../public/assets/vectors/suket.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Surat Keterangan Serta Melampirkan Paspor lama</div>
                             </div>
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait img-rotate-1" src="../sofifi/public/assets/vectors/aktalahir.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-2" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
-                                <img class="img-potrait img-rotate-3" src="../sofifi/public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-1" src="../public/assets/vectors/aktalahir.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-2" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
+                                <img class="img-potrait img-rotate-3" src="../public/assets/vectors/ijazah.png" alt="E-KTP">
                               </div>
                               <div class="text-title">Fotokopi Akta Kelahiran / Ijazah / Surat Nikah (Tertera Nama Orang Tua)</div>
                             </div>
@@ -738,7 +738,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Tarif Layanan Imigrasi Bagi WNI</h2>
@@ -1064,7 +1064,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single" main class="page-full-single" style="background-image: url(../public/assets/vectors/alur-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: center; background-size: contain;">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Alur Proses Permohonan Paspor</h2>
@@ -1818,7 +1818,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Langkah Penggunaan Aplikasi M-Paspor</h2>
@@ -1839,7 +1839,7 @@ class PagesSeed extends Seeder
                                 <p>Instal aplikasi pada perangkat anda melalui Playstore untuk pengguna Android atau AppStore untuk pengguna IOS<p>
                               </div>
                             </td>
-                            <td><img src="../sofifi/public/assets/vectors/mpas_steps0.png"></td>
+                            <td><img src="../public/assets/vectors/mpas_steps0.png"></td>
                           </tr>
                           <tr>
                             <td>
@@ -1848,7 +1848,7 @@ class PagesSeed extends Seeder
                                 <p>Pemohon yang belum memiliki akun dapat membuat akun baru dengan memilih <strong>Daftar Akun</strong> kemudian mengisi data diri pada halaman Pendaftaran Akun. Aktivasi akun akan terhubung dengan email yang didaftarkan. Klik <strong>Aktivasi Akun Anda</strong> untuk melanjutkan. Selanjutnya, masuk ke aplikasi M-Paspor dengan megisikan alamat email dan sandi yang telah didaftarkan lalu klik <strong>Masuk</strong></p>
                               </div>
                             </td>
-                            <td><img src="../sofifi/public/assets/vectors/mpas_steps1.png"></td>
+                            <td><img src="../public/assets/vectors/mpas_steps1.png"></td>
                           </tr>
                           <tr>
                             <td>
@@ -1857,7 +1857,7 @@ class PagesSeed extends Seeder
                                 <p>Pilih <strong>Pengajuan Permohonan</strong>, kemudian <strong>Permohonan Paspor Reguler</strong>, Klik <strong>Lanjutkan</strong>. Pemohon harus mengisi data dengan benar. Pengisian data yang tidak benar mengakibatkan permohonan paspor anda ditolak dan pembayaran tidak dapat dikembalikan</p>
                               </div>
                             </td>
-                            <td><img src="../sofifi/public/assets/vectors/mpas_steps0.png"></td>
+                            <td><img src="../public/assets/vectors/mpas_steps0.png"></td>
                           </tr>
                           <tr>
                             <td>
@@ -1866,14 +1866,14 @@ class PagesSeed extends Seeder
                                 <p></p>
                               </div>
                             </td>
-                            <td><img src="../sofifi/public/assets/vectors/mpas_steps0.png"></td>
+                            <td><img src="../public/assets/vectors/mpas_steps0.png"></td>
                           </tr>
                         </table>
                       </div>
                     </div>
                     <div class="phone-skin-box">
                       <div class="content-img">
-                        <img src="../sofifi/public/assets/vectors/mpas_steps0.png">
+                        <img src="../public/assets/vectors/mpas_steps0.png">
                       </div>
                       <img src="/assets/vectors/phone-skin.svg">
                     </div>
@@ -1894,7 +1894,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Definisi Izin Tinggal Bagi Warga Negara Asing ( WNA )</h2>
@@ -2019,7 +2019,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single" style="background-image: url(../public/assets/vectors/persyaratan-wna-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: center; background-size: contain;">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Persyaratan Izin Tinggal Bagi Warga Negara Asing</h2>
@@ -2179,6 +2179,8 @@ class PagesSeed extends Seeder
                       <div class="body">
                         <!-- Content -->
                         <div class="content modal-content-itk">
+                          <h3 class="title" style="margin-bottom: 20px">Persyaratan Permohonan ITAP :</h3>
+
                           <div class="container-dropdown">
                             <div class="dropdown">
                               <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
@@ -2190,10 +2192,10 @@ class PagesSeed extends Seeder
                                   <li>
                                     <ul class="dropdown__select">
                                       <li class="dropdown__select-option" role="option">
-                                        Option 1
+                                        Bagi anak yang akan mengikuti atau menggabungkan diri dengan ayah dan/atau ibu pemegang Izin Tinggal Tetap
                                       </li>
                                       <li class="dropdown__select-option" role="option">
-                                        Option 2
+                                        Anak yang lahir di Wilayah Indonesia dari orang tua pemegang Izin Tinggal Tetap
                                       </li>
                                       <li class="dropdown__select-option" role="option">
                                         Option 3
@@ -2210,7 +2212,6 @@ class PagesSeed extends Seeder
                               </label>
                             </div>
                           </div>
-                          <h3 class="title">Persyaratan Permohonan ITAS :</h3>
             
                           <div class="custom-select">
                             <select>
@@ -2257,7 +2258,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Tarif Layanan Keimigrasian Bagi WNA</h2>
@@ -2306,7 +2307,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Tarif Layanan Visa</h2>
@@ -2721,7 +2722,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Tarif Layanan Keimigrasian</h2>
@@ -3815,7 +3816,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single" main class="page-full-single" style="background-image: url(../public/assets/vectors/alur-wna-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: center; background-size: contain;">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                     <h2>Alur Proses Layanan Keimigrasian Bagi WNA</h2>
@@ -3908,7 +3909,7 @@ class PagesSeed extends Seeder
               'page' => '<main class="page-full-single">
                 <div class="c-header">
                   <div class="office">
-                    <img class="logo" src="../sofifi/public/assets/vectors/logoditjenim.png" alt="logo">
+                    <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
                   </div>
                   <div class="title">
                   </div>
