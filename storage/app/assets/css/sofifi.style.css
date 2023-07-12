@@ -2174,7 +2174,8 @@ body {
 
 .modal-dialog .modal-full .modal__container .body {
   padding: 20px;
-  height: 100%
+  height: 100%;
+  overflow: scroll;
 }
 
 .modal-dialog .modal-full .modal__container .body .content {
@@ -2289,6 +2290,13 @@ body {
   overflow: scroll;
 }
 
+.kedatangan-1 {
+  background-color: lightcoral;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .kedatangan-pertama {
   background-color: orange;
   position: relative;
@@ -2313,6 +2321,7 @@ body {
 .step-container {
   display: flex;
   padding: 10px;
+  justify-content: center;
 }
 
 .step {
@@ -2341,12 +2350,14 @@ body {
 }
 
 .step-pic img {
-  height: calc(100%);
+  height: calc(100% - 150px);
 }
 
 .deskripsi {
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
 }
 
@@ -2355,7 +2366,7 @@ body {
   max-width: 30em;
   background-color: #fff;
   padding: 1.125em 1.5em;
-  font-size: 1.25em;
+  font-size: 0.8em;
   border-radius: 1rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
@@ -2394,8 +2405,8 @@ body {
   display: block;
   width: 1.5vw;
   height: 1.5vw;
-  border-bottom: 7px solid green;
-  border-right: 7px solid green;
+  border-bottom: 10px solid green;
+  border-right: 10px solid green;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
