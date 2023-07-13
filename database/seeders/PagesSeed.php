@@ -1123,7 +1123,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1142,7 +1142,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1162,7 +1162,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1181,7 +1181,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-3.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1200,7 +1200,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1219,7 +1219,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1238,7 +1238,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1273,7 +1273,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1292,7 +1292,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1312,7 +1312,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1331,7 +1331,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-3.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1350,7 +1350,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1369,7 +1369,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1388,7 +1388,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1420,7 +1420,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-person.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-person.png" alt="">
                                 </div>
                                 <div class="deskripsi">
                                   <p class="buble">
@@ -1438,7 +1438,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-bap.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-bap.png" alt="">
                                 </div>
                                 <div class="deskripsi">
                                   <p class="buble">
@@ -1455,7 +1455,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-bap.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-bap.png" alt="">
                                 </div>
                                 <div class="deskripsi">
                                   <p class="buble">
@@ -1472,7 +1472,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1491,7 +1491,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1511,7 +1511,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1530,7 +1530,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-4">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-3.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-3.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1549,7 +1549,7 @@ class PagesSeed extends Seeder
                             <div class="step-container">
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-1.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1568,7 +1568,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3" style="margin-right: 50px;">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1587,7 +1587,7 @@ class PagesSeed extends Seeder
                               </div>
                               <div class="step step-3">
                                 <div class="step-pic">
-                                  <img src="../assets/vectors/wni-alur-2.png" alt="">
+                                  <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                                 </div>
                                 <div class="deskripsi">
 
@@ -1619,7 +1619,7 @@ class PagesSeed extends Seeder
                         <div class="step-container">
                           <div class="step step-3" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-person.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-person.png" alt="">
                             </div>
                             <div class="deskripsi">
                               <p class="buble">
@@ -1637,7 +1637,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-3" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-bap.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-bap.png" alt="">
                             </div>
                             <div class="deskripsi">
                               <p class="buble">
@@ -1654,7 +1654,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-3" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-bap.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-bap.png" alt="">
                             </div>
                             <div class="deskripsi">
                               <p class="buble">
@@ -1671,7 +1671,7 @@ class PagesSeed extends Seeder
                         <div class="step-container">
                           <div class="step step-4" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-1.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1690,7 +1690,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-4" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-2.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1710,7 +1710,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-4" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-2.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1729,7 +1729,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-4">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-3.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-3.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1748,7 +1748,7 @@ class PagesSeed extends Seeder
                         <div class="step-container">
                           <div class="step step-3" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-1.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-1.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1767,7 +1767,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-3" style="margin-right: 50px;">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-2.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1786,7 +1786,7 @@ class PagesSeed extends Seeder
                           </div>
                           <div class="step step-3">
                             <div class="step-pic">
-                              <img src="../assets/vectors/wni-alur-2.png" alt="">
+                              <img src="../public/assets/vectors/wni-alur-2.png" alt="">
                             </div>
                             <div class="deskripsi">
 
@@ -1875,7 +1875,7 @@ class PagesSeed extends Seeder
                       <div class="content-img">
                         <img src="../public/assets/vectors/mpas_steps0.png">
                       </div>
-                      <img src="/assets/vectors/phone-skin.svg">
+                      <img src="../public/assets/vectors/phone-skin.svg">
                     </div>
                   </div>
                 </div>
@@ -2186,25 +2186,31 @@ class PagesSeed extends Seeder
                               <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
                               <label for="filter-switch" class="dropdown__options-filter">
                                 <ul class="dropdown__filter" role="listbox" tabindex="-1">
-                                  <li class="dropdown__filter-selected" aria-selected="true">
+                                  <li class="dropdown__filter-selected" aria-selected="true" id="default">
                                     Default option
                                   </li>
                                   <li>
                                     <ul class="dropdown__select">
-                                      <li class="dropdown__select-option" role="option">
+                                      <li id="1" class="dropdown__select-option" role="option">
                                         Bagi anak yang akan mengikuti atau menggabungkan diri dengan ayah dan/atau ibu pemegang Izin Tinggal Tetap
                                       </li>
-                                      <li class="dropdown__select-option" role="option">
+                                      <li id="2" class="dropdown__select-option" role="option">
                                         Anak yang lahir di Wilayah Indonesia dari orang tua pemegang Izin Tinggal Tetap
                                       </li>
-                                      <li class="dropdown__select-option" role="option">
-                                        Option 3
+                                      <li id="3" class="dropdown__select-option" role="option">
+                                        Orang Asing eks warga negara Indonesia
                                       </li>
-                                      <li class="dropdown__select-option" role="option">
-                                        Option 4
+                                      <li id="4" class="dropdown__select-option" role="option">
+                                        Anak berkewarganegaraan ganda yang memilih kewarganegaraan asing
                                       </li>
-                                      <li class="dropdown__select-option" role="option">
-                                        Option 5
+                                      <li id="5" class="dropdown__select-option" role="option">
+                                        Suami atau istri warga negara asing yang menggabungkan diri dengan istri atau suami warga negara Indonesia
+                                      </li>
+                                      <li id="6" class="dropdown__select-option" role="option">
+                                        Anak berkewarganegaraan asing dari hasil perkawinan yang sah yang menggabungkan diri dengan ayah atau ibu warga negara Indonesia
+                                      </li>
+                                      <li id="7" class="dropdown__select-option" role="option">
+                                        Anak dari Orang Asing yang kawin secara sah dengan warga negara Indonesia yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan dengan ayah atau ibu warga negara Indonesia
                                       </li>
                                     </ul>
                                   </li>
@@ -2212,29 +2218,70 @@ class PagesSeed extends Seeder
                               </label>
                             </div>
                           </div>
-            
-                          <div class="custom-select">
-                            <select>
-                              <option value="0">Orang Asing yang bekerja sebagai penanaman modal</option>
-                              <option value="1">Orang Asing yang bekerja sebagai tenaga ahli</option>
-                              <option value="2">Orang Asing yang bekerja sebagai rohaniawan</option>
-                              <option value="3">Orang Asing yang mengikuti pendidikan dan pelatihan</option>
-                              <option value="4">Orang Asing yang melakukan perkawinan campuran dan menggabungkan diri dengan suami
-                                atau istri Warga Negara Indonesia</option>
-                              <option value="5">Orang Asing yang menggabungkan diri dengan suami atau istri pemegang Izin Tinggal
-                                Terbatas</option>
-                              <option value="6">Anak berkewarganegaraan asing yang menggabungkan diri dengan orang tua yang
-                                mempunyai hubungan hukum kekeluargaan dengan orang tua warga Negara Indonesia</option>
-                              <option value="7">Anak yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan
-                                diri dengan orang tua pemegang Izin Tinggal Terbatas/option>
-                              <option value="8">Warga Negara Indonesia dalam rangka memperoleh kembali Kewarganegaraan Republik
-                                Indonesia berdasarkan ketentuan peraturan perundang-undangan</option>
-                              <option value="9"> eks Warga Negara Indonesia bukan dalam rangka memperoleh kembali Kewarganegaraan
-                                Indonesia, permohonan diajukan oleh penjamin dengan melampirkan juga dokumen resmi yang dikeluarkan
-                                oleh Instansi Pemerintah Republik Indonesia atau oleh Lembaga yang diakui oleh Pemerintah Republik
-                                Indonesia yang sah yang dapat membuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia
-                              </option>
-                            </select>
+
+                          <div class="container-persyaratan">
+                            <ul class="default-persyaratan">
+                              <li>Paspor kebangsaan yang sah dan masih berlaku
+                              </li>
+                              <li>Fotokopi Izin Tinggal terbatas yang masih berlaku kecuali bagi Orang Asing eks subyek anak berkewarganegaraan ganda Republik Indonesia yang memilih kewarganegaraan asing, anak yang lahir di Indonesia dari Orang Asing pemegang Izin Tinggal Tetap dan warga negara Indonesia yang kehilangan kewarganegaraan Indonesia di Wilayah Indonesia</li>
+                              <li>Surat keterangan domisili</li>
+                              <li>Pernyataan integrasi yang telah ditandatangani oleh yang bersangkutan</li>
+                              <li>Rekomendasi dari kementerian atau lembaga pemerintah nonkementerian terkait</li>
+                            </ul>
+                            <ul id="opt-1" class="option-persyaratan show-persyaratan">
+                              <li>Surat penjaminan dari Penjamin</li>
+                              <li>Fotokopi akta kelahiran</li>
+                              <li>Fotokopi akta perkawinanatau buku nikah orang tua</li>
+                              <li>Fotokopi paspor kebangsaanayah dan/atau ibu yang sah dan masih berlaku</li>
+                              <li>Fotokopi Izin Tinggal Tetap ayah dan/atau ibu yang masih berlaku</li>
+                              <li>Keputusan mengenai alih status Izin Tinggalnya</li>
+                            </ul>
+
+                            <ul id="opt-2" class="option-persyaratan">
+                              <li>Surat penjaminan dari Penjamin</li>
+                              <li>Fotokopi akta kelahiran</li>
+                              <li>Fotokopi akta perkawinanatau buku nikah orang tua</li>
+                              <li>Fotokopi paspor kebangsaanayah dan/atau ibu yang sah dan masih berlaku</li>
+                              <li>Fotokopi Izin Tinggal Tetap ayah dan/atau ibu yang masih berlaku</li>
+                            </ul>
+
+                            <ul id="opt-3" class="option-persyaratan">
+                              <li>Surat penjaminan dari Penjamin</li>
+                              <li>Fotokopi akta kelahiran</li>
+                              <li>Bukti yang menunjukan pernah menjadi warga negara Indonesia</li>
+                              <li>Keputusan mengenai alih status Izin Tinggalnya</li>
+                            </ul>
+
+                            <ul id="opt-4" class="option-persyaratan">
+                              <li>Surat permohonan dari ayah atau ibu warga negara Indonesia</li>
+                              <li>Fotokopi akta kelahiran</li>
+                              <li>Isian formulir penyampaian pernyataan memilih kewarganegaraan asing sesuai dengan ketentuan peraturan perundang-undangan
+                              </li>
+                              <li>Bukti pengembalian Paspor bagi yang memiliki; dan</li>
+                              <li>Bukti pengembalian affidavit</li>
+                            </ul>
+                            <ul id="opt-5" class="option-persyaratan">
+                              <li>Fotokopi akta perkawinan atau buku nikah</li>
+                              <li>Fotokopi surat melaporkan perkawinan dari instansi yang berwenang untuk perkawinan yang dilangsungkan di luar negeri</li>
+                              <li>Fotokopi kartu tanda penduduk suami atau isteri warga negara Indonesia yang masih berlaku</li>
+                              <li>Fotokopi kartu keluarga suami atau isteri yang warga negara Indonesia; dan</li>
+                              <li>Keputusan alih status</li>
+                            </ul>
+
+                            <ul id="opt-6" class="option-persyaratan">
+                              <li>Surat permohonan dari ayah atau ibu warga negara Indonesia</li>
+                              <li>Fotokopi kartu tanda penduduk ayah atau ibu yang warga negara Indonesia yang masih berlaku</li>
+                              <li>Fotokopi kartu keluarga ayah atau ibu yang warga negara Indonesia; dan</li>
+                              <li>Surat Keputusan alih status</li>
+                            </ul>
+
+                            <ul id="opt-7" class="option-persyaratan">
+                              <li>Surat permohonan dari ayah atau ibu warga negara Indonesia</li>
+                              <li>Fotokopi akta perkawinan atau buku nikah orang tua</li>
+                              <li>Fotokopi kartu tanda penduduk ayah atau ibu yang warga negara Indonesia yang masih berlaku</li>
+                              <li>Fotokopi kartu keluarga ayah atau ibu yang warga negara Indonesia; dan</li>
+                              <li>Surat Keputusan alih status</li>
+                            </ul>
                           </div>
             
                         </div>

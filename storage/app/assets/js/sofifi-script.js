@@ -249,3 +249,42 @@ if (mpasSteps !== null) {
 
 }
 
+// DROPDOWN
+// Change option selected
+const label = document.querySelector(".dropdown__filter-selected");
+const options = Array.from(
+  document.querySelectorAll(".dropdown__select-option"));
+
+
+options.forEach(option => {
+  option.addEventListener("click", (e) => {
+    label.textContent = option.textContent;
+    showPersyaratanItasItap(e.target.id)
+  });
+});
+
+// Close dropdown onclick outside
+document.addEventListener("click", e => {
+  const toggle = document.querySelector(".dropdown__switch");
+  const element = e.target;
+
+  if (element == toggle) return;
+
+  const isDropdownChild = element.closest(".dropdown__filter");
+
+  if (!isDropdownChild) {
+    toggle.checked = false;
+  }
+});
+
+// SHOWCLOSE MODAL DETAIL ITAS_ITAP
+function showPersyaratanItasItap(id) {
+  let oldSelection = document.querySelector('.show-persyaratan');
+  let newSelection = document.querySelector(`#opt-${id}`);
+  if (oldSelection !== null) {
+    oldSelection.classList.remove('show-persyaratan');
+  }
+  if (newSelection !== null) {
+    newSelection.classList.add('show-persyaratan');
+  }
+}
