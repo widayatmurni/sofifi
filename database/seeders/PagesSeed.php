@@ -2139,28 +2139,164 @@ class PagesSeed extends Seeder
                         <div class="content modal-content-itk">
                           <h3 class="title">Persyaratan Permohonan ITAS :</h3>
             
-                          <div class="custom-select">
-                            <select>
-                              <option value="0">Orang Asing yang bekerja sebagai penanaman modal</option>
-                              <option value="1">Orang Asing yang bekerja sebagai tenaga ahli</option>
-                              <option value="2">Orang Asing yang bekerja sebagai rohaniawan</option>
-                              <option value="3">Orang Asing yang mengikuti pendidikan dan pelatihan</option>
-                              <option value="4">Orang Asing yang melakukan perkawinan campuran dan menggabungkan diri dengan suami
-                                atau istri Warga Negara Indonesia</option>
-                              <option value="5">Orang Asing yang menggabungkan diri dengan suami atau istri pemegang Izin Tinggal
-                                Terbatas</option>
-                              <option value="6">Anak berkewarganegaraan asing yang menggabungkan diri dengan orang tua yang
-                                mempunyai hubungan hukum kekeluargaan dengan orang tua warga Negara Indonesia</option>
-                              <option value="7">Anak yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan
-                                diri dengan orang tua pemegang Izin Tinggal Terbatas/option>
-                              <option value="8">Warga Negara Indonesia dalam rangka memperoleh kembali Kewarganegaraan Republik
-                                Indonesia berdasarkan ketentuan peraturan perundang-undangan</option>
-                              <option value="9"> eks Warga Negara Indonesia bukan dalam rangka memperoleh kembali Kewarganegaraan
-                                Indonesia, permohonan diajukan oleh penjamin dengan melampirkan juga dokumen resmi yang dikeluarkan
-                                oleh Instansi Pemerintah Republik Indonesia atau oleh Lembaga yang diakui oleh Pemerintah Republik
-                                Indonesia yang sah yang dapat membuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia
-                              </option>
-                            </select>
+                          <div class="container-dropdown">
+                            <div class="dropdown">
+                              <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+                              <label for="filter-switch" class="dropdown__options-filter">
+                                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                                  <li class="dropdown__filter-selected" aria-selected="true" id="default">
+                                    Default option
+                                  </li>
+                                  <li>
+                                    <ul class="dropdown__select">
+                                      <li id="itas-1" class="dropdown__select-option" role="option">Bagi Orang Orang Asing yang bekerja sebagai penanaman modal, permohonan diajukan oleh Penjamin dengan melampirkan</li>
+                                      <li id="itas-2" class="dropdown__select-option" role="option">Bagi Orang Asing yang bekerja sebagai tenaga ahli, permohonan diajukan oleh Penjamin dengan melampirkan</li>
+                                      <li id="itas-3" class="dropdown__select-option" role="option">Bagi Orang Asing yang bekerja sebagai rohaniawan, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-4" class="dropdown__select-option" role="option">Bagi Orang Asing yang mengikuti pendidikan dan pelatihan, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-5" class="dropdown__select-option" role="option">Bagi Orang Asing yang melakukan perkawinan campuran dan menggabungkan diri dengan suami atau istri Warga Negara Indonesia, permohonan diajukan oleh suami atau istri orang asing yang bersangkutan sebagai penanggung jawab</li>
+                                      <li id="itas-6" class="dropdown__select-option" role="option">Bagi Orang Asing yang menggabungkan diri dengan suami atau istri pemegang Izin Tinggal Terbatas, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-7" class="dropdown__select-option" role="option">Bagi anak berkewarganegaraan asing yang menggabungkan diri dengan orang tua yang mempunyai hubungan hukum kekeluargaan dengan orang tua warga Negara Indonesia, permohonan diajukan oleh ayah dan/atau ibunya Warga Negara Indonesia sebagai penanggung jawab</li>
+                                      <li id="itas-8" class="dropdown__select-option" role="option">Bagi anak yang belum berusia 18 (delapan belas) tahun dan belum kawin yang menggabungkan diri dengan orang tua pemegang Izin Tinggal Terbatas, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-9" class="dropdown__select-option" role="option">Warga Negara Indonesia dalam rangka memperoleh kembali Kewarganegaraan Republik Indonesia berdasarkan ketentuan peraturan perundang-undangan, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-10" class="dropdown__select-option" role="option">Bagi anak eks berkewarganegaraan ganda Republik Indonesia permohonan diajukan oleh ayah dan/atau ibunya Warga Negara Indonesia atau penjamin</li>
+                                      <li id="itas-11" class="dropdown__select-option" role="option">Bagi wisatawan lanjut usia mancanegara, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-12" class="dropdown__select-option" role="option">Bagi wisatawan lanjut usia mancanegara, permohonan diajukan oleh penjamin</li>
+                                      <li id="itas-13" class="dropdown__select-option" role="option">Bagi anak dari Orang Asing yang kawin secara sah dengan Warga Negara Indonesia yang belum berusia 18 (delapan belas) tahun dan belum kawin dan menggabungkan dengan ayah atau ibu Warga Negara Indonesia, permohonan diajukan oleh ayah atau ibunya Warga Negara Indonesia sebagai penanggung jawab</li>
+                                    <li id="itas-14" class="dropdown__select-option" role="option">Bagi orang asing yang bekerja pada Instansi Pemerintah, Badan Internasional, atau perwakilan Negara asing, permohonan diajukan oleh penjamin</li>
+                                    <li id="itas-15" class="dropdown__select-option" role="option">Bagi orang asing yang bekerja sebagai tenaga ahli dalam rangka kerja sama teknik Pemerintah Republik Indonesia dan Pemerintah asing, permohonan diajukan oleh penjamin</li>
+                                    <li id="itas-16" class="dropdown__select-option" role="option">Bagi anak yang lahir diwilayah Indonesia yang mengikuti status Izin Tinggal orang tuanya pemegang Izin Tinggal Terbatas, permohonan diajukan ayah dan/atau ibunya</li>
+                                </ul>			
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="container-persyaratan">
+                            <ul class="default-persyaratan">
+                              <li>Paspor kebangsaan yang sah dan masih berlaku
+                              </li>
+                              <li>Fotokopi Izin Tinggal terbatas yang masih berlaku kecuali bagi Orang Asing eks subyek anak berkewarganegaraan ganda Republik Indonesia yang memilih kewarganegaraan asing, anak yang lahir di Indonesia dari Orang Asing pemegang Izin Tinggal Tetap dan warga negara Indonesia yang kehilangan kewarganegaraan Indonesia di Wilayah Indonesia</li>
+                              <li>Surat keterangan domisili</li>
+                              <li>Pernyataan integrasi yang telah ditandatangani oleh yang bersangkutan</li>
+                              <li>Rekomendasi dari kementerian atau lembaga pemerintah nonkementerian terkait</li>
+                            </ul>
+                            <ul id="opt-itas-1" class="option-persyaratan show-persyaratan">
+                              <li>Akte pendirian perusahaan yang memuat kepemilikan modal dan / atau saham dari Orang Asing yang ditanam di Indonesia</li>
+                              <li>Surat persetujuan penanaman modal dari lembaga negara yang membidangi penanaman modal</li>
+                              <li>Izin usaha tetap</li>
+                              <li>Surat Izin usaha perdagang</li>
+                              <li>Tanda daftar perusahaan</li>
+                              <li>Nomor pokok wajib pajak perusahaan</li>
+                            </ul>
+
+                            <ul id="opt-itas-2" class="option-persyaratan">
+                              <li>Rekomendasi rencana penggunaan tenaga kerja asing yang masih berlaku dan TA.01 dari Kementrian yang membidangi ketenagakerjaan</li>
+                              <li>Izin usaha tetap</li>
+                              <li>Surat izin usaha perdagangan</li>
+                              <li>Tanda daftar perusahaan</li>
+                              <li>Nomor pokok wajib pajak perusaha/li>
+                              <li>Akta pendirian perusah</li>
+                              <li>Bagi perpanjangan Ijin Tinggal Terbatas melampirkan IMTA</li>
+                            </ul>
+
+                            <ul id="opt-itas-3" class="option-persyaratan">
+                              <li>Rekomendasi dari Kementrian yang membidangi keagamaan</li>
+                              <li>Rekomendasi rencana penggunaan tenaga kerja asing yang masih berlaku dan TA.01 dari Kementrian yang membidangi ketenagakerjaan</li>
+                              <li>Akta pendirian yayasan atau lembaga kerohanian</li>
+                            </ul>
+
+                            <ul id="opt-itas-4" class="option-persyaratan">
+                              <li>Surat rekomendasi dari Kementrian yang membidangi pendidikan atau keagamaan atau lembaga pemerintah yang terkait sesuai dengan bidang kegiatannya</li>
+                              <li>Surat rekomendasi dari Sekretariat Negara bagi Orang Asing penerima beasiswa dari Pemerintah Republik Indonesia</li>
+                            </ul>
+                            <ul id="opt-itas-5" class="option-persyaratan">
+                              <li>Akta perkawinan atau buku nikah yang telah diterjemahkan dalam bahasa Indonesia oleh penerjemah tersumpah, kecuali bahasa Inggris</li>
+                              <li>Surat bukti lapor perkawinan dari kantor pencatatan sipil, dalam hal perkawinan dilangsungkan diluar negeri</li>
+                              <li>Rencana penggunaan tenaga kerja asing dari Kementrian yang membidangi ketenagakerjaan, dalam hal orang asing yang bersangkutan sebagai tenaga kerja asing</li>
+                            </ul>
+
+                            <ul id="opt-itas-6" class="option-persyaratan">
+                              <li>Akta perkawinan atau buku nikah yang telah diterjemahkan dalam bahasa Indonesia oleh penerjemah tersumpah, kecuali bahasa Inggris</li>
+                              <li>Kartu Izin Tinggal Terbatas atau kartu Izin Tinggal Tetap suami atau istri</li>
+                            </ul>
+
+                            <ul id="opt-itas-7" class="option-persyaratan">
+                              <li>Akte kelahiran yang bersangkutan yang telah diterjemahkan dalam bahasa Indonesia oleh penerjemah tersumpah, kecuali bahasa Inggris</li>
+                              <li>Fotokopi akta perkawinan atau buku nikah orang tua</li>
+                              <li>Akte perkawinan orang tua yang telah diterjemahkan dalam bahasa Indonesia oleh penerjemah tersumaph, kecuali bahasa Inggris</li>
+                              <li>Surat bukti lapor perkawinan dari Kantor Pencatatan Sipil, dalam hal perkawinan dilangsungkan diluar negri</li>
+                            </ul>
+
+                            <ul id="opt-itas-8" class="option-persyaratan">
+                              <li>Akta kelahiran yang bersangkutan yang telah diterjemahkan dalam bahasa Indonesia oleh penerjemah tersumpah, kecuali bahasa Inggris</li>
+                              <li>Akta perkawinan orang tua yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah kecuali Bahasa Inggris</li>
+                              <li>Kartu Izin Tinggal Terbatas atau Kartu Izin Tinggal Tetap ayau dan/atau ibun</li>
+                            </ul>
+
+                            <ul id="opt-itas-9" class="option-persyaratan">
+                              <li>Bukti keterangan dari Kepala Perwakilan Republik Indonesia tentang kehilangan Kewarganegaraan Indone</li>
+                              <li>ABukti berupa dokumen resmi yang dikeluarkan oleh instansi Pemerintah Republik Indonesia yang sah yang dapat memnuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia antara lain akta kelahiran, Kartu Tanda Penduduk, Paspor Republik Indonesia atau Ijazah</li>
+                            </ul>
+
+                            <ul id="opt-itas-10" class="option-persyaratan">
+                              <li>resmi yang dikeluarkan oleh Instansi Pemerintah Republik Indonesia atau oleh Lembaga yang diakui oleh Pemerintah Republik Indonesia yang sah yang dapat membuktikan bahwa yang bersangkutan adalah eks Warga Negara Indonesia antara lain akta kelahira, kartu tanda penduduk, paspor Republik Indonesia atau Ijazah.</li>
+                            </ul>
+
+                            <ul id="opt-itas-11" class="option-persyaratan">
+                              <li>Akta kelahiran yang bersangkutan yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris</li>
+                              <li>Akta perkawinan orang tua yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris;</li>
+                              <li>Bukti fasilitas Keimigrasian berupa kartu fasilitas Keimigrasian atau pengembalian Dokumen Keimigrasian</li>
+                            </ul>
+
+                            <ul id="opt-itas-12" class="option-persyaratan">
+                              <li>Akta kelahiran yang bersangkutan yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris</li>
+                              <li>Akta perkawinan orang tua yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris;</li>
+                              <li>Bukti fasilitas Keimigrasian berupa kartu fasilitas Keimigrasian atau pengembalian Dokumen Keimigrasian</li>
+                            </ul>
+
+                            <ul id="opt-itas-13" class="option-persyaratan">
+                              <li>Surat izin usaha perdagangan biro perjalanan wisata yang ditunjuk oleh Kementrian yang menyelenggarakan urusan Pemerintahan dibidang kepariwisataan.</li>
+                              <li>Bukti mengenai tersedianya dana untuk memenuhi kebutuhan hidupnya selama di Indonesia dari lembaga dana pensiun atau Bank di Negara asalnya ataupun di Wilayah Indonesia</li>
+                              <li>Bukti polis asuransi kesehatan, asuransi kematian;</li>
+                              <li>Bukti tinggal disarana akomodasi yang tersedia selama di Indonesia baik yang diperoleh dengan cara sewa, sewa beli, atau pembelian</li>
+                              <li>Bukti telah memperkerjakan tenaga informal warga negara Indonesia sebagai pramuwisma, supir, penjaga keamanan, atau pembelian</li>
+                              <li>Bukti telah memperkerjakan tenaga informal Warga Negara Indonesia sebagai pramuwisma, supir, penjaga keaamanan, atau tukang kebun</li>
+                            </ul>
+
+                            <ul id="opt-itas-14" class="option-persyaratan">
+                              <li>Surat izin usaha perdagangan biro perjalanan wisata yang ditunjuk oleh Kementrian yang menyelenggarakan urusan Pemerintahan dibidang kepariwisataan</li>
+                              <li>Bukti mengenai tersedianya dana untuk memenuhi kebutuhan hidupnya selama di Indonesia dari lembaga dana pensiun atau Bank di Negara asalnya ataupun di Wilayah Indonesia;</li>
+                              <li>Bukti polis asuransi kesehatan, asuransi kematian;</li>
+                              <li>Bukti tinggal disarana akomodasi yang tersedia selama di Indonesia baik yang diperoleh dengan cara sewa, sewa beli, atau pembelian</li>
+                              <li>Bukti telah memperkerjakan tenaga informal warga negara Indonesia sebagai pramuwisma, supir, penjaga keamanan, atau pembelian</li>
+                              <li>Bukti telah memperkerjakan tenaga informal Warga Negara Indonesia sebagai pramuwisma, supir, penjaga keaamanan, atau tukang kebun</li>
+                            </ul>
+
+                            <ul id="opt-itas-15" class="option-persyaratan">
+                              <li>Akta kelahiran yang bersangkutan yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris</li>
+                              <li>Akta perkawinan orang tua yang telah diterjemahkan dalam Bahasa Indonesia oleh penerjemah tersumpah, kecuali Bahasa Inggris</li>
+                              <li>Surat bukti lapor perkawinan dari Kantor Pencatatan Sipil, dalam hal perkawinan dilangsungkan diluar negri.</li>
+                            </ul>
+
+                            <ul id="opt-itas-16" class="option-persyaratan">
+                              <li>Rekomendasi dari Kementrian Sekretariat Negara</li>
+                              <li>Rekomendasi dari Kementrian atau Lembaga Pemerintah terkait.
+                              </li>
+                            </ul>
+
+                            <ul id="opt-itas-17" class="option-persyaratan">
+                              <li>Rekomendasi dari Kementrian Sekretariat Negara;</li>
+                              <li>Rekomendasi dari Kementrian atau Lembaga Pemerintah terkait
+                              </li>
+                            </ul>
+
+                            <ul id="opt-itas-16" class="option-persyaratan">
+                              <li>Surat keterangan kelahiran anak dari rumah sakit atau akta kelahiran dari pejabat yang berwenang</li>
+                              <li>Paspor Kebangsaan ayah dan/atau ibunya</li>
+                              <li>Kartu Izin Tinggal Terbatas ayah dan/atau ibunya;</li>
+                              <li>Surat kawin orang tua bagi yang menikah</li>
+                              <li>Surat keterangan lapor lahir yang dikeluarkan oleh Kantor Imigrasi</li>
+                            </ul>
+
                           </div>
             
                         </div>
