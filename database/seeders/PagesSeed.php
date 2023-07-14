@@ -2289,7 +2289,7 @@ class PagesSeed extends Seeder
                               </li>
                             </ul>
 
-                            <ul id="opt-itas-16" class="option-persyaratan">
+                            <ul id="opt-itas-18" class="option-persyaratan">
                               <li>Surat keterangan kelahiran anak dari rumah sakit atau akta kelahiran dari pejabat yang berwenang</li>
                               <li>Paspor Kebangsaan ayah dan/atau ibunya</li>
                               <li>Kartu Izin Tinggal Terbatas ayah dan/atau ibunya;</li>
@@ -4043,7 +4043,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        body
+                        
                       </div>
                     </div>
                   </div>
@@ -4058,7 +4058,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Body
+                        
                       </div>
                     </div>
                   </div>
@@ -4072,7 +4072,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        Body
+                        
                       </div>
                     </div>
                   </div>
