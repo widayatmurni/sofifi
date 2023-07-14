@@ -26,16 +26,15 @@ class Gallery extends Controller
     protected function getGallery($idAlbum)
     {
         $gal = Galleries::where('album_id', $idAlbum)
-                ->join('albums')
-                ->select('albums.name as nama_album', 'galleries.file_uri', 'galleries.description as deskripsi')
+                ->join('albums', 'albums.id', 'galleries.album_id')
+                ->select('albums.title as nama_album', 'albums.description as album_deskripsi', 'galleries.file_uri', 'galleries.description as deskripsi')
                 ->get();
         return $gal;
     }
 
     public function getAlbumContent($albumId) {
-        $data = [
-            'coba' => $albumId
-        ];
-        return response()->json($data);
+        $data = $this->getGallery($albumId);
+        return view('galleryViewAlbum')->with('photos', $data);
     }
+
 }

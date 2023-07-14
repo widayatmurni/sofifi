@@ -53,8 +53,8 @@ Route::prefix('pages')->group(function () {
         // GALLERY
         Route::controller(Gallery::class)->group(function () {
             Route::prefix('gallery')->group(function () {
-                Route::get('/', 'index');
-                Route::get('/get-album-content/{idAlbum}', 'getAlbumContent');
+                Route::get('/', 'index')->name('gallery.album');
+                Route::get('/get-album-content/{idAlbum}', 'getAlbumContent')->name('get.album.content');
             });
         });
     
@@ -99,6 +99,7 @@ Route::prefix('admin')->group(function () {
             Route::get('/', 'getGalleries')->name('admin.gallery');
             Route::post('/create-album', 'createAlbum')->name('admin.create-album');
             Route::get('/album/{id}', 'getGalleryCollections')->name('admin.get-album');
+            Route::post('/add-photos-to-album', 'addPhotoToAlbum' )->name('admin.add-photo-to-album');
         });
 
     });

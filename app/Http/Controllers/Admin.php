@@ -90,9 +90,33 @@ class Admin extends Controller {
     }
 
     public function getGalleryCollections($idAlbum) {
-        $albumName = MAlbum::where('id', $idAlbum)->select('title')->first();
+        $albumName = MAlbum::where('id', $idAlbum)->select('title', 'id')->first();
         $colls = MGal::where('album_id', $idAlbum)->get();
         
-        return view('admin.pages.gallery_manage_collection', ['album_name' => $albumName, 'collections'=> $colls]);
+        return view('admin.pages.gallery_manage_collection', ['album' => $albumName, 'collections'=> $colls]);
+    }
+
+    public function addPhotoToAlbum(Request $request) {
+        $request->validate([
+            'filename' => 'required',
+            'filename.*' => 'mimes:doc,docx,PDF,pdf,jpg,jpeg,png|max:2000'
+        ]);
+        if ($request->hasfile('filename')) { 
+            $files = [];
+            foreach ($request->file('filename') as $file) {
+                if ($file->isValid()) {
+                    $filename = round(microtime(true) * 1000).'-'.str_replace(' ','-',$file->getClientOriginalName());
+                    $file->move(public_path('photos'), $filename);                    
+                    $files[] = [
+                        'file_uri' => $filename,
+                        'album_id' => $request->idAlbum,
+                    ];
+                }
+            }
+            MGal::insert($files);
+            return redirect()->back();
+        }else{
+            echo'Gagal';
+        }
     }
 }

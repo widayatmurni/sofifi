@@ -1,28 +1,32 @@
 @extends('galleryBase')
 
 @section('Galleries')
-<div class="gallery">
+<main class="gallery">
   <div class="gal-slider">
-    coba
+    <img src="{{ url(asset('assets/vectors/album-cover.png'))}}">
   </div>
   <div class="gal-main">
-    <div class="__header">headers</div>
+    <div class="__header">
+      <h2>Koleksi Album</h2>
+    </div>
     <div class="__body __c-main">
       <div class="__grid-container">
 
-        <div class="__grid-item" albumId="albumId-1">
-          <img src="../assets/vectors/gal-bg.png" alt="thumbs">
-          <div class="__c-desc">
-            <div class="title">Judul album pertama</div>
+        @foreach ($albums as $item)
+          
+          <div class="__grid-item __album" albumId="albumId-1">
+            <a href="{{ route('get.album.content', $item->id)}}" class="__album-thumb">
+              <div class="__thumb-prev __thumb-bk"></div>
+              <div class="__thumb-prev __thumb-fr"></div>
+            </a>
+            <div class="__album-desc">
+                <div class="__desc-boby">
+                    <div class="__desc-text">{{ $item->title }}</div>
+                </div>
+            </div>
           </div>
-        </div>
 
-        <div class="__grid-item" albumId="albumId-2">
-          <img src="../assets/vectors/gal-bg.png" alt="thumbs">
-          <div class="__c-desc">
-            <div class="title">Judul album kedua</div>
-          </div>
-        </div>
+        @endforeach
 
       </div>
     </div>
@@ -38,7 +42,15 @@
       </div>
     </div>
   </div>
-</div>
+
+  <div class="float-menu">
+    <div class="float-menu">
+      <a href="dashboard" class="nav-single">
+        <i class="icon-dashboard"></i>
+        <span class="nav-text">Dashboard</span>
+      </a>
+    </div>
+</main>
 @endsection
 
 @push('bodyResouces')
