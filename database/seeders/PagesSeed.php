@@ -252,7 +252,7 @@ class PagesSeed extends Seeder
               'title' => 'Definisi Paspor',
               'slug' => 'definition',
               'language_id' => 1,
-              'page' => '<main class="page-full-single" style="background-image: url(../public/assets/vectors/passport-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: bottom;">
+              'page' => '<main class="page-full-single" style="background-image: url(../assets/vectors/passport-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: bottom;">
                 <div class="c-header">
                   <div class="office">
                     <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">

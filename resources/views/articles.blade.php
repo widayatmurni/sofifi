@@ -24,12 +24,13 @@
                 </div>
             </div>
             <div class="bg-slide">
-                <img class="on-background" src="{{ $item->lead_bg }}" alt="" srcset="">
+                <img class="on-background" src="{{ url(asset('uploads/'.$item->lead_bg))}}" alt="" srcset="">
             </div>
             </div>
             
         @endforeach
 
+        
 {{--   
         <div class="section">
           <div class="the-overlay"></div>
@@ -54,7 +55,14 @@
           </div>
         </div> --}}
       </div>
-
+      
+      <div class="float-menu" style="scale: 0.6">
+        <div class="float-menu">
+          <a href="dashboard" class="nav-single">
+            <i class="icon-dashboard"></i>
+            <span class="nav-text">Dashboard</span>
+          </a>
+        </div>
     
 </main>
 @endsection 

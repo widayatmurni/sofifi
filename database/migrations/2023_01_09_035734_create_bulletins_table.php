@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('title');
             $table->boolean('publish')->nullable()->default(false);
-            $table->string('lead_bg')->default('assets/lead_bg.png');
+            $table->string('lead_bg')->default('lead_bg.png');
             $table->string('lead_title')->nullable();
             $table->string('lead_text')->nullable()->default('Resume berita');
             $table->longText('content');

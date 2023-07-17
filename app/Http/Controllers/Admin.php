@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use App\Http\Controllers\Language as CLang;
 use App\Models\Pages as MPage;
 use App\Models\Bulletins as MBulletin;
@@ -65,13 +67,40 @@ class Admin extends Controller {
 
     // BULLETINS
     public function getBulletins() {
-        $bulletins = MBulletin::get();
+        $bulletins = MBulletin::where('publish', TRUE)->get();
         return view('admin.pages.bulletin', ['bulletins' => $bulletins]);
     }
 
     public function addBulletin() {
-        $langs = $langs = (new CLang)->getLanguages();
+        $langs = (new CLang)->getLanguages();
         return view('admin.pages.bulletin_add', ['languages' => $langs]);
+    }
+
+    public function saveBulletin(Request $req) {
+        // validation
+
+        $field = [
+            'title' => $req->title,
+            'lead_title' => $req->lead_title,
+            'lead_text' => $req->lead_text,
+            'content' => $req->page,
+        ];
+        $file = $req->file('bg_image');
+        $slug = Str::replace(' ', '-', $req->title);
+        $exist = MBulletin::where('slug', $slug)->first();
+
+        if ($exist->isEmpty()) {
+            if ($file->isValid()){
+                $filename = round(microtime(true) * 1000).'-'.str_replace(' ','-',$file->getClientOriginalName());
+                $file->storeAs('uploads/', $filename);
+                $field = Arr::add($field, 'lead_bg', $filename);
+            }
+            MBulletin::insert($field);
+            return redirect()->back();
+        } else {
+            
+        }
+
     }
 
     // GALLERY

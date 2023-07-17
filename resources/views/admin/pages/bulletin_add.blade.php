@@ -5,7 +5,7 @@
 @extends('admin.layout')
 
 @push('headerScript')
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+{{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
 var editor_config = {
   content_css:"http://dev.local:8000/assets/css/style.css",
@@ -44,16 +44,15 @@ var editor_config = {
     });
   }
 };
-tinymce.init(editor_config);
+tinymce.init(editor_config); --}}
 @endpush
 
 @section('contents')
-<form action="{{ route('post-add-page')}}" method="post">
 <div class="d-flex justify-content-between mb-4">
   <div>
       <h4 class="card-title mb-0">Halaman Bulletin</h4>
   </div>
-  <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
+  {{-- <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       @php
           $firstLang = true
@@ -74,24 +73,66 @@ tinymce.init(editor_config);
 
 
     </div>
-  </div>
+  </div> --}}
 </div>
 
 <div class="my-4">
-  <div class="form-control mb-3">
+  <form class="form-control mb-3" action="{{ route('admin.create-bulletin')}}" method="post" enctype="multipart/form-data">
+    @csrf
     <div class="mb-3">
-      <label for="title" class="form-label">Judul Bulletin</label>
+      <label for="title" class="form-label">Title</label>
       <input type="text" name="title" id="title" class="form-control">
     </div>
+
+    <p>
+      <button class="btn btn-primary" type="button" data-coreui-toggle="collapse" data-coreui-target="#collapseLead" aria-expanded="false" aria-controls="collapseLead">
+        Pengaturan Lead
+      </button>
+    
+    </p>
+    <div class="collapse mb-4" id="collapseLead">
+      <div class="card card-body">
+
+        <div class="mb-3">
+          <label for="lead-title" class="form-label">Lead Title</label>
+          <input type="text" name="lead_title" id="lead-title" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="lead-text" class="form-label">Lead Text</label>
+          <textarea name="lead_text" id="lead-text" cols="10" rows="3" class="form-control"></textarea>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Background image</label>
+      <input class="form-control" type="file" id="formFile" name="bg_image">
+    </div>
+
     <div class="mb-3">
       <label for="page" class="form-label">Halaman</label>
-      <textarea name="page" id="page" cols="30" rows="10" class="form-control"></textarea>
+      <textarea name="page" id="page" cols="30" rows="20" class="form-control"></textarea>
+      <div class="valid-feedback d-block">
+        Buat halaman berita/buletin disini.
+      </div>
+  
     </div>
-    <div class="mb-3">
-      <button type="submit" class="btn btn-success">Simpan</button>
+
+    <div class="row">
+    <div class="mb-3 col-6">
+      <input type="submit" class="btn btn-success" value="Simpan"></input>
       <a href="" class="btn btn-outline-secondary">Batal</a>
     </div>
-  </div>
+    <div class="mb-3 col-6 text-end">
+      <a href="" class="btn btn-outline-secondary">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/free.svg#cil-link"></use>
+        </svg>
+      </a>
+    </div>
+
+  </form>
 </div>
 </form>
 @endsection

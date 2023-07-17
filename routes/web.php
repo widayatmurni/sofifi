@@ -92,6 +92,7 @@ Route::prefix('admin')->group(function () {
         Route::prefix('bulletin')->group(function() {
             Route::get('/', 'getBulletins')->name('admin.bulletin');
             Route::get('/add-page', 'addBulletin')->name('add-bulletin');
+            Route::post('/save-page', 'saveBulletin')->name('admin.create-bulletin');
         });
 
         // Gallery
