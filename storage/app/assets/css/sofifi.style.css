@@ -783,7 +783,8 @@ a {
   border-radius: 78px;
   margin: 0 5px;
   width: 498px;
-  height: 1001px
+  height: 1001px;
+  overflow: hidden;
 }
 
 #wni-mpas .container .phone-skin-box .content-img img {

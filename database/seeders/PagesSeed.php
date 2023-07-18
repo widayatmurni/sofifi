@@ -1848,7 +1848,7 @@ class PagesSeed extends Seeder
                                 <p>Pemohon yang belum memiliki akun dapat membuat akun baru dengan memilih <strong>Daftar Akun</strong> kemudian mengisi data diri pada halaman Pendaftaran Akun. Aktivasi akun akan terhubung dengan email yang didaftarkan. Klik <strong>Aktivasi Akun Anda</strong> untuk melanjutkan. Selanjutnya, masuk ke aplikasi M-Paspor dengan megisikan alamat email dan sandi yang telah didaftarkan lalu klik <strong>Masuk</strong></p>
                               </div>
                             </td>
-                            <td><img src="../public/assets/vectors/mpas_steps1.png"></td>
+                            <td><img src="../public/assets/vectors/mpas-1.png"></td>
                           </tr>
                           <tr>
                             <td>
@@ -1857,22 +1857,112 @@ class PagesSeed extends Seeder
                                 <p>Pilih <strong>Pengajuan Permohonan</strong>, kemudian <strong>Permohonan Paspor Reguler</strong>, Klik <strong>Lanjutkan</strong>. Pemohon harus mengisi data dengan benar. Pengisian data yang tidak benar mengakibatkan permohonan paspor anda ditolak dan pembayaran tidak dapat dikembalikan</p>
                               </div>
                             </td>
-                            <td><img src="../public/assets/vectors/mpas_steps0.png"></td>
+                            <td><img src="../public/assets/vectors/mpas-2.png"></td>
                           </tr>
                           <tr>
                             <td>
                               <div>
-                                <h3>Pemilihan Kantor Imigrasi Terdekat</h3>
-                                <p></p>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Setelah itu muncul pertanyaan untuk siapa paspor yang akan diajukan. Apabila paspor diajukan untuk dewasa, maka akan diminta untuk memfoto KTP pemohon. Namun apabila paspor diajukan untuk anak, maka akan diminta untuk memfoto KTP orang tua. Pemohon harus memfoto KTP yang diminta dengan menempatkan posisi KTP sesuai pada gambar</p>
                               </div>
                             </td>
-                            <td><img src="../public/assets/vectors/mpas_steps0.png"></td>
+                            <td><img src="../public/assets/vectors/mpas-3.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Selanjutnya, Anda akan diminta untuk mengisi data sesuai dengan data KTP yang telah diunggah untuk diverifikasi data. Pastikan seluruh ejaan Nama, Tanggal Lahir, dan NIK sama dengan KTP yang telah diunggah. Sistem akan menolak apabila terjadi perbedaan data yang dimasukan. Setelah selesai klik Lanjutkan dan anda akan diminta untuk mengisis data tujuan permohonan paspor</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-4.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Selanjutnya lengkapi data diri pemohon. Isi seluruh data dan unggah seluruh dokuman yang diminta dengan benar. Pastikan foto dokumen yang diunggah berkualitas baik dan mudah dibaca. Setelah mengisi dan mengunggah dokumen dengan benar, klik Lanjutkan.</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-5.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Selanjutnya isi data tambahan pemohon paspor. Pastikan data yang diisi sesuai dengan data yang telah diunggah sebelumnya. Data yang mengginakan (*) adalah data yang wajib diisi. Setelah selesai mengisi seluruh data dengan benar, klik Lanjutkan</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-6.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Setelah mengisi data dan Informasi dengan lengkap dan benar, pilih Kantor Imigrasi yang akan dituju untuk proses pengajuan permohonan paspor anda. Anda dapat memilih Kantor Imigrasi terdekat dengan lokasi anda.</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-7.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Selanjutnya, Anda dapat memilih tanggal dan waktu kedatangan sesuai dengan Kuota yang tersedia pada Kantor Imigrasi yang telah dipilih, Kmeudian klik Lanjut. Keterangan jumlah kuota yang tersedia akan tampil diatas tanggal pada layar. Pilihan jam kedatangan yang tersedia terletak pada option dibawah halaman kalender kuota</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-8.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pada tahap ini pengisian data telah selesai. Pemohon akan diingatkan kembali untuk mengisi data dengan benar, karena biaya yang sudah dibayarkan tidak bisa kembali apabila pemohon memberikan keterangan yang tidak benar. Jika seluruh data telah diisi dengan lengkap dan benar silahkan pilih Ya, Lanjutkan.</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-9.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pengajuan Permohonan telah berhasil tersimpan. Pemohon dapat kembali ke Halaman Utama untuk menlihat Kode Layanan, Kode QR, Kode Billing serta Tata cara pembayaran.</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-10.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pada Halaman Utama pemohon akan mendapatkan Kode Permohonan Pengajuan Paspor sekaligus Kode Billing yang dapat langsung dibayarkan</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-11.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pengajuan permohonan pembuatan paspor sudah selesai dilakukan. Pemohon akan mendapatkan nomor antrian pada Email yang telah didaftarkan. Selanjutnya pemohon harus datang ke Kantor Imigrasi pada hari dan tanggal yang telah ditentukan dengan membawa Dokumen Asli untuk melakukan perekaman biometrik dan wawancara</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-12.png"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <h3>Pengajuan Permohonan Paspor</h3>
+                                <p>Pemohon dapat merubah jadwal kedatangan pada halaman utama aplikasi M-Paspor. Perubahan jadawal hanya untuk permohonan yang telah selesai dibayarkan. Batas perubahan jadwal hanya 1 kali dan hanya 30 hari dari tanggal pembayaran pertama. Selain itu, pada halaman utama terdapat menu Riwayat, dimana Pemohon dapat melihat riwayat permohonan pengajuan Paspor yang telah diajukan.</p>
+                              </div>
+                            </td>
+                            <td><img src="../public/assets/vectors/mpas-13.png"></td>
                           </tr>
                         </table>
                       </div>
                     </div>
                     <div class="phone-skin-box">
-                      <div class="content-img">
+                      <div class="content-img" style="overflow: hidden">
                         <img src="../public/assets/vectors/mpas_steps0.png">
                       </div>
                       <img src="../public/assets/vectors/phone-skin.svg">
