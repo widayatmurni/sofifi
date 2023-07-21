@@ -4285,7 +4285,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        <img src="../assets/vectors/alur-itap.png"/>
+                        <img src="../assets/vectors/alur-itap.png" style="width: 100%"/>
                       </div>
                     </div>
                   </div>
