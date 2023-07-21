@@ -252,7 +252,7 @@ class PagesSeed extends Seeder
               'title' => 'Definisi Paspor',
               'slug' => 'definition',
               'language_id' => 1,
-              'page' => '<main class="page-full-single" style="background-image: url(../assets/vectors/passport-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: bottom;">
+              'page' => '<main class="page-full-single" style="background-image: url(../public/assets/vectors/passport-bg.png);background-repeat: no-repeat;background-position-x: left;background-position-y: bottom;">
                 <div class="c-header">
                   <div class="office">
                     <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
@@ -4134,7 +4134,7 @@ class PagesSeed extends Seeder
                       <div class="body">
                         <div class="step-container">
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="c-bubble-1 bubble-pos-top-right-abs">
                               <div class="bubble-1">
                                 <ul>
@@ -4152,7 +4152,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 <strong>Petugas Loket: </strong>
@@ -4173,7 +4173,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-wna-2.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-wna-2.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Saran: Pembayaran di awal melalui Bank/Pos persepsi untuk penerbitan Nomor Register Izin Tinggal Keimigrasian
@@ -4188,7 +4188,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-wna-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-wna-1.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Melakukan pengambilan data biometrik meliputi foto, tanda tangan, sidik jari dan melakukan wawancara.
@@ -4204,7 +4204,7 @@ class PagesSeed extends Seeder
                           </div>
 
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="c-bubble-2 bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Melakukan pemindahan dokumen berkas pemohon
@@ -4212,7 +4212,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Penyerahan Paspor kepada pemohon
@@ -4227,7 +4227,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Pendantangan perpanjangan ITK / VOA Oleh Kepala Kantor Imigrasi
@@ -4242,7 +4242,7 @@ class PagesSeed extends Seeder
                             </div>
                           </div>
                           <div class="step-wna step-4" style="margin-right: 50px;">
-                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <img class="alur-bg" src="../public/assets/vectors/alur-voa-1.jpg"/>
                             <div class="bubble-pos-btm-r-abs">
                               <div class="bubble-2">
                                 Menerakan Cap Perpanjangan ITK / VOA oleh Petugas
@@ -4271,7 +4271,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        <img src="../assets/vectors/alur-itas.png" style="width: 100%"/>
+                        <img src="../public/assets/vectors/alur-itas.png" style="width: 100%"/>
                       </div>
                     </div>
                   </div>
@@ -4285,7 +4285,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        <img src="../assets/vectors/alur-itap.png" style="width: 100%"/>
+                        <img src="../public/assets/vectors/alur-itap.png" style="width: 100%"/>
                       </div>
                     </div>
                   </div>
