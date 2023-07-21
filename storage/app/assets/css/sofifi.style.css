@@ -2462,6 +2462,90 @@ body {
   height: calc(100% - 150px);
 }
 
+.step-wna {
+  position: relative;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  margin-bottom: 120px;
+}
+
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alur-bg {
+  width: 100%;
+}
+
+.bubble-pos-top-right-abs {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
+.bubble-pos-btm-r-abs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c-bubble-1 {
+  perspective: 50em;
+}
+
+.bubble-1 {
+  position: relative;
+  padding: 1em;
+  border-radius: 0.25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  border: 2px solid #ffea00;
+}
+
+.bubble-1::before .bubble-1::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.bubble-1::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
+  background: #a8a8a8;
+}
+
+.bubble-2 {
+  position: relative;
+  padding: 1em;
+  border-radius: 0.25em;
+  /* transform: rotate(-4deg) rotateY(15deg); */
+  background: #629bdd;
+  border: 2px solid #ffea00;
+}
+
+.bubble-2::before .bubble-2::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.bubble-2::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  /* transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02); */
+  background: #a8a8a8;
+}
+
 .deskripsi {
   position: absolute;
   bottom: 0;
@@ -2501,13 +2585,40 @@ body {
   z-index: 1;
 }
 
+.arrow-wrap-bottom {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.arrow-wrap-left {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
+
 .arrow {
   /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  transform: rotate(270deg);
+  /* transform: rotate(270deg); */
   cursor: pointer;
+}
+
+.arrow-right {
+  transform: rotate(270deg);
+}
+
+.arrow-down {
+  transform: rotate(360deg);
+}
+
+.arrow-left {
+  transform: rotate(90deg);
 }
 
 .arrow span {

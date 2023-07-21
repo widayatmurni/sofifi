@@ -1132,12 +1132,11 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                   </div>
-
                                 </div>
                               </div>
                               <div class="step step-4" style="margin-right: 50px;">
@@ -1152,7 +1151,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1171,7 +1170,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1209,7 +1208,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1228,7 +1227,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1282,7 +1281,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1302,7 +1301,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1321,7 +1320,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1359,7 +1358,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1378,7 +1377,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1428,7 +1427,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1446,7 +1445,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1481,7 +1480,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1501,7 +1500,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1520,7 +1519,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1558,7 +1557,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1577,7 +1576,7 @@ class PagesSeed extends Seeder
                                   </p>
                                 </div>
                                 <div class="arrow-wrap">
-                                  <div class="arrow">
+                                  <div class="arrow arrow-right">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -1627,7 +1626,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1645,7 +1644,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1680,7 +1679,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1700,7 +1699,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1719,7 +1718,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1757,7 +1756,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -1776,7 +1775,7 @@ class PagesSeed extends Seeder
                               </p>
                             </div>
                             <div class="arrow-wrap">
-                              <div class="arrow">
+                              <div class="arrow arrow-right">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -4129,11 +4128,135 @@ class PagesSeed extends Seeder
                   <div class="overlay__modal-full modal-full with-btn-close">
                     <div class="modal__container">
                       <div class="header transparent">
-                        <h2 class="title">Permohonan ITK/VOA</h2>
+                        <h2 class="title">Alur Permohonan ITK/VOA</h2>
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        
+                        <div class="step-container">
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="c-bubble-1 bubble-pos-top-right-abs">
+                              <div class="bubble-1">
+                                <ul>
+                                  <li>Melakukan pendaftaran online di https://izintinggal.imigrasi.go.id</li>
+                                  <li>Membawa berkas permohonan serta printout pendaftaran online</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="arrow-wrap">
+                              <div class="arrow arrow-right">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                <strong>Petugas Loket: </strong>
+                                <ul>
+                                  <li>Memeriksa Kelengkapan Dokeumen</li>
+                                  <li>Entri data</li>
+                                  <li>Cetak Tanda Pembayaran</li>
+                                  <li>Pemeriksaan Cekal dan Keabsahan Data</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="arrow-wrap">
+                              <div class="arrow arrow-right">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-wna-2.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Saran: Pembayaran di awal melalui Bank/Pos persepsi untuk penerbitan Nomor Register Izin Tinggal Keimigrasian
+                              </div>
+                            </div>
+                            <div class="arrow-wrap">
+                              <div class="arrow arrow-right">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-wna-1.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Melakukan pengambilan data biometrik meliputi foto, tanda tangan, sidik jari dan melakukan wawancara.
+                              </div>
+                            </div>
+                            <div class="arrow-wrap-bottom">
+                              <div class="arrow arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="c-bubble-2 bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Melakukan pemindahan dokumen berkas pemohon
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Penyerahan Paspor kepada pemohon
+                              </div>
+                            </div>
+                            <div class="arrow-wrap arrow-wrap-left">
+                              <div class="arrow arrow-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Pendantangan perpanjangan ITK / VOA Oleh Kepala Kantor Imigrasi
+                              </div>
+                            </div>
+                            <div class="arrow-wrap arrow-wrap-left">
+                              <div class="arrow arrow-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="step-wna step-4" style="margin-right: 50px;">
+                            <img class="alur-bg" src="../assets/vectors/alur-voa-1.jpg"/>
+                            <div class="bubble-pos-btm-r-abs">
+                              <div class="bubble-2">
+                                Menerakan Cap Perpanjangan ITK / VOA oleh Petugas
+                              </div>
+                            </div>
+                            <div class="arrow-wrap arrow-wrap-left">
+                              <div class="arrow arrow-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -4148,7 +4271,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        
+                        <img src="../assets/vectors/alur-itas.png" style="width: 100%"/>
                       </div>
                     </div>
                   </div>
@@ -4162,7 +4285,7 @@ class PagesSeed extends Seeder
                         <div class="with-btn-close"></div>
                       </div>
                       <div class="body">
-                        
+                        <img src="../assets/vectors/alur-itap.png"/>
                       </div>
                     </div>
                   </div>
