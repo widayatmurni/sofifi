@@ -26,7 +26,7 @@ class PagesSeed extends Seeder
                     <div class="header">
               
                       <div class="instansi">
-                        <img class="logo" src="../public/assets/vectors/logoditjenim.png" alt="logo">
+                        <img class="logo" src="./public/assets/vectors/logoditjenim.png" alt="logo">
                         <div class="text">
                           <div class="kl">Kementerian Hukum dan HAM RI</div>
                           <div class="kantor">Kantor Imigrasi Kelas I TPI Ternate</div>
@@ -35,7 +35,7 @@ class PagesSeed extends Seeder
                       </div>
               
                       <div class="apps">
-                        <img class="app-brand" src="../public/assets/vectors/logoapp.png" alt="app">
+                        <img class="app-brand" src="./public/assets/vectors/logoapp.png" alt="app">
                         <div class="names">
                           <div class="app-name">SOFIFI</div>
                           <div class="app-name-2">Sitem Operasi Interaktif Imigrasi</div>
@@ -45,7 +45,7 @@ class PagesSeed extends Seeder
                     </div>
               
                     <div class="contents">
-                      <video class="vid-player" src="../public/assets/cobas.mov" autoplay />
+                      <video class="vid-player" src="./public/assets/cobas.mov" autoplay />
                     </div>
               
                     <div class="float-nav">
@@ -67,7 +67,7 @@ class PagesSeed extends Seeder
               
                         <div class="nav-btn nav-language">
                           <span class="text">ID</span>
-                          <img class="flag" src="../public/assets/icons/flag_id.svg" alt="flag">
+                          <img class="flag" src="./public/assets/icons/flag_id.svg" alt="flag">
                         </div>
               
                         <a href="/sofifi/pages/wni-menu" class="nav-btn nav-item">
@@ -96,28 +96,28 @@ class PagesSeed extends Seeder
               
                             <div class="language-item" data-href="pages/set-lang/id">
                               <div class="c-flag">
-                                <img class="flag" src="../public/assets/icons/flag_id.svg" alt="id">
+                                <img class="flag" src="./public/assets/icons/flag_id.svg" alt="id">
                               </div>
                               <div class="text">Indonesia</div>
                             </div>
               
                             <div class="language-item" data-href="pages/set-lang/en">
                               <div class="c-flag">
-                                <img class="flag" src="../public/assets/icons/flag_us.svg" alt="us">
+                                <img class="flag" src="./public/assets/icons/flag_us.svg" alt="us">
                               </div>
                               <div class="text">Inggris</div>
                             </div>
               
                             <div class="language-item" data-href="pages/set-lang/ch">
                               <div class="c-flag">
-                                <img class="flag" src="../public/assets/icons/flag_ch.svg" alt="ch">
+                                <img class="flag" src="./public/assets/icons/flag_ch.svg" alt="ch">
                               </div>
                               <div class="text">China</div>
                             </div>
               
                             <div class="language-item" data-href="pages/set-lang/ko">
                               <div class="c-flag">
-                                <img class="flag" src="../public/assets/icons/flag_ko.svg" alt="ko">
+                                <img class="flag" src="./public/assets/icons/flag_ko.svg" alt="ko">
                               </div>
                               <div class="text">Korea Selatan</div>
                             </div>
