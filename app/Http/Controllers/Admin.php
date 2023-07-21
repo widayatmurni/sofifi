@@ -87,7 +87,7 @@ class Admin extends Controller {
         ];
         $file = $req->file('bg_image');
         $slug = Str::replace(' ', '-', $req->title);
-        $exist = MBulletin::where('slug', $slug)->first();
+        $exist = MBulletin::where('slug', $slug)->get();
 
         if ($exist->isEmpty()) {
             if ($file->isValid()){

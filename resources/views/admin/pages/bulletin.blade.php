@@ -48,7 +48,7 @@
             <tr>
                 <th scope="col" class="text-center" width="40">#</th>
                 <th scope="col" class="" width="">Halaman</th>
-                <th scope="col" class="text-center" width="85"></th>
+                <th scope="col" class="text-center" width="100"></th>
             </tr>
         </thead>
         <tbody>
@@ -56,8 +56,14 @@
             @foreach ($bulletins as $item)
               <tr>
                   <th class="text-center" scope="col">#</th>
-                  <td>Title</td>
+                  <td>{{$item->title}}</td>
                   <td>
+                      <a href="{{ route('bulletin.read', $item->slug )}}" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Lihat" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="../assets/icons/free.svg#cil-eye"></use>
+                          </svg>
+                            
+                      </a>
                       <a href="" type="button" class="btn btn-ghost-success btn-sm" data-coreui-toggle="tooltip" title="Edit">
                           <svg class="icon">
                             <use xlink:href="../assets/icons/free.svg#cil-pencil"></use>
