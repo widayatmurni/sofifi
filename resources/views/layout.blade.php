@@ -15,6 +15,6 @@
 </head>
 <body>
   @yield('pageContent')
-  <script src="{{ url(asset('assets/js/sofifi-script.js')) }}"></script>
+  <script src="{{ url(asset('public/assets/js/sofifi-script.js')) }}"></script>
 </body>
 </html>
