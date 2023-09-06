@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Language as CLang;
 use App\Models\Pages as MPage;
 use App\Models\Bulletins as MBulletin;
 use App\Models\Albums as MAlbum;
 use App\Models\Galleries as MGal;
+use App\Models\User as MUser;
 
 class Admin extends Controller {
     public function index() {
@@ -19,6 +21,48 @@ class Admin extends Controller {
 
     public function getLogin() {
         return view('admin.login');
+    }
+
+    public function cekLogin(Request $request){
+        $credentials = $request->validate([
+            'email' => 'required',
+            'password' => 'required'
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+ 
+            return redirect()->intended('admin/sofifi');
+        }
+
+        return back()->withErrors('username dan password tidak sesusi.');
+
+    }
+
+    public function logout() {
+        Auth::logout();
+        return redirect()->route('admin.login');
+    }
+
+    public function managedAccount() {
+        $usr = MUser::where('id', Auth::id())->get(['name', 'email']);
+        return view('admin.pages.manage_account')->with(['user' => $usr]);
+    }
+
+    public function updateAccount(Request $request) {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required|confirmed',
+            'password_confirmation' => 'required'
+        ]);
+        
+        $usr = MUser::find(Auth::id());
+        $usr->name = $request->name;
+        $usr->email = $request->email;
+        $usr->password = bcrypt($request->password);
+        $usr->update();
+        return redirect()->back()->with('status', 'Berhasil di update.');
     }
 
     public function getAddPage() {

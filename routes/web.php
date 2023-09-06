@@ -70,7 +70,17 @@ Route::prefix('pages')->group(function () {
 
 
 // ADMIN
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->group(function() {
+    Route::controller(Admin::class)->group(function () {
+        // LOGIN
+        Route::get('/login', 'getLogin')->name('admin.login');
+        Route::post('/login', 'cekLogin')->name('cek-login');
+        Route::get('/logout', 'logout')->name('admin.logout');
+
+    });
+});
+
+Route::middleware('auth')->prefix('admin')->group(function () {
     Route::controller(PageController::class)->group(function () {
         Route::get('/post', function() {
             return view('admin/postpage');
@@ -81,12 +91,16 @@ Route::prefix('admin')->group(function () {
     Route::controller(Admin::class)->group(function () {
         Route::get('/', 'index');
         Route::get('/sofifi', 'index')->name('admin.sofifi');
-        Route::get('/login', 'getLogin');
         Route::get('/add-page', 'getAddPage')->name('add-page');
         Route::get('/edit-page/{slug}/{lang?}', 'getEditPage')->name('edit-page');
         Route::get('/generate-page/{slug}/{lang_id}', 'generateNewPage')->name('generateNewPage');
         Route::post('/post-add-page', 'create_page')->name('post-add-page');
-
+        
+        // USERS
+        Route::prefix('account')->group( function() {
+            Route::get('/manage', 'managedAccount')->name('admin.managed-acount');
+            Route::post('/update-account', 'updateAccount')->name('admin.update-account');
+        });
 
         // BUlletin
         Route::prefix('bulletin')->group(function() {

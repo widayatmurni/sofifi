@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             LanguageTableSeeder::class,
             PagesSeed::class,
+            users::class,
         ]);
     }
 }
