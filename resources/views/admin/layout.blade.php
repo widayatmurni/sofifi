@@ -9,7 +9,7 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source">
     <title>Sofifi | Admin</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/assets/favicon/apple-icon-57x57.png')}}">
+    {{-- <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/assets/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/assets/favicon/apple-icon-60x60.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/assets/favicon/apple-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/assets/favicon/apple-icon-76x76.png') }}">
@@ -21,12 +21,13 @@
     <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/assets/favicon/android-icon-192x192.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/assets/favicon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/assets/favicon/favicon-96x96.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/assets/favicon/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{ asset('assets/assets/favicon/manifest.json')}}">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ asset('assets/assets/favicon/ms-icon-144x144.png')}}">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/assets/favicon/favicon-16x16.png')}}"> --}}
+    {{-- <link rel="manifest" href="{{ asset('assets/assets/favicon/manifest.json')}}"> --}}
+    {{-- <meta name="msapplication-TileColor" content="#ffffff"> --}}
+    {{-- <meta name="msapplication-TileImage" content="{{ asset('assets/assets/favicon/ms-icon-144x144.png')}}"> --}}
+    {{-- <meta name="theme-color" content="#ffffff"> --}}
     <!-- Vendors styles-->
+    <link rel="icon" href="{{ url('favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendors/simplebar.css') }}">
     <!-- Main styles for this application-->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
