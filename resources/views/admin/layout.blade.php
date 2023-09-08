@@ -45,15 +45,15 @@
       <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link @if($nav == 'sofifi') 'active' @endif" href="{{ route('admin.sofifi')}}">
             <svg class="nav-icon">
-              <use xlink:href="{{ asset('assets/icons/free.svg#cil-speedometer') }}"></use>
+              <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-speedometer') }}"></use>
             </svg> Sofifi Apps</a></li>
         <li class="nav-item"><a class="nav-link @if($nav == 'bulletin') 'active' @endif" href="{{ route('admin.bulletin')}}">
             <svg class="nav-icon">
-              <use xlink:href="{{ asset('assets/icons/free.svg#cil-drop')}}"></use>
+              <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-drop')}}"></use>
             </svg> Bulletin</a></li>
         <li class="nav-item"><a class="nav-link @if($nav == 'gallery') 'active' @endif" href="{{ route('admin.gallery') }}">
             <svg class="nav-icon">
-              <use xlink:href="{{ asset('assets/icons/free.svg#cil-pencil')}}"></use>
+              <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-pencil')}}"></use>
             </svg> Dokumentasi</a>
         </li>
       </ul>
@@ -64,7 +64,7 @@
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
-              <use xlink:href="{{ asset('assets/icons/free.svg#cil-menu')}}"></use>
+              <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-menu')}}"></use>
             </svg>
           </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
@@ -80,12 +80,12 @@
 
                   <a class="dropdown-item" href="{{route('admin.managed-acount')}}">
                   <svg class="icon me-2">
-                    <use xlink:href="{{ asset('assets/icons/free.svg#cil-user')}}"></use>
+                    <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-user')}}"></use>
                   </svg> Kelola</a>
   
                   <a class="dropdown-item" href="{{route('admin.logout')}}">
                   <svg class="icon me-2">
-                    <use xlink:href="{{ asset('assets/icons/free.svg#cil-account-logout')}}"></use>
+                    <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-account-logout')}}"></use>
                   </svg> Logout</a>
               </div>
             </li>
