@@ -28,10 +28,10 @@
     {{-- <meta name="theme-color" content="#ffffff"> --}}
     <!-- Vendors styles-->
     <link rel="icon" href="{{ url('favicon.png') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/vendors/simplebar.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/vendors/simplebar.css') }}">
     <!-- Main styles for this application-->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset("assets/css/custom.css")}}">
+    <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset("public/assets/css/custom.css")}}">
     @stack('headerScript')
   </head>
   <body>
@@ -108,8 +108,8 @@
       </footer>
   </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="{{ asset('assets/js/coreui.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tooltips.js') }}"></script>
+    <script src="{{ asset('public/assets/js/coreui.bundle.min.js') }}"></script>
+    <script src="{{ asset('public/assets/js/tooltips.js') }}"></script>
     @stack('bodyScript')
   </body>
 </html>
