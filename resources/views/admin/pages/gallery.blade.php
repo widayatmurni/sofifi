@@ -45,7 +45,7 @@
             <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
                 <button type="button" class="btn btn-primary px-3" data-coreui-toggle="modal" data-coreui-target="#createModal">
                     <svg class="icon me-2">
-                      <use xlink:href="../assets/icons/free.svg#cil-plus"></use>
+                      <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-plus') }}"></use>
                     </svg>
                     Buat Album
                 </button>

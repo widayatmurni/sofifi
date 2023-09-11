@@ -35,7 +35,7 @@
       <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
         <a href="{{ route('add-bulletin') }}" class="btn btn-primary">
           <svg class="icon me-2">
-            <use xlink:href="../assets/icons/free.svg#cil-link"></use>
+            <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-link') }}"></use>
           </svg>
           Tambah Baru
         </a>
@@ -60,19 +60,19 @@
                   <td>
                       <a href="{{ route('bulletin.read', $item->slug )}}" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Lihat" target="_blank">
                           <svg class="icon">
-                            <use xlink:href="../assets/icons/free.svg#cil-eye"></use>
+                            <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-eye') }}"></use>
                           </svg>
                             
                       </a>
                       <a href="" type="button" class="btn btn-ghost-success btn-sm" data-coreui-toggle="tooltip" title="Edit">
                           <svg class="icon">
-                            <use xlink:href="../assets/icons/free.svg#cil-pencil"></use>
+                            <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-pencil') }}"></use>
                           </svg>
                             
                       </a>
                       <button type="button" class="btn btn-ghost-danger btn-sm" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="" data-title="" data-slug="">
                         <svg class="icon">
-                          <use xlink:href="../assets/icons/free.svg#cil-trash"></use>
+                          <use xlink:href=".{{ asset('public/assets/icons/free.svg#cil-trash') }}"></use>
                         </svg>
                       </button>
                   </td>

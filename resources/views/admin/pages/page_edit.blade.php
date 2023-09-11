@@ -8,6 +8,7 @@
 @pushOnce('headerScript')
 <script src="https://cdn.tiny.cloud/1/9kst2yubujraj0tbh7caiwvqk0qvpji3dgbqd9dah8i98x9b/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 @endPushOnce
+
 @section('contents')
 
 @if ($page->isEmpty())
@@ -32,7 +33,7 @@
                         @checked(true)
                     @endif>
                     <a href="{{ route('edit-page', ['slug' => $page[0]->slug, 'lang' => $lang->id]) }}" class="btn btn-outline-primary" for="{{ $lang->code }}">
-                        <img src="{{ asset('assets/icons/' . $lang->flag) }}" alt="{{ $lang->code }}" style="width: 20px">
+                        <img src="{{ asset('public/assets/icons/' . $lang->flag) }}" alt="{{ $lang->code }}" style="width: 20px">
                         <span>{{ $lang->code }}</span>
                     </a>
                     
@@ -58,7 +59,7 @@
         <div class="mb-3">
             <button type="submit" class="btn btn-success px-4">
                 <svg class="icon me-2">
-                    <use xlink:href="{{ asset('assets/icons/free.svg#cil-save') }}"></use>
+                    <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-save') }}"></use>
                 </svg>
                 <span>Simpan</span>
             </button>
@@ -116,7 +117,7 @@
 // tinymce.init(editor_config);
 
     tinymce.init({
-        content_css:"/assets/css/sofifi.style.css",
+        content_css:"public/assets/css/sofifi.style.css",
         selector: 'textarea',
         plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
         toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',

@@ -53,7 +53,7 @@
                     <div class="offset-sm-2">
                         <button type="submit" class="btn btn-success">
                             <svg class="icon me-2">
-                                <use xlink:href="{{ asset('assets/icons/free.svg#cil-save')}}"></use>
+                                <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-save')}}"></use>
                             </svg>
                             Simpan perubahan
                         </button>
