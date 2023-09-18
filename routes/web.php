@@ -106,6 +106,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::prefix('bulletin')->group(function() {
             Route::get('/', 'getBulletins')->name('admin.bulletin');
             Route::get('/add-page', 'addBulletin')->name('add-bulletin');
+            Route::get('/edit/{id}', 'editBulletin')->name('bulletin.edit');
+            Route::post('/update-page', 'updateBulletin')->name('admin.update-bulletin');
             Route::post('/save-page', 'saveBulletin')->name('admin.create-bulletin');
         });
 

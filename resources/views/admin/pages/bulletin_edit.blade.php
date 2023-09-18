@@ -13,36 +13,15 @@
   <div>
       <h4 class="card-title mb-0">Halaman Bulletin</h4>
   </div>
-  {{-- <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      @php
-          $firstLang = true
-      @endphp
-      @foreach ($languages as $lang)
-
-        <input type="radio" class="btn-check" name="btnradio" id="{{ $lang->code }}" autocomplete="off" @checked($firstLang)>
-        <label class="btn btn-outline-primary d-flex align-items-center" for="{{ $lang->code }}" style="position: relative">
-          <img style="width: 20px; border-radius: 3px; margin-right: 5px" src="{{ asset('assets/icons/' . $lang->flag )}}" alt="{{ $lang->code }}">
-          <span>{{ $lang->code }}</span>
-        </label>
-
-        @php
-            $firstLang = false
-        @endphp
-          
-      @endforeach
-
-
-    </div>
-  </div> --}}
 </div>
 
 <div class="my-4">
-  <form class="form-control mb-3" action="{{ route('admin.create-bulletin')}}" method="post" enctype="multipart/form-data">
+  <form class="form-control mb-3" action="{{ route('admin.update-bulletin')}}" method="post" enctype="multipart/form-data">
     @csrf
+    <input type="hidden" name="id" value={{ $page->id }} @readonly(true)>
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
-      <input type="text" name="title" id="title" class="form-control">
+      <input type="text" name="title" id="title" class="form-control" value="{{ $page->title }}">
     </div>
 
     <p>
@@ -56,11 +35,13 @@
 
         <div class="mb-3">
           <label for="lead-title" class="form-label">Lead Title</label>
-          <input type="text" name="lead_title" id="lead-title" class="form-control">
+          <input type="text" name="lead_title" id="lead-title" class="form-control" value="{{ $page->lead_title }}">
         </div>
         <div class="mb-3">
           <label for="lead-text" class="form-label">Lead Text</label>
-          <textarea name="lead_text" id="lead-text" cols="10" rows="3" class="form-control"></textarea>
+          <textarea name="lead_text" id="lead-text" cols="10" rows="3" class="form-control">
+            {{ $page->lead_content }}
+          </textarea>
         </div>
 
       </div>
@@ -68,12 +49,14 @@
 
     <div class="mb-3">
       <label for="formFile" class="form-label">Background image</label>
-      <input class="form-control" type="file" id="formFile" name="bg_image">
+      <input class="form-control" type="file" id="formFile" name="bg_image" value="{{ url(asset($page->lead_bg))}}">
     </div>
 
     <div class="mb-3">
       <label for="page" class="form-label">Halaman</label>
-      <textarea name="page" id="page" cols="30" rows="20" class="form-control"></textarea>
+      <textarea name="page" id="page" cols="30" rows="20" class="form-control">
+        {{ $page->content }}
+      </textarea>
       <div class="valid-feedback d-block">
         Buat halaman berita/buletin disini.
       </div>

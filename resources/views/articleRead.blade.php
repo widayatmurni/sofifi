@@ -17,7 +17,7 @@
   </div>
   <div class="shared">
     <a href="{{ url('/pages/news')}}">
-      <img class="icon-back" style="width: 40px" src="{{ url(asset('assets/vectors/btn_home.png'))}}" alt="back">
+      <img class="icon-back" style="width: 40px" src="{{ url(asset('public/assets/vectors/btn_home.png'))}}" alt="back">
     </a>
   </div>
 </div>

@@ -147,6 +147,34 @@ class Admin extends Controller {
 
     }
 
+    public function editBulletin($id) {
+        $page = MBulletin::where('id', $id)->first();
+        return view('admin.pages.bulletin_edit', ['page' => $page]);
+    }
+
+    public function updateBulletin(Request $req){
+        $field = [
+            'id' => $req->id,
+            'title' => $req->title,
+            'lead_title' => $req->lead_title,
+            'lead_text' => $req->lead_text,
+            'content' => $req->page,
+        ];
+        $file = $req->file('bg_image');
+        $slug = Str::replace(' ', '-', $req->title);
+        $exist = MBulletin::where('slug', $slug)->get();
+        
+        if ($req->hasFile('bg_image')){
+            if ($file->isValid()){
+                $filename = round(microtime(true) * 1000).'-'.str_replace(' ','-',$file->getClientOriginalName());
+                $file->storeAs('uploads/', $filename);
+                $field = Arr::add($field, 'lead_bg', $filename);
+            }
+        }
+        MBulletin::where('id', $field['id'])->update($field);
+        return redirect()->back();    
+    }
+
     // GALLERY
     public function getGalleries() {
         $albums = MAlbum::all();

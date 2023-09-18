@@ -4,7 +4,7 @@
 <main class="busi">
     <div class="busi-c-header">
         <div class="app-brand">
-          <img src="{{ url(asset('assets/vectors/busi.png'))}}" alt="busi_logo">
+          <img src="{{ url(asset('public/assets/vectors/busi.png'))}}" alt="busi_logo">
         </div>
     </div>
 
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="bg-slide">
-                <img class="on-background" src="{{ url(asset('uploads/'.$item->lead_bg))}}" alt="" srcset="">
+                <img class="on-background" src="{{ $item->lead_bg }}" alt="" srcset="">
             </div>
             </div>
             
