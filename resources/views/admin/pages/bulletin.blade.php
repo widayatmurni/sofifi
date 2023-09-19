@@ -7,11 +7,11 @@
 
 {{-- MODAL DELETE --}}
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+        <h5 class="modal-title" id="deleteModalLabel">Konfirmasi</h5>
         <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -20,7 +20,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-coreui-dismiss="modal">Tidak</button>
-        <a href="route" type="button" class="btn btn-danger px-4">Ya</a>
+        <a href="" type="button" class="btn btn-danger px-4">Ya</a>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
             <tr>
                 <th scope="col" class="text-center" width="40">#</th>
                 <th scope="col" class="" width="">Halaman</th>
-                <th scope="col" class="text-center" width="100"></th>
+                <th scope="col" class="text-center" width="120"></th>
             </tr>
         </thead>
         <tbody>
@@ -70,7 +70,7 @@
                           </svg>
                             
                       </a>
-                      <button type="button" class="btn btn-ghost-danger btn-sm" data-coreui-toggle="modal" data-coreui-target="#exampleModal" data-coreui-whatever="" data-title="" data-id="">
+                      <button type="button" class="btn btn-ghost-danger btn-sm" data-coreui-toggle="modal" data-coreui-target="#deleteModal" data-coreui-whatever="" data-title="{{ $item->title }}" data-id="{{ $item->id }}">
                         <svg class="icon">
                           <use xlink:href=".{{ asset('public/assets/icons/free.svg#cil-trash') }}"></use>
                         </svg>
@@ -95,17 +95,22 @@
 
 @push('bodyScript')
 <script>
-const exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.coreui.modal', event => {
+const deleteModal = document.querySelector('#deleteModal')
+
+deleteModal.addEventListener('show.coreui.modal', event => {
   const button = event.relatedTarget
   const title = button.getAttribute('data-title')
-  const curSlug = button.getAttribute('data-slug')
+  const curId = button.getAttribute('data-id')
 
-  const modalBodySpan = exampleModal.querySelector('.modal-body span')
-  const modalBodyInput = exampleModal.querySelector('.modal-body input')
+  const modalBodySpan = deleteModal.querySelector('.modal-body span')
+  const modalBodyInput = deleteModal.querySelector('.modal-body input')
+  const deleteUri = deleteModal.querySelector('.modal-footer a')
+  let url='{{route("admin.delete-bulletin", ":id")}}'
+  url=url.replace(':id', curId)
 
   modalBodySpan.innerHTML = `<b>${title}</b>`
-  modalBodyInput.value = curSlug
+  deleteUri.href = url
 })
 
 </script>
+@endPush

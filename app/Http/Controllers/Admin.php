@@ -175,6 +175,11 @@ class Admin extends Controller {
         return redirect()->back();    
     }
 
+    public function deleteBulletin($id) {
+        MBulletin::where('id',$id)->delete();
+        return redirect()->back();
+    }
+
     // GALLERY
     public function getGalleries() {
         $albums = MAlbum::all();
