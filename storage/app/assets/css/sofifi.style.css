@@ -1603,13 +1603,14 @@ body {
 .gallery {
   position: relative;
   width: 100%;
+  height: 100vh;
   background-color: #f3f0f0c1;
 
 }
 
 .gallery .gal-slider {
   width: 100%;
-  height: 250px;
+  height: 150px;
   position: relative;
   background-color: #0283c9b8;
   overflow: hidden;

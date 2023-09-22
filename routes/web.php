@@ -55,6 +55,7 @@ Route::prefix('pages')->group(function () {
             Route::prefix('gallery')->group(function () {
                 Route::get('/', 'index')->name('gallery.album');
                 Route::get('/get-album-content/{idAlbum}', 'getAlbumContent')->name('get.album.content');
+                Route::get('get-album-content-items/{idAlbum}', 'getAlbumContentItems');
             });
         });
     

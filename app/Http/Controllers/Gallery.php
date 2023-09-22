@@ -37,4 +37,13 @@ class Gallery extends Controller
         return view('galleryViewAlbum')->with('photos', $data);
     }
 
+    public function getAlbumContentItems($albumId) {
+        $gal = Galleries::where('album_id', $albumId)
+                ->join('albums', 'albums.id', 'galleries.album_id')
+                ->select('galleries.file_uri')
+                ->limit(2)
+                ->get();
+        return response()->json($gal, 200);
+    }
+
 }

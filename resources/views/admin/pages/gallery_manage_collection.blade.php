@@ -88,7 +88,7 @@
         @foreach ($collections as $item)
           <div class="col-4">
             <div class="card">
-              <img src="{{asset('photos/' . $item->file_uri)}}">
+              <img src="{{asset('public/photos/' . $item->file_uri)}}">
             </div>
           </div>
         @endforeach

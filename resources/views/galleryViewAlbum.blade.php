@@ -1,7 +1,7 @@
 @extends('galleryBase') 
 @push('headerResources')
-<link href="{{ asset('assets/bootstrap-5.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
-<script src="{{ asset('assets/bootstrap-5.0-dist/js/bootstrap.js')}}"></script>
+<link href="{{ asset('public/assets/bootstrap-5.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+<script src="{{ asset('public/assets/bootstrap-5.0-dist/js/bootstrap.js')}}"></script>
 @endpush
 @section('Galleries')
     @if($photos->isEmpty())
@@ -35,9 +35,16 @@
       <div class="row">
         @foreach ($photos as $item)
           <div class="col-sm-6 col-md-4 mb-3">
-            <img src="{{ asset('photos/' . $item->file_uri)}}" alt="" class="fluid img-thumbnail">      
+            <img src="{{ asset('public/photos/' . $item->file_uri)}}" alt="" class="fluid img-thumbnail">      
           </div>
         @endforeach
+      </div>
+    </div>
+    <div class="float-menu">
+      <div class="float-menu">
+        <a href="{{ route('gallery.album')}}" class="nav-single">
+          <span class="nav-text">Kembali</span>
+        </a>
       </div>
     </div>
     @endif
