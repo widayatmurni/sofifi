@@ -27,7 +27,7 @@
     {{-- <meta name="msapplication-TileImage" content="{{ asset('assets/assets/favicon/ms-icon-144x144.png')}}"> --}}
     {{-- <meta name="theme-color" content="#ffffff"> --}}
     <!-- Vendors styles-->
-    <link rel="icon" href="{{ url('favicon.png') }}">
+    <link rel="icon" href="{{ asset('public/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/vendors/simplebar.css') }}">
     <!-- Main styles for this application-->
     <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">

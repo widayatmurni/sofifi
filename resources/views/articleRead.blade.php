@@ -1,7 +1,12 @@
 @extends('articlesBase')
 
+@push('headerResources')
+  <link rel="stylesheet" href="{{ url(asset('public/assets/bootstrap-5.0-dist/css/bootstrap.min.css')) }}">  
+  
+@endpush
+
 @section('Articles')
-<div class="header header--fixed">
+<div class="header header-fixed">
   <div class="logo">
     <h1 class="clearfix">
       <a href="" class="logo-title">
@@ -21,8 +26,12 @@
     </a>
   </div>
 </div>
-<main role="main">
-  {!! html_entity_decode($buletin['content']) !!}    
+<main role="main" class="container-lg py-4">
+  <div class="row">
+    <div class="col">
+      {!! html_entity_decode($buletin['content']) !!}    
+    </div>
+  </div>
 </main>
 
 @endsection

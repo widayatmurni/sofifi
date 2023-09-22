@@ -1,11 +1,11 @@
 <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
   <div class="sidebar-brand d-none d-md-flex">
-  <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+  {{-- <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
   <use xlink:href="assets/brand/coreui.svg#full"></use>
   </svg>
   <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
   <use xlink:href="assets/brand/coreui.svg#signet"></use>
-  </svg>
+  </svg> --}}
   </div>
   <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
   <li class="nav-item"><a class="nav-link" href="index.html">

@@ -111,7 +111,7 @@ class Admin extends Controller {
 
     // BULLETINS
     public function getBulletins() {
-        $bulletins = MBulletin::where('publish', TRUE)->get();
+        $bulletins = MBulletin::all();
         return view('admin.pages.bulletin', ['bulletins' => $bulletins]);
     }
 
@@ -131,6 +131,7 @@ class Admin extends Controller {
         ];
         $file = $req->file('bg_image');
         $slug = Str::replace(' ', '-', $req->title);
+        $field = Arr::add($field, 'slug', $slug);
         $exist = MBulletin::where('slug', $slug)->get();
 
         if ($exist->isEmpty()) {
@@ -171,6 +172,7 @@ class Admin extends Controller {
                 $field = Arr::add($field, 'lead_bg', $filename);
             }
         }
+        $field = Arr::add($field, 'slug', $slug);
         MBulletin::where('id', $field['id'])->update($field);
         return redirect()->back();    
     }

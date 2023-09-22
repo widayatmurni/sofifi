@@ -58,7 +58,7 @@
                   <th class="text-center" scope="col">#</th>
                   <td>{{$item->title}}</td>
                   <td>
-                      <a href="{{ route('bulletin.read', $item->slug )}}" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Lihat" target="_blank">
+                      <a href="{{ route('bulletin.read', $item->slug )}}" type="button" class="btn btn-ghost-primary btn-sm" data-coreui-toggle="tooltip" title="Lihat" target="_blank" @disabled(true)>
                           <svg class="icon">
                             <use xlink:href="{{ asset('public/assets/icons/free.svg#cil-link') }}"></use>
                           </svg>
