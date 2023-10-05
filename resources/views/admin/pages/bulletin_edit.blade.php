@@ -83,17 +83,44 @@
 
 @push('bodyScript')
 <script>
-tinymce.init({
-        selector: 'textarea',
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Author name',
-        mergetags_list: [
-            { value: 'First.Name', title: 'First Name' },
-            { value: 'Email', title: 'Email' },
-        ],
-        ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
+<script>
+var host = window.location.protocol + "//" + window.location.host;
+var editor_config = {
+  content_css: host + "/sofifi/public/assets/css/sofifi.style.css",
+  selector: 'textarea#page',
+  path_absolute : "/",
+  relative_urls: false,
+  valid_elements: '*[*]',
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste imagetools wordcount'
+  ],
+  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | code',
+  file_picker_callback : function(callback, value, meta) {
+    var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+    var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;
+
+    var cmsURL = editor_config.path_absolute + 'sofifi/public/laravel-filemanager?editor=' + meta.fieldname;
+    if (meta.filetype == 'image') {
+      cmsURL = cmsURL + "&type=Images";
+    } else {
+      cmsURL = cmsURL + "&type=Files";
+    }
+
+    tinyMCE.activeEditor.windowManager.openUrl({
+      url : cmsURL,
+      title : 'Filemanager',
+      width : x * 0.8,
+      height : y * 0.8,
+      resizable : "yes",
+      close_previous : "no",
+      onMessage: (api, message) => {
+        callback(message.content);
+      }
     });
+  }
+};
+tinymce.init(editor_config);
 </script>
 @endpush
