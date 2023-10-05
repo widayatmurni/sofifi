@@ -20,9 +20,10 @@ use App\Http\Controllers\Gallery;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::group(['prefix' => 'laravel-filemanager'], function () {
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
+
 
 
 
@@ -67,7 +68,6 @@ Route::prefix('pages')->group(function () {
     });
     
 });
-
 
 
 // ADMIN
