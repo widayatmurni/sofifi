@@ -578,7 +578,7 @@ class PagesSeed extends Seeder
             
                             <div class="s-card">
                               <div class="content-image">
-                                <img class="img-potrait" src="../public/assets/vectors/fc-kk.png" alt="E-KTP">
+                                <img class="img-potrait" src="../public/assets/vectors/pasport.png" alt="Passport">
                               </div>
                               <div class="text-title">Melampirkan Paspor lama</div>
                             </div>
